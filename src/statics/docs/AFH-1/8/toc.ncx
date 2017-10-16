@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="baca0c1a-ba9e-4d6c-9bff-591e2ba258cc" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (3.6.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Chapter 8, Military Customs and Courtesies</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="uvLgXjzgGbjHsniPIrqIju9" playOrder="0">
+      <navLabel>
+        <text>www.aoc.gov/flags</text>
+      </navLabel>
+      <content src="/%5c%5crndap01302%5cPD%5c2017%20Handbook%5c06%20Final%20TOC%2c%20Final%20Chapters%20%26%20Attachments%5cChapter%208%20MILITARY%20CUSTOMS%2c%20COURTESIES%2c%20AND%20PROTOCOL%20FOR%20SPECIAL%20EVENTS%5cwww.aoc.gov%5cflags"/>
+    </navPoint>
+  </navMap>
+</ncx>

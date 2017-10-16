@@ -1,0 +1,83 @@
+<template>
+	<div class="home">
+		<h3></h3>
+		<h1>Air Force Handbook 1 </h1>
+		<ul class="list">
+			<li @click="gotoReading">Chapters</li>
+			<li @click="gotoSearcher">Search</li>
+			<li v-if="hasLastViewed" @click="gotoLastViewed">Continue Reading</li>	
+		    <li v-if="hasBookmarks" @click="gotoBookmarks">Bookmarks</li>				
+		</ul>
+
+	</div>
+</template>
+
+<style>
+	.home h3{
+		background-image:url("../assets/af_logo.svg");
+		background-size:25vw 25vw;
+		background-repeat:no-repeat;
+		height:25vw;
+		background-position:center;
+	}
+
+	.home{
+		background-color:white;
+		text-align:center;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+	}
+	
+	
+	
+</style>
+
+<script>
+mb.store = mb.store || {};
+
+module.exports = {
+
+	methods:{
+	
+		gotoReading: function(){
+			window.location.hash = '#/toc';
+		},
+		gotoBookmarks: function(){	
+			window.location.hash = '#/bookmarks';
+		},
+		gotoSearcher: function(){
+			window.location.hash = '#/searcher';
+		},
+		gotoLastViewed:function(){
+			const lastLocation = localStorage.getItem('lastLocation');			
+			if(lastLocation){
+				window.location.hash = '#/reader/' + mb.store.lastLocation.location;
+			}
+		}
+	},
+	computed:{
+		hasLastViewed:function(){
+			let lastLocation = localStorage.getItem('lastLocation');
+			return lastLocation && true;	
+			
+		},
+		hasBookmarks:function(){
+			var bookmarks = localStorage.getItem('bookmarks');
+			if(!bookmarks) return false;
+			var bookmarksArr = JSON.parse(bookmarks);
+			return bookmarksArr.length>0;
+		}
+	
+	}
+
+
+
+
+
+}
+
+
+</script>
+

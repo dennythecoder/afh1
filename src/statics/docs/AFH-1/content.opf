@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="epubmerge-id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>AFH-1</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:identifier id="epubmerge-id">epubmerge-uid-1506083592</dc:identifier>
+    <dc:contributor opf:role="bkp">epubmerge</dc:contributor>
+    <dc:rights>Copyrights as per source stories</dc:rights>
+    <dc:description>Anthology containing:
+
+Chapter 1, Air Force Heritage
+Chapter 2, Enlisted History
+Chapter 3, Organization
+Chapter 4, Air Force Doctrine, Air Expeditionary Force (AEF), and Joint Force
+Chapter 5, Emergency Management
+Chapter 6 Standards of Conduct
+Chapter 7, Enforcing Standards and Legal Issues
+Chapter 8, Military Customs and Courtesies
+Chapter 9, THE NCO
+Chapter 10 Leadership
+Chapter 11, Officer and Enlisted Evaluation Systems and Civilian Performance Program
+Chapter 12, Training and Education
+Chapter 13, Resource Management
+Chapter 14, Communicating In Today's Air Force
+Chapter 15, Personnel Programs
+Chapter 16, Wing Support
+Chapter 17, Dress and Appearance
+Chapter 18, Fit Force
+Chapter 19, Security
+Chapter 20, Air Force Knowledge
+Chapter 21, Organizational Management
+Chapter 22, Human Resource Development
+Chapter 23, Critical Thinking
+Chapter 24, Studying Effectively
+Chapter 25, Professionalism</dc:description>
+    <dc:publisher>USAF</dc:publisher>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">1a536bb7-2de4-41dd-84b7-7fa51ddee088</dc:identifier>
+    <meta name="calibre:title_sort" content="AFH-1"/>
+    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="1/index.html" id="a1id2" media-type="application/xhtml+xml"/>
+    <item href="2/index.html" id="a2id2" media-type="application/xhtml+xml"/>
+    <item href="3/index.html" id="a3id2" media-type="application/xhtml+xml"/>
+    <item href="4/index.html" id="a4id2" media-type="application/xhtml+xml"/>
+    <item href="5/index.html" id="a5id2" media-type="application/xhtml+xml"/>
+    <item href="6/index.html" id="a6id2" media-type="application/xhtml+xml"/>
+    <item href="7/index.html" id="a7id2" media-type="application/xhtml+xml"/>
+    <item href="8/index_split_000.html" id="a8id22" media-type="application/xhtml+xml"/>
+    <item href="8/index_split_001.html" id="a8id21" media-type="application/xhtml+xml"/>
+    <item href="9/index.html" id="a9id2" media-type="application/xhtml+xml"/>
+    <item href="10/index.html" id="a10id2" media-type="application/xhtml+xml"/>
+    <item href="11/index.html" id="a11id2" media-type="application/xhtml+xml"/>
+    <item href="12/index_split_000.html" id="a12id22" media-type="application/xhtml+xml"/>
+    <item href="12/index_split_001.html" id="a12id21" media-type="application/xhtml+xml"/>
+    <item href="13/index.html" id="a13id2" media-type="application/xhtml+xml"/>
+    <item href="14/index_split_000.html" id="a14id22" media-type="application/xhtml+xml"/>
+    <item href="14/index_split_001.html" id="a14id21" media-type="application/xhtml+xml"/>
+    <item href="15/index_split_000.html" id="a15id22" media-type="application/xhtml+xml"/>
+    <item href="15/index_split_001.html" id="a15id21" media-type="application/xhtml+xml"/>
+    <item href="16/titlepage.xhtml" id="a16titlepage" media-type="application/xhtml+xml"/>
+    <item href="16/index.html" id="a16id2" media-type="application/xhtml+xml"/>
+    <item href="17/index.html" id="a17id2" media-type="application/xhtml+xml"/>
+    <item href="18/index.html" id="a18id2" media-type="application/xhtml+xml"/>
+    <item href="19/index.html" id="a19id2" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_000.html" id="a20id217" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_001.html" id="a20id216" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_002.html" id="a20id215" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_003.html" id="a20id214" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_004.html" id="a20id213" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_005.html" id="a20id212" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_006.html" id="a20id211" media-type="application/xhtml+xml"/>
+    <item href="20/index_split_007.html" id="a20id210" media-type="application/xhtml+xml"/>
+    <item href="21/index.html" id="a21id2" media-type="application/xhtml+xml"/>
+    <item href="22/index.html" id="a22id2" media-type="application/xhtml+xml"/>
+    <item href="23/index.html" id="a23id2" media-type="application/xhtml+xml"/>
+    <item href="24/index_split_000.html" id="a24id23" media-type="application/xhtml+xml"/>
+    <item href="24/index_split_001.html" id="a24id22" media-type="application/xhtml+xml"/>
+    <item href="24/index_split_002.html" id="a24id21" media-type="application/xhtml+xml"/>
+    <item href="25/index.html" id="a25id2" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="1/page_styles.css" id="a1page_css" media-type="text/css"/>
+    <item href="1/stylesheet.css" id="a1css" media-type="text/css"/>
+    <item href="10/page_styles.css" id="a10page_css" media-type="text/css"/>
+    <item href="10/stylesheet.css" id="a10css" media-type="text/css"/>
+    <item href="11/page_styles.css" id="a11page_css" media-type="text/css"/>
+    <item href="11/stylesheet.css" id="a11css" media-type="text/css"/>
+    <item href="12/page_styles.css" id="a12page_css" media-type="text/css"/>
+    <item href="12/stylesheet.css" id="a12css" media-type="text/css"/>
+    <item href="13/page_styles.css" id="a13page_css" media-type="text/css"/>
+    <item href="13/stylesheet.css" id="a13css" media-type="text/css"/>
+    <item href="14/page_styles.css" id="a14page_css" media-type="text/css"/>
+    <item href="14/stylesheet.css" id="a14css" media-type="text/css"/>
+    <item href="15/page_styles.css" id="a15page_css" media-type="text/css"/>
+    <item href="15/stylesheet.css" id="a15css" media-type="text/css"/>
+    <item href="16/page_styles.css" id="a16page_css" media-type="text/css"/>
+    <item href="16/stylesheet.css" id="a16css" media-type="text/css"/>
+    <item href="17/page_styles.css" id="a17page_css" media-type="text/css"/>
+    <item href="17/stylesheet.css" id="a17css" media-type="text/css"/>
+    <item href="18/page_styles.css" id="a18page_css" media-type="text/css"/>
+    <item href="18/stylesheet.css" id="a18css" media-type="text/css"/>
+    <item href="19/page_styles.css" id="a19page_css" media-type="text/css"/>
+    <item href="19/stylesheet.css" id="a19css" media-type="text/css"/>
+    <item href="2/page_styles.css" id="a2page_css" media-type="text/css"/>
+    <item href="2/stylesheet.css" id="a2css" media-type="text/css"/>
+    <item href="20/page_styles.css" id="a20page_css" media-type="text/css"/>
+    <item href="20/stylesheet.css" id="a20css" media-type="text/css"/>
+    <item href="21/page_styles.css" id="a21page_css" media-type="text/css"/>
+    <item href="21/stylesheet.css" id="a21css" media-type="text/css"/>
+    <item href="22/page_styles.css" id="a22page_css" media-type="text/css"/>
+    <item href="22/stylesheet.css" id="a22css" media-type="text/css"/>
+    <item href="23/page_styles.css" id="a23page_css" media-type="text/css"/>
+    <item href="23/stylesheet.css" id="a23css" media-type="text/css"/>
+    <item href="24/page_styles.css" id="a24page_css" media-type="text/css"/>
+    <item href="24/stylesheet.css" id="a24css" media-type="text/css"/>
+    <item href="25/page_styles.css" id="a25page_css" media-type="text/css"/>
+    <item href="25/stylesheet.css" id="a25css" media-type="text/css"/>
+    <item href="3/page_styles.css" id="a3page_css" media-type="text/css"/>
+    <item href="3/stylesheet.css" id="a3css" media-type="text/css"/>
+    <item href="4/page_styles.css" id="a4page_css" media-type="text/css"/>
+    <item href="4/stylesheet.css" id="a4css" media-type="text/css"/>
+    <item href="5/page_styles.css" id="a5page_css" media-type="text/css"/>
+    <item href="5/stylesheet.css" id="a5css" media-type="text/css"/>
+    <item href="6/page_styles.css" id="a6page_css" media-type="text/css"/>
+    <item href="6/stylesheet.css" id="a6css" media-type="text/css"/>
+    <item href="7/page_styles.css" id="a7page_css" media-type="text/css"/>
+    <item href="7/stylesheet.css" id="a7css" media-type="text/css"/>
+    <item href="8/page_styles.css" id="a8page_css" media-type="text/css"/>
+    <item href="8/stylesheet.css" id="a8css" media-type="text/css"/>
+    <item href="9/page_styles.css" id="a9page_css" media-type="text/css"/>
+    <item href="9/stylesheet.css" id="a9css" media-type="text/css"/>
+    <item href="1/cover.jpeg" id="a1cover" media-type="image/jpeg"/>
+    <item href="1/images/100.jpeg" id="a1id3" media-type="image/jpeg"/>
+    <item href="1/images/101.jpeg" id="a1id4" media-type="image/jpeg"/>
+    <item href="1/images/102.jpeg" id="a1id5" media-type="image/jpeg"/>
+    <item href="1/images/1Lt_Fleming.jpeg" id="a1id6" media-type="image/jpeg"/>
+    <item href="1/images/1st_lt_Goetler.jpeg" id="a1id7" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Gott.jpeg" id="a1id8" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Knight.jpeg" id="a1id9" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Lawley.jpeg" id="a1id10" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Mathis.jpeg" id="a1id11" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Michael.jpeg" id="a1id12" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Pucket.jpeg" id="a1id13" media-type="image/jpeg"/>
+    <item href="1/images/1st_Lt_Rickenbacker.jpeg" id="a1id14" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Bleckley.jpeg" id="a1id15" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Femoyer.jpeg" id="a1id16" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Herbert.jpeg" id="a1id17" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Kingsley.jpeg" id="a1id18" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Luke.jpeg" id="a1id19" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Metzger.jpeg" id="a1id20" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Morgan.jpeg" id="a1id21" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Sarnoski.jpeg" id="a1id22" media-type="image/jpeg"/>
+    <item href="1/images/2d_Lt_Truemper.jpeg" id="a1id23" media-type="image/jpeg"/>
+    <item href="1/images/33.jpeg" id="a1id24" media-type="image/jpeg"/>
+    <item href="1/images/34.jpeg" id="a1id25" media-type="image/jpeg"/>
+    <item href="1/images/36.jpeg" id="a1id26" media-type="image/jpeg"/>
+    <item href="1/images/50.jpeg" id="a1id27" media-type="image/jpeg"/>
+    <item href="1/images/59.jpeg" id="a1id28" media-type="image/jpeg"/>
+    <item href="1/images/75.jpeg" id="a1id29" media-type="image/jpeg"/>
+    <item href="1/images/79.jpeg" id="a1id30" media-type="image/jpeg"/>
+    <item href="1/images/80.jpeg" id="a1id31" media-type="image/jpeg"/>
+    <item href="1/images/81.jpeg" id="a1id32" media-type="image/jpeg"/>
+    <item href="1/images/82.jpeg" id="a1id33" media-type="image/jpeg"/>
+    <item href="1/images/83.jpeg" id="a1id34" media-type="image/jpeg"/>
+    <item href="1/images/84.jpeg" id="a1id35" media-type="image/jpeg"/>
+    <item href="1/images/85.jpeg" id="a1id36" media-type="image/jpeg"/>
+    <item href="1/images/86.jpeg" id="a1id37" media-type="image/jpeg"/>
+    <item href="1/images/87.jpeg" id="a1id38" media-type="image/jpeg"/>
+    <item href="1/images/88.jpeg" id="a1id39" media-type="image/jpeg"/>
+    <item href="1/images/89.jpeg" id="a1id40" media-type="image/jpeg"/>
+    <item href="1/images/90.jpeg" id="a1id41" media-type="image/jpeg"/>
+    <item href="1/images/91.jpeg" id="a1id42" media-type="image/jpeg"/>
+    <item href="1/images/92.jpeg" id="a1id43" media-type="image/jpeg"/>
+    <item href="1/images/93.jpeg" id="a1id44" media-type="image/jpeg"/>
+    <item href="1/images/94.jpeg" id="a1id45" media-type="image/jpeg"/>
+    <item href="1/images/95.jpeg" id="a1id46" media-type="image/jpeg"/>
+    <item href="1/images/96.jpeg" id="a1id47" media-type="image/jpeg"/>
+    <item href="1/images/97.jpeg" id="a1id48" media-type="image/jpeg"/>
+    <item href="1/images/98.jpeg" id="a1id49" media-type="image/jpeg"/>
+    <item href="1/images/99.jpeg" id="a1id50" media-type="image/jpeg"/>
+    <item href="1/images/A1C_Levitow.jpeg" id="a1id51" media-type="image/jpeg"/>
+    <item href="1/images/A1C_Pitsenbarger.jpeg" id="a1id52" media-type="image/jpeg"/>
+    <item href="1/images/BG_Castle.jpeg" id="a1id53" media-type="image/jpeg"/>
+    <item href="1/images/BG_Doolittle.jpeg" id="a1id54" media-type="image/jpeg"/>
+    <item href="1/images/BG_Walker.jpeg" id="a1id55" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Bennett.jpeg" id="a1id56" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Lindsey.jpeg" id="a1id57" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Pease.jpeg" id="a1id58" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Sijan.jpeg" id="a1id59" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Walmsley.jpeg" id="a1id60" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Wilbanks.jpeg" id="a1id61" media-type="image/jpeg"/>
+    <item href="1/images/Capt_Young.jpeg" id="a1id62" media-type="image/jpeg"/>
+    <item href="1/images/ccc.jpeg" id="a1id63" media-type="image/jpeg"/>
+    <item href="1/images/CMSgt_Etchberger.jpeg" id="a1id64" media-type="image/jpeg"/>
+    <item href="1/images/Col_Craw.jpeg" id="a1id65" media-type="image/jpeg"/>
+    <item href="1/images/Col_Johnson.jpeg" id="a1id66" media-type="image/jpeg"/>
+    <item href="1/images/Col_Jones_III.jpeg" id="a1id67" media-type="image/jpeg"/>
+    <item href="1/images/Col_Kane.jpeg" id="a1id68" media-type="image/jpeg"/>
+    <item href="1/images/Col_Kearby.jpeg" id="a1id69" media-type="image/jpeg"/>
+    <item href="1/images/Col_Walnut.jpeg" id="a1id70" media-type="image/jpeg"/>
+    <item href="1/images/image-1.jpeg" id="a1id71" media-type="image/jpeg"/>
+    <item href="1/images/image-10.jpeg" id="a1id72" media-type="image/jpeg"/>
+    <item href="1/images/image-11.jpeg" id="a1id73" media-type="image/jpeg"/>
+    <item href="1/images/image-12.jpeg" id="a1id74" media-type="image/jpeg"/>
+    <item href="1/images/image-13.jpeg" id="a1id75" media-type="image/jpeg"/>
+    <item href="1/images/image-14.jpeg" id="a1id76" media-type="image/jpeg"/>
+    <item href="1/images/image-15.jpeg" id="a1id77" media-type="image/jpeg"/>
+    <item href="1/images/image-16.jpeg" id="a1id78" media-type="image/jpeg"/>
+    <item href="1/images/image-17.jpeg" id="a1id79" media-type="image/jpeg"/>
+    <item href="1/images/image-18.jpeg" id="a1id80" media-type="image/jpeg"/>
+    <item href="1/images/image-19.jpeg" id="a1id81" media-type="image/jpeg"/>
+    <item href="1/images/image-2.jpeg" id="a1id82" media-type="image/jpeg"/>
+    <item href="1/images/image-20.jpeg" id="a1id83" media-type="image/jpeg"/>
+    <item href="1/images/image-21.jpeg" id="a1id84" media-type="image/jpeg"/>
+    <item href="1/images/image-22.jpeg" id="a1id85" media-type="image/jpeg"/>
+    <item href="1/images/image-23.jpeg" id="a1id86" media-type="image/jpeg"/>
+    <item href="1/images/image-24.jpeg" id="a1id87" media-type="image/jpeg"/>
+    <item href="1/images/image-25.jpeg" id="a1id88" media-type="image/jpeg"/>
+    <item href="1/images/image-26.jpeg" id="a1id89" media-type="image/jpeg"/>
+    <item href="1/images/image-27.jpeg" id="a1id90" media-type="image/jpeg"/>
+    <item href="1/images/image-28.jpeg" id="a1id91" media-type="image/jpeg"/>
+    <item href="1/images/image-29.jpeg" id="a1id92" media-type="image/jpeg"/>
+    <item href="1/images/image-3.jpeg" id="a1id93" media-type="image/jpeg"/>
+    <item href="1/images/image-30.jpeg" id="a1id94" media-type="image/jpeg"/>
+    <item href="1/images/image-31.jpeg" id="a1id95" media-type="image/jpeg"/>
+    <item href="1/images/image-32.jpeg" id="a1id96" media-type="image/jpeg"/>
+    <item href="1/images/image-33.jpeg" id="a1id97" media-type="image/jpeg"/>
+    <item href="1/images/image-34.jpeg" id="a1id98" media-type="image/jpeg"/>
+    <item href="1/images/image-35.jpeg" id="a1id99" media-type="image/jpeg"/>
+    <item href="1/images/image-36.jpeg" id="a1id100" media-type="image/jpeg"/>
+    <item href="1/images/image-37.jpeg" id="a1id101" media-type="image/jpeg"/>
+    <item href="1/images/image-38.jpeg" id="a1id102" media-type="image/jpeg"/>
+    <item href="1/images/image-39.jpeg" id="a1id103" media-type="image/jpeg"/>
+    <item href="1/images/image-4.jpeg" id="a1id104" media-type="image/jpeg"/>
+    <item href="1/images/image-40.jpeg" id="a1id105" media-type="image/jpeg"/>
+    <item href="1/images/image-5.jpeg" id="a1id106" media-type="image/jpeg"/>
+    <item href="1/images/image-6.jpeg" id="a1id107" media-type="image/jpeg"/>
+    <item href="1/images/image-7.jpeg" id="a1id108" media-type="image/jpeg"/>
+    <item href="1/images/image-8.jpeg" id="a1id109" media-type="image/jpeg"/>
+    <item href="1/images/image-9.jpeg" id="a1id110" media-type="image/jpeg"/>
+    <item href="1/images/image.jpeg" id="a1id111" media-type="image/jpeg"/>
+    <item href="1/images/LtC_Baker.jpeg" id="a1id112" media-type="image/jpeg"/>
+    <item href="1/images/LtC_Hamilton.jpeg" id="a1id113" media-type="image/jpeg"/>
+    <item href="1/images/LtC_Howard.jpeg" id="a1id114" media-type="image/jpeg"/>
+    <item href="1/images/LtC_Jackson.jpeg" id="a1id115" media-type="image/jpeg"/>
+    <item href="1/images/LtC_Vance_jr.jpeg" id="a1id116" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Bong.jpeg" id="a1id118" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Carswell.jpeg" id="a1id119" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Cheli.jpeg" id="a1id120" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Davis_Jr.jpeg" id="a1id121" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Day.jpeg" id="a1id122" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Dethlefsen.jpeg" id="a1id123" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Fisher.jpeg" id="a1id124" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Jerstad.jpeg" id="a1id125" media-type="image/jpeg"/>
+    <item href="1/images/Maj_McGuire.jpeg" id="a1id126" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Sebille.jpeg" id="a1id127" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Shomo.jpeg" id="a1id128" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Wilkins.jpeg" id="a1id129" media-type="image/jpeg"/>
+    <item href="1/images/Maj_Zeamer.jpeg" id="a1id130" media-type="image/jpeg"/>
+    <item href="1/images/Major_Loring.jpeg" id="a1id117" media-type="image/jpeg"/>
+    <item href="1/images/P-40_Warhawks.jpeg" id="a1id131" media-type="image/jpeg"/>
+    <item href="1/images/Section_1C.jpeg" id="a1id132" media-type="image/jpeg"/>
+    <item href="1/images/Sgt_Mathies.jpeg" id="a1id133" media-type="image/jpeg"/>
+    <item href="1/images/Sgt_Smith.jpeg" id="a1id134" media-type="image/jpeg"/>
+    <item href="1/images/SSgt_Erwin.jpeg" id="a1id135" media-type="image/jpeg"/>
+    <item href="1/images/TSgt_Vosler.jpeg" id="a1id136" media-type="image/jpeg"/>
+    <item href="13/images/five_phases.jpeg" id="a13id3" media-type="image/jpeg"/>
+    <item href="14/images/image-1.png" id="a14id3" media-type="image/png"/>
+    <item href="14/images/image-2.png" id="a14id4" media-type="image/png"/>
+    <item href="14/images/image-3.png" id="a14id5" media-type="image/png"/>
+    <item href="14/images/image-4.png" id="a14id6" media-type="image/png"/>
+    <item href="14/images/image-5.png" id="a14id7" media-type="image/png"/>
+    <item href="14/images/image-6.png" id="a14id8" media-type="image/png"/>
+    <item href="14/images/image-7.png" id="a14id9" media-type="image/png"/>
+    <item href="14/images/image.png" id="a14id12" media-type="image/png"/>
+    <item href="16/cover.jpeg" id="a16cover" media-type="image/jpeg"/>
+    <item href="18/images/denter_graphic.png" id="a18id3" media-type="image/png"/>
+    <item href="2/cover.jpeg" id="a2cover" media-type="image/jpeg"/>
+    <item href="2/images/Figure_2.2.png" id="a2id3" media-type="image/png"/>
+    <item href="2/images/Figure_2.3.png" id="a2id4" media-type="image/png"/>
+    <item href="20/cover.jpeg" id="a20cover" media-type="image/jpeg"/>
+    <item href="20/images/1.jpeg" id="a20id3" media-type="image/jpeg"/>
+    <item href="20/images/1906-1916.jpeg" id="a20id4" media-type="image/jpeg"/>
+    <item href="20/images/1917_1921-1941.jpeg" id="a20id5" media-type="image/jpeg"/>
+    <item href="20/images/1918-1920.jpeg" id="a20id6" media-type="image/jpeg"/>
+    <item href="20/images/1942-1943.jpeg" id="a20id7" media-type="image/jpeg"/>
+    <item href="20/images/1942-1943a.jpeg" id="a20id8" media-type="image/jpeg"/>
+    <item href="20/images/1943-1947.jpeg" id="a20id9" media-type="image/jpeg"/>
+    <item href="20/images/1943.jpeg" id="a20id10" media-type="image/jpeg"/>
+    <item href="20/images/1947-Present.jpeg" id="a20id11" media-type="image/jpeg"/>
+    <item href="20/images/2.jpeg" id="a20id12" media-type="image/jpeg"/>
+    <item href="20/images/3.jpeg" id="a20id13" media-type="image/jpeg"/>
+    <item href="20/images/4.jpeg" id="a20id14" media-type="image/jpeg"/>
+    <item href="20/images/5.jpeg" id="a20id15" media-type="image/jpeg"/>
+    <item href="20/images/A-10_Thunderbolt_II.jpeg" id="a20id16" media-type="image/jpeg"/>
+    <item href="20/images/AC-130_Gunship.png" id="a20id17" media-type="image/png"/>
+    <item href="20/images/Acquisition_and_Financial_Management.png" id="a20id18" media-type="image/png"/>
+    <item href="20/images/ADM-160_Miniature_Air-Launched_Decoy_(MALD).png" id="a20id19" media-type="image/png"/>
+    <item href="20/images/AGM-114_Hellfire_Missile.jpeg" id="a20id20" media-type="image/jpeg"/>
+    <item href="20/images/AGM-129A_Advanced_Cruise_Missile_(ACM).jpeg" id="a20id21" media-type="image/jpeg"/>
+    <item href="20/images/AGM-158_Joint_Air-to-Surface_Stand-off_Missile_(JASSM).png" id="a20id22" media-type="image/png"/>
+    <item href="20/images/AGM-65_Maverick_Missile.png" id="a20id23" media-type="image/png"/>
+    <item href="20/images/AGM-86_Air-Launched_Cruise_Missile_(ALCM).png" id="a20id25" media-type="image/png"/>
+    <item href="20/images/AGM-86C_Conventional_Air-Launched_Cruise_Missile_(CALCM).png" id="a20id24" media-type="image/png"/>
+    <item href="20/images/AGM-88_High_Speed_Anti-Radiation_Missile_(HARM).png" id="a20id26" media-type="image/png"/>
+    <item href="20/images/AIM-120_Advanced_Medium-Range_Air-to-Air_Missile_(AMRAAM).jpeg" id="a20id27" media-type="image/jpeg"/>
+    <item href="20/images/AIM-9MX_Sidewinder.jpeg" id="a20id28" media-type="image/jpeg"/>
+    <item href="20/images/Air_Battle_Manager.png" id="a20id29" media-type="image/png"/>
+    <item href="20/images/Air_Force_Satellite_Control_Network_(AFSCN).jpeg" id="a20id30" media-type="image/jpeg"/>
+    <item href="20/images/Air_Traffic_Control.png" id="a20id31" media-type="image/png"/>
+    <item href="20/images/Astronaut.jpeg" id="a20id32" media-type="image/jpeg"/>
+    <item href="20/images/B-1B_Lancer.jpeg" id="a20id33" media-type="image/jpeg"/>
+    <item href="20/images/B-2_Spirit.png" id="a20id34" media-type="image/png"/>
+    <item href="20/images/B-52_Stratofortess.jpeg" id="a20id35" media-type="image/jpeg"/>
+    <item href="20/images/Ballistic_Missile_Early_Warning_System_(BMEWS).png" id="a20id36" media-type="image/png"/>
+    <item href="20/images/Band.png" id="a20id37" media-type="image/png"/>
+    <item href="20/images/Biomedical_Science_Corps.png" id="a20id38" media-type="image/png"/>
+    <item href="20/images/C-130J_Hercules.png" id="a20id39" media-type="image/png"/>
+    <item href="20/images/C-146A_Wolfhound.jpeg" id="a20id40" media-type="image/jpeg"/>
+    <item href="20/images/C-17_Globemaster_III.png" id="a20id41" media-type="image/png"/>
+    <item href="20/images/C-21_Learjet.png" id="a20id42" media-type="image/png"/>
+    <item href="20/images/C-5_Galaxy.png" id="a20id43" media-type="image/png"/>
+    <item href="20/images/Chaplain_Buddhist.png" id="a20id44" media-type="image/png"/>
+    <item href="20/images/Chaplain_Christian.png" id="a20id45" media-type="image/png"/>
+    <item href="20/images/Chaplain_Jewish.png" id="a20id46" media-type="image/png"/>
+    <item href="20/images/Chaplain_Muslim.png" id="a20id47" media-type="image/png"/>
+    <item href="20/images/Chaplain_Service_Support.png" id="a20id48" media-type="image/png"/>
+    <item href="20/images/Civil_Engineer.png" id="a20id49" media-type="image/png"/>
+    <item href="20/images/Combat_Control_and_Special_Tactics_Officer_(Scarlet).jpeg" id="a20id50" media-type="image/jpeg"/>
+    <item href="20/images/Command_&amp;_Control.png" id="a20id52" media-type="image/png"/>
+    <item href="20/images/Commander.png" id="a20id51" media-type="image/png"/>
+    <item href="20/images/Cyberspace_Support.png" id="a20id54" media-type="image/png"/>
+    <item href="20/images/Cyberspace.png" id="a20id53" media-type="image/png"/>
+    <item href="20/images/Defense_Meteorological_Satellites_Program_(DMSP).png" id="a20id55" media-type="image/png"/>
+    <item href="20/images/Defense_Satellite_Communication_System_and_Wideband_Global_SATCOM.jpeg" id="a20id56" media-type="image/jpeg"/>
+    <item href="20/images/Defense_Support_Program_(DSP)_and_Space_Based_Infrared_System_(SBIRS).jpeg" id="a20id57" media-type="image/jpeg"/>
+    <item href="20/images/Dental_Corps.png" id="a20id58" media-type="image/png"/>
+    <item href="20/images/E-3_Sentry_AWACS.png" id="a20id59" media-type="image/png"/>
+    <item href="20/images/E-4B_NAOC.png" id="a20id60" media-type="image/png"/>
+    <item href="20/images/E-8C_Joint_STARS.png" id="a20id61" media-type="image/png"/>
+    <item href="20/images/EC-130H_Compass_Call.jpeg" id="a20id62" media-type="image/jpeg"/>
+    <item href="20/images/EC-130J_Commando_Solo.png" id="a20id63" media-type="image/png"/>
+    <item href="20/images/Enlisted_Aircrew.png" id="a20id64" media-type="image/png"/>
+    <item href="20/images/Enlisted_Medical.png" id="a20id65" media-type="image/png"/>
+    <item href="20/images/Evolved_Expendable_Launch_Vehicle_(EELV).jpeg" id="a20id66" media-type="image/jpeg"/>
+    <item href="20/images/Explosive_Ordnance_Disposal.png" id="a20id67" media-type="image/png"/>
+    <item href="20/images/F-15_Eagle.jpeg" id="a20id69" media-type="image/jpeg"/>
+    <item href="20/images/F-15E_Strike_Eagle.jpeg" id="a20id68" media-type="image/jpeg"/>
+    <item href="20/images/F-16_Fighting_Falcon.jpeg" id="a20id70" media-type="image/jpeg"/>
+    <item href="20/images/F-22_Raptor.png" id="a20id71" media-type="image/png"/>
+    <item href="20/images/F-35A_Lightning_II.jpeg" id="a20id72" media-type="image/jpeg"/>
+    <item href="20/images/Firefighter.png" id="a20id73" media-type="image/png"/>
+    <item href="20/images/Flight_Nurse.png" id="a20id74" media-type="image/png"/>
+    <item href="20/images/Flight_Surgeon.png" id="a20id75" media-type="image/png"/>
+    <item href="20/images/Force_Protection.png" id="a20id76" media-type="image/png"/>
+    <item href="20/images/Force_Support.png" id="a20id77" media-type="image/png"/>
+    <item href="20/images/GBU-15.png" id="a20id78" media-type="image/png"/>
+    <item href="20/images/GBU-31_32_38_54_Joint_Direct_Attack_Munition_(JDAM).png" id="a20id79" media-type="image/png"/>
+    <item href="20/images/GBU-43_Massive_Ordinance_Air_Blast_(MOAB).jpeg" id="a20id80" media-type="image/jpeg"/>
+    <item href="20/images/GBU-57_Massive_Ordinance_Penetrator.jpeg" id="a20id81" media-type="image/jpeg"/>
+    <item href="20/images/Global_Broadcast_System_(GBS).png" id="a20id82" media-type="image/png"/>
+    <item href="20/images/HC-130NJ_Combat_King.jpeg" id="a20id83" media-type="image/jpeg"/>
+    <item href="20/images/HH-60G_Pave_Hawk.png" id="a20id84" media-type="image/png"/>
+    <item href="20/images/High__Altitude_Low_Opening_(HALO).png" id="a20id85" media-type="image/png"/>
+    <item href="20/images/Historian.png" id="a20id86" media-type="image/png"/>
+    <item href="20/images/image-1.png" id="a20id87" media-type="image/png"/>
+    <item href="20/images/image-2.png" id="a20id88" media-type="image/png"/>
+    <item href="20/images/image-3.png" id="a20id89" media-type="image/png"/>
+    <item href="20/images/image.png" id="a20id90" media-type="image/png"/>
+    <item href="20/images/Intelligence.png" id="a20id91" media-type="image/png"/>
+    <item href="20/images/Judge_Advocate.png" id="a20id92" media-type="image/png"/>
+    <item href="20/images/KC-10_Extender.jpeg" id="a20id93" media-type="image/jpeg"/>
+    <item href="20/images/KC-135R_Stratotanker.jpeg" id="a20id94" media-type="image/jpeg"/>
+    <item href="20/images/LGM-30G_Minute_III.png" id="a20id95" media-type="image/png"/>
+    <item href="20/images/Logistics_Plans.png" id="a20id96" media-type="image/png"/>
+    <item href="20/images/MC-130H_Combat_Talon_II.jpeg" id="a20id97" media-type="image/jpeg"/>
+    <item href="20/images/MC-130J_Commando_II.jpeg" id="a20id98" media-type="image/jpeg"/>
+    <item href="20/images/Medical_Service_Corps.png" id="a20id99" media-type="image/png"/>
+    <item href="20/images/Meteorologist.png" id="a20id100" media-type="image/png"/>
+    <item href="20/images/Milstar_and_Advanced_Extremely_High_Frequency_Satellite_Communication_System.png" id="a20id101" media-type="image/png"/>
+    <item href="20/images/Missile_Operations.jpeg" id="a20id103" media-type="image/jpeg"/>
+    <item href="20/images/Missile.jpeg" id="a20id102" media-type="image/jpeg"/>
+    <item href="20/images/MQ-1B_Predator.jpeg" id="a20id104" media-type="image/jpeg"/>
+    <item href="20/images/MQ-9_Reaper.jpeg" id="a20id105" media-type="image/jpeg"/>
+    <item href="20/images/Navigator_Observer.png" id="a20id106" media-type="image/png"/>
+    <item href="20/images/Nurse_Corps.png" id="a20id107" media-type="image/png"/>
+    <item href="20/images/Officer_Aircrew.png" id="a20id108" media-type="image/png"/>
+    <item href="20/images/Operations_Support.png" id="a20id109" media-type="image/png"/>
+    <item href="20/images/Parachutist.png" id="a20id110" media-type="image/png"/>
+    <item href="20/images/Pararescue_and_Combat_Rescue_Officer_(Maroon).jpeg" id="a20id111" media-type="image/jpeg"/>
+    <item href="20/images/PAVEWAY_Family_of_Guided_Bombs.png" id="a20id112" media-type="image/png"/>
+    <item href="20/images/Perimeter_Acquisition_Radar_Characterization_System_(PARCS).jpeg" id="a20id113" media-type="image/jpeg"/>
+    <item href="20/images/Phased_Array_Warning_System_(PAVE_PAWS).png" id="a20id114" media-type="image/png"/>
+    <item href="20/images/Pilot.png" id="a20id115" media-type="image/png"/>
+    <item href="20/images/Public_Affairs.png" id="a20id116" media-type="image/png"/>
+    <item href="20/images/RC-135_UVW.png" id="a20id117" media-type="image/png"/>
+    <item href="20/images/Readiness.png" id="a20id118" media-type="image/png"/>
+    <item href="20/images/Remotely_Piloted_Aircraft_(RPA).png" id="a20id119" media-type="image/png"/>
+    <item href="20/images/RQ-4_Global_Hawk.jpeg" id="a20id120" media-type="image/jpeg"/>
+    <item href="20/images/SCUBA.png" id="a20id121" media-type="image/png"/>
+    <item href="20/images/Security_Forces_(Blue).jpeg" id="a20id122" media-type="image/jpeg"/>
+    <item href="20/images/Security_Police.png" id="a20id123" media-type="image/png"/>
+    <item href="20/images/Sensor_Operator.png" id="a20id124" media-type="image/png"/>
+    <item href="20/images/Services.png" id="a20id125" media-type="image/png"/>
+    <item href="20/images/Space_Missile.png" id="a20id126" media-type="image/png"/>
+    <item href="20/images/Special_Operations_Weather_(SOWT).png" id="a20id127" media-type="image/png"/>
+    <item href="20/images/Supply_Fuels.png" id="a20id128" media-type="image/png"/>
+    <item href="20/images/Survival,_Evasion,_Resistance_and_Escape_(SERE)_Team_(Pewter_Green).gif" id="a20id129" media-type="image/gif"/>
+    <item href="20/images/T-1_Jayhawk.png" id="a20id130" media-type="image/png"/>
+    <item href="20/images/T-38AC_Talon.png" id="a20id131" media-type="image/png"/>
+    <item href="20/images/T-6A_Texan_II.jpeg" id="a20id132" media-type="image/jpeg"/>
+    <item href="20/images/Tactical_Air_Control_Party_(Black).jpeg" id="a20id133" media-type="image/jpeg"/>
+    <item href="20/images/Tactical_Liaison_Officer_(Black).jpeg" id="a20id134" media-type="image/jpeg"/>
+    <item href="20/images/Tailflash.jpeg" id="a20id135" media-type="image/jpeg"/>
+    <item href="20/images/Transportation.png" id="a20id136" media-type="image/png"/>
+    <item href="20/images/U-2S_Dragon_Lady.png" id="a20id137" media-type="image/png"/>
+    <item href="20/images/UH-1N_Iroquois.jpeg" id="a20id138" media-type="image/jpeg"/>
+    <item href="20/images/UV-18_Twin_Otter.png" id="a20id139" media-type="image/png"/>
+    <item href="20/images/VC-25_Air_Force_One.png" id="a20id140" media-type="image/png"/>
+    <item href="20/images/Weapons_Director.png" id="a20id141" media-type="image/png"/>
+    <item href="20/images/Weather_Parachutist_(Pewter_Gray).jpeg" id="a20id142" media-type="image/jpeg"/>
+    <item href="21/images/image-1.jpeg" id="a21id3" media-type="image/jpeg"/>
+    <item href="21/images/image.jpeg" id="a21id4" media-type="image/jpeg"/>
+    <item href="3/images/image-1.jpeg" id="a3id3" media-type="image/jpeg"/>
+    <item href="3/images/image-1.png" id="a3id4" media-type="image/png"/>
+    <item href="3/images/image-2.jpeg" id="a3id5" media-type="image/jpeg"/>
+    <item href="3/images/image-2.png" id="a3id6" media-type="image/png"/>
+    <item href="3/images/image-3.jpeg" id="a3id7" media-type="image/jpeg"/>
+    <item href="3/images/image-3.png" id="a3id8" media-type="image/png"/>
+    <item href="3/images/image-4.jpeg" id="a3id9" media-type="image/jpeg"/>
+    <item href="3/images/image-4.png" id="a3id10" media-type="image/png"/>
+    <item href="3/images/image-5.jpeg" id="a3id11" media-type="image/jpeg"/>
+    <item href="3/images/image-5.png" id="a3id12" media-type="image/png"/>
+    <item href="3/images/image-6.jpeg" id="a3id13" media-type="image/jpeg"/>
+    <item href="3/images/image-6.png" id="a3id14" media-type="image/png"/>
+    <item href="3/images/image-7.jpeg" id="a3id15" media-type="image/jpeg"/>
+    <item href="3/images/image-8.jpeg" id="a3id16" media-type="image/jpeg"/>
+    <item href="3/images/image-9.jpeg" id="a3id17" media-type="image/jpeg"/>
+    <item href="3/images/image.jpeg" id="a3id18" media-type="image/jpeg"/>
+    <item href="3/images/image.png" id="a3id19" media-type="image/png"/>
+    <item href="3/images/untitled.png" id="a3id20" media-type="image/png"/>
+    <item href="5/cover.jpeg" id="a5cover" media-type="image/jpeg"/>
+    <item href="5/images/AttackWarning_LetterSize.jpeg" id="a5id3" media-type="image/jpeg"/>
+    <item href="5/images/image-1.png" id="a5id4" media-type="image/png"/>
+    <item href="5/images/image-2.png" id="a5id5" media-type="image/png"/>
+    <item href="5/images/image-3.png" id="a5id6" media-type="image/png"/>
+    <item href="5/images/image.png" id="a5id7" media-type="image/png"/>
+    <item href="7/images/image.png" id="a7id3" media-type="image/png"/>
+    <item href="8/cover.jpeg" id="a8cover" media-type="image/jpeg"/>
+    <item href="8/images/image-1.png" id="a8id3" media-type="image/png"/>
+    <item href="8/images/image-2.png" id="a8id4" media-type="image/png"/>
+    <item href="8/images/image-3.png" id="a8id5" media-type="image/png"/>
+    <item href="8/images/image-4.png" id="a8id6" media-type="image/png"/>
+    <item href="8/images/image.jpeg" id="a8id7" media-type="image/jpeg"/>
+    <item href="8/images/image.png" id="a8id8" media-type="image/png"/>
+    <item href="9/cover.jpeg" id="a9cover" media-type="image/jpeg"/>
+    <item href="9/images/Enlisted_Pyramid.jpeg" id="a9id3" media-type="image/jpeg"/>
+    <item href="1/content.opf" id="a1rootfile" media-type="origrootfile/xml"/>
+    <item href="1/toc.ncx" id="a1ncx" media-type="origtocncx/xml"/>
+    <item href="10/content.opf" id="a10rootfile" media-type="origrootfile/xml"/>
+    <item href="10/toc.ncx" id="a10ncx" media-type="origtocncx/xml"/>
+    <item href="11/content.opf" id="a11rootfile" media-type="origrootfile/xml"/>
+    <item href="11/toc.ncx" id="a11ncx" media-type="origtocncx/xml"/>
+    <item href="12/content.opf" id="a12rootfile" media-type="origrootfile/xml"/>
+    <item href="12/toc.ncx" id="a12ncx" media-type="origtocncx/xml"/>
+    <item href="13/content.opf" id="a13rootfile" media-type="origrootfile/xml"/>
+    <item href="13/images/image.emf" id="a13id4" media-type="application/octet-stream"/>
+    <item href="13/toc.ncx" id="a13ncx" media-type="origtocncx/xml"/>
+    <item href="14/content.opf" id="a14rootfile" media-type="origrootfile/xml"/>
+    <item href="14/images/image.Picture_5" id="a14id10" media-type="application/octet-stream"/>
+    <item href="14/images/image.Picture_6" id="a14id11" media-type="application/octet-stream"/>
+    <item href="14/toc.ncx" id="a14ncx" media-type="origtocncx/xml"/>
+    <item href="15/content.opf" id="a15rootfile" media-type="origrootfile/xml"/>
+    <item href="15/toc.ncx" id="a15ncx" media-type="origtocncx/xml"/>
+    <item href="16/content.opf" id="a16rootfile" media-type="origrootfile/xml"/>
+    <item href="16/toc.ncx" id="a16ncx" media-type="origtocncx/xml"/>
+    <item href="17/content.opf" id="a17rootfile" media-type="origrootfile/xml"/>
+    <item href="17/toc.ncx" id="a17ncx" media-type="origtocncx/xml"/>
+    <item href="18/content.opf" id="a18rootfile" media-type="origrootfile/xml"/>
+    <item href="18/toc.ncx" id="a18ncx" media-type="origtocncx/xml"/>
+    <item href="19/content.opf" id="a19rootfile" media-type="origrootfile/xml"/>
+    <item href="19/toc.ncx" id="a19ncx" media-type="origtocncx/xml"/>
+    <item href="2/content.opf" id="a2rootfile" media-type="origrootfile/xml"/>
+    <item href="2/toc.ncx" id="a2ncx" media-type="origtocncx/xml"/>
+    <item href="20/content.opf" id="a20rootfile" media-type="origrootfile/xml"/>
+    <item href="20/toc.ncx" id="a20ncx" media-type="origtocncx/xml"/>
+    <item href="21/content.opf" id="a21rootfile" media-type="origrootfile/xml"/>
+    <item href="21/toc.ncx" id="a21ncx" media-type="origtocncx/xml"/>
+    <item href="22/content.opf" id="a22rootfile" media-type="origrootfile/xml"/>
+    <item href="22/toc.ncx" id="a22ncx" media-type="origtocncx/xml"/>
+    <item href="23/content.opf" id="a23rootfile" media-type="origrootfile/xml"/>
+    <item href="23/toc.ncx" id="a23ncx" media-type="origtocncx/xml"/>
+    <item href="24/content.opf" id="a24rootfile" media-type="origrootfile/xml"/>
+    <item href="24/toc.ncx" id="a24ncx" media-type="origtocncx/xml"/>
+    <item href="25/content.opf" id="a25rootfile" media-type="origrootfile/xml"/>
+    <item href="25/toc.ncx" id="a25ncx" media-type="origtocncx/xml"/>
+    <item href="3/content.opf" id="a3rootfile" media-type="origrootfile/xml"/>
+    <item href="3/toc.ncx" id="a3ncx" media-type="origtocncx/xml"/>
+    <item href="4/content.opf" id="a4rootfile" media-type="origrootfile/xml"/>
+    <item href="4/toc.ncx" id="a4ncx" media-type="origtocncx/xml"/>
+    <item href="5/content.opf" id="a5rootfile" media-type="origrootfile/xml"/>
+    <item href="5/toc.ncx" id="a5ncx" media-type="origtocncx/xml"/>
+    <item href="6/content.opf" id="a6rootfile" media-type="origrootfile/xml"/>
+    <item href="6/toc.ncx" id="a6ncx" media-type="origtocncx/xml"/>
+    <item href="7/content.opf" id="a7rootfile" media-type="origrootfile/xml"/>
+    <item href="7/toc.ncx" id="a7ncx" media-type="origtocncx/xml"/>
+    <item href="8/content.opf" id="a8rootfile" media-type="origrootfile/xml"/>
+    <item href="8/toc.ncx" id="a8ncx" media-type="origtocncx/xml"/>
+    <item href="9/content.opf" id="a9rootfile" media-type="origrootfile/xml"/>
+    <item href="9/toc.ncx" id="a9ncx" media-type="origtocncx/xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="a1id2" linear="yes"/>
+    <itemref idref="a2id2" linear="yes"/>
+    <itemref idref="a3id2" linear="yes"/>
+    <itemref idref="a4id2" linear="yes"/>
+    <itemref idref="a5id2" linear="yes"/>
+    <itemref idref="a6id2" linear="yes"/>
+    <itemref idref="a7id2" linear="yes"/>
+    <itemref idref="a8id22" linear="yes"/>
+    <itemref idref="a8id21" linear="yes"/>
+    <itemref idref="a9id2" linear="yes"/>
+    <itemref idref="a10id2" linear="yes"/>
+    <itemref idref="a11id2" linear="yes"/>
+    <itemref idref="a12id22" linear="yes"/>
+    <itemref idref="a12id21" linear="yes"/>
+    <itemref idref="a13id2" linear="yes"/>
+    <itemref idref="a14id22" linear="yes"/>
+    <itemref idref="a14id21" linear="yes"/>
+    <itemref idref="a15id22" linear="yes"/>
+    <itemref idref="a15id21" linear="yes"/>
+    <itemref idref="a16titlepage" linear="yes"/>
+    <itemref idref="a16id2" linear="yes"/>
+    <itemref idref="a17id2" linear="yes"/>
+    <itemref idref="a18id2" linear="yes"/>
+    <itemref idref="a19id2" linear="yes"/>
+    <itemref idref="a20id217" linear="yes"/>
+    <itemref idref="a20id216" linear="yes"/>
+    <itemref idref="a20id215" linear="yes"/>
+    <itemref idref="a20id214" linear="yes"/>
+    <itemref idref="a20id213" linear="yes"/>
+    <itemref idref="a20id212" linear="yes"/>
+    <itemref idref="a20id211" linear="yes"/>
+    <itemref idref="a20id210" linear="yes"/>
+    <itemref idref="a21id2" linear="yes"/>
+    <itemref idref="a22id2" linear="yes"/>
+    <itemref idref="a23id2" linear="yes"/>
+    <itemref idref="a24id23" linear="yes"/>
+    <itemref idref="a24id22" linear="yes"/>
+    <itemref idref="a24id21" linear="yes"/>
+    <itemref idref="a25id2" linear="yes"/>
+  </spine>
+</package>

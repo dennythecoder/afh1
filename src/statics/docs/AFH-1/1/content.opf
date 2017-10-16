@@ -1,0 +1,166 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title>Chapter 1, Air Force Heritage</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">95ca0e1e-9919-4e24-abad-677c5fe7df92</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:publisher>USAF</dc:publisher>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">95ca0e1e-9919-4e24-abad-677c5fe7df92</dc:identifier>
+    <meta name="cover" content="cover"/>
+    <meta name="calibre:timestamp" content="2017-09-22T12:20:38.589000+00:00"/>
+    <meta name="calibre:title_sort" content="Chapter 1, Air Force Heritage"/>
+    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml"/>
+    <item href="index.html" id="id2" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="cover.jpeg" id="cover" media-type="image/jpeg"/>
+    <item href="images/100.jpeg" id="id3" media-type="image/jpeg"/>
+    <item href="images/101.jpeg" id="id4" media-type="image/jpeg"/>
+    <item href="images/102.jpeg" id="id5" media-type="image/jpeg"/>
+    <item href="images/1Lt_Fleming.jpeg" id="id6" media-type="image/jpeg"/>
+    <item href="images/1st_lt_Goetler.jpeg" id="id7" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Gott.jpeg" id="id8" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Knight.jpeg" id="id9" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Lawley.jpeg" id="id10" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Mathis.jpeg" id="id11" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Michael.jpeg" id="id12" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Pucket.jpeg" id="id13" media-type="image/jpeg"/>
+    <item href="images/1st_Lt_Rickenbacker.jpeg" id="id14" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Bleckley.jpeg" id="id15" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Femoyer.jpeg" id="id16" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Herbert.jpeg" id="id17" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Kingsley.jpeg" id="id18" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Luke.jpeg" id="id19" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Metzger.jpeg" id="id20" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Morgan.jpeg" id="id21" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Sarnoski.jpeg" id="id22" media-type="image/jpeg"/>
+    <item href="images/2d_Lt_Truemper.jpeg" id="id23" media-type="image/jpeg"/>
+    <item href="images/33.jpeg" id="id24" media-type="image/jpeg"/>
+    <item href="images/34.jpeg" id="id25" media-type="image/jpeg"/>
+    <item href="images/36.jpeg" id="id26" media-type="image/jpeg"/>
+    <item href="images/50.jpeg" id="id27" media-type="image/jpeg"/>
+    <item href="images/59.jpeg" id="id28" media-type="image/jpeg"/>
+    <item href="images/75.jpeg" id="id29" media-type="image/jpeg"/>
+    <item href="images/79.jpeg" id="id30" media-type="image/jpeg"/>
+    <item href="images/80.jpeg" id="id31" media-type="image/jpeg"/>
+    <item href="images/81.jpeg" id="id32" media-type="image/jpeg"/>
+    <item href="images/82.jpeg" id="id33" media-type="image/jpeg"/>
+    <item href="images/83.jpeg" id="id34" media-type="image/jpeg"/>
+    <item href="images/84.jpeg" id="id35" media-type="image/jpeg"/>
+    <item href="images/85.jpeg" id="id36" media-type="image/jpeg"/>
+    <item href="images/86.jpeg" id="id37" media-type="image/jpeg"/>
+    <item href="images/87.jpeg" id="id38" media-type="image/jpeg"/>
+    <item href="images/88.jpeg" id="id39" media-type="image/jpeg"/>
+    <item href="images/89.jpeg" id="id40" media-type="image/jpeg"/>
+    <item href="images/90.jpeg" id="id41" media-type="image/jpeg"/>
+    <item href="images/91.jpeg" id="id42" media-type="image/jpeg"/>
+    <item href="images/92.jpeg" id="id43" media-type="image/jpeg"/>
+    <item href="images/93.jpeg" id="id44" media-type="image/jpeg"/>
+    <item href="images/94.jpeg" id="id45" media-type="image/jpeg"/>
+    <item href="images/95.jpeg" id="id46" media-type="image/jpeg"/>
+    <item href="images/96.jpeg" id="id47" media-type="image/jpeg"/>
+    <item href="images/97.jpeg" id="id48" media-type="image/jpeg"/>
+    <item href="images/98.jpeg" id="id49" media-type="image/jpeg"/>
+    <item href="images/99.jpeg" id="id50" media-type="image/jpeg"/>
+    <item href="images/A1C_Levitow.jpeg" id="id51" media-type="image/jpeg"/>
+    <item href="images/A1C_Pitsenbarger.jpeg" id="id52" media-type="image/jpeg"/>
+    <item href="images/BG_Castle.jpeg" id="id53" media-type="image/jpeg"/>
+    <item href="images/BG_Doolittle.jpeg" id="id54" media-type="image/jpeg"/>
+    <item href="images/BG_Walker.jpeg" id="id55" media-type="image/jpeg"/>
+    <item href="images/Capt_Bennett.jpeg" id="id56" media-type="image/jpeg"/>
+    <item href="images/Capt_Lindsey.jpeg" id="id57" media-type="image/jpeg"/>
+    <item href="images/Capt_Pease.jpeg" id="id58" media-type="image/jpeg"/>
+    <item href="images/Capt_Sijan.jpeg" id="id59" media-type="image/jpeg"/>
+    <item href="images/Capt_Walmsley.jpeg" id="id60" media-type="image/jpeg"/>
+    <item href="images/Capt_Wilbanks.jpeg" id="id61" media-type="image/jpeg"/>
+    <item href="images/Capt_Young.jpeg" id="id62" media-type="image/jpeg"/>
+    <item href="images/ccc.jpeg" id="id63" media-type="image/jpeg"/>
+    <item href="images/CMSgt_Etchberger.jpeg" id="id64" media-type="image/jpeg"/>
+    <item href="images/Col_Craw.jpeg" id="id65" media-type="image/jpeg"/>
+    <item href="images/Col_Johnson.jpeg" id="id66" media-type="image/jpeg"/>
+    <item href="images/Col_Jones_III.jpeg" id="id67" media-type="image/jpeg"/>
+    <item href="images/Col_Kane.jpeg" id="id68" media-type="image/jpeg"/>
+    <item href="images/Col_Kearby.jpeg" id="id69" media-type="image/jpeg"/>
+    <item href="images/Col_Walnut.jpeg" id="id70" media-type="image/jpeg"/>
+    <item href="images/image-1.jpeg" id="id71" media-type="image/jpeg"/>
+    <item href="images/image-10.jpeg" id="id72" media-type="image/jpeg"/>
+    <item href="images/image-11.jpeg" id="id73" media-type="image/jpeg"/>
+    <item href="images/image-12.jpeg" id="id74" media-type="image/jpeg"/>
+    <item href="images/image-13.jpeg" id="id75" media-type="image/jpeg"/>
+    <item href="images/image-14.jpeg" id="id76" media-type="image/jpeg"/>
+    <item href="images/image-15.jpeg" id="id77" media-type="image/jpeg"/>
+    <item href="images/image-16.jpeg" id="id78" media-type="image/jpeg"/>
+    <item href="images/image-17.jpeg" id="id79" media-type="image/jpeg"/>
+    <item href="images/image-18.jpeg" id="id80" media-type="image/jpeg"/>
+    <item href="images/image-19.jpeg" id="id81" media-type="image/jpeg"/>
+    <item href="images/image-2.jpeg" id="id82" media-type="image/jpeg"/>
+    <item href="images/image-20.jpeg" id="id83" media-type="image/jpeg"/>
+    <item href="images/image-21.jpeg" id="id84" media-type="image/jpeg"/>
+    <item href="images/image-22.jpeg" id="id85" media-type="image/jpeg"/>
+    <item href="images/image-23.jpeg" id="id86" media-type="image/jpeg"/>
+    <item href="images/image-24.jpeg" id="id87" media-type="image/jpeg"/>
+    <item href="images/image-25.jpeg" id="id88" media-type="image/jpeg"/>
+    <item href="images/image-26.jpeg" id="id89" media-type="image/jpeg"/>
+    <item href="images/image-27.jpeg" id="id90" media-type="image/jpeg"/>
+    <item href="images/image-28.jpeg" id="id91" media-type="image/jpeg"/>
+    <item href="images/image-29.jpeg" id="id92" media-type="image/jpeg"/>
+    <item href="images/image-3.jpeg" id="id93" media-type="image/jpeg"/>
+    <item href="images/image-30.jpeg" id="id94" media-type="image/jpeg"/>
+    <item href="images/image-31.jpeg" id="id95" media-type="image/jpeg"/>
+    <item href="images/image-32.jpeg" id="id96" media-type="image/jpeg"/>
+    <item href="images/image-33.jpeg" id="id97" media-type="image/jpeg"/>
+    <item href="images/image-34.jpeg" id="id98" media-type="image/jpeg"/>
+    <item href="images/image-35.jpeg" id="id99" media-type="image/jpeg"/>
+    <item href="images/image-36.jpeg" id="id100" media-type="image/jpeg"/>
+    <item href="images/image-37.jpeg" id="id101" media-type="image/jpeg"/>
+    <item href="images/image-38.jpeg" id="id102" media-type="image/jpeg"/>
+    <item href="images/image-39.jpeg" id="id103" media-type="image/jpeg"/>
+    <item href="images/image-4.jpeg" id="id104" media-type="image/jpeg"/>
+    <item href="images/image-40.jpeg" id="id105" media-type="image/jpeg"/>
+    <item href="images/image-5.jpeg" id="id106" media-type="image/jpeg"/>
+    <item href="images/image-6.jpeg" id="id107" media-type="image/jpeg"/>
+    <item href="images/image-7.jpeg" id="id108" media-type="image/jpeg"/>
+    <item href="images/image-8.jpeg" id="id109" media-type="image/jpeg"/>
+    <item href="images/image-9.jpeg" id="id110" media-type="image/jpeg"/>
+    <item href="images/image.jpeg" id="id111" media-type="image/jpeg"/>
+    <item href="images/LtC_Baker.jpeg" id="id112" media-type="image/jpeg"/>
+    <item href="images/LtC_Hamilton.jpeg" id="id113" media-type="image/jpeg"/>
+    <item href="images/LtC_Howard.jpeg" id="id114" media-type="image/jpeg"/>
+    <item href="images/LtC_Jackson.jpeg" id="id115" media-type="image/jpeg"/>
+    <item href="images/LtC_Vance_jr.jpeg" id="id116" media-type="image/jpeg"/>
+    <item href="images/Maj_Bong.jpeg" id="id118" media-type="image/jpeg"/>
+    <item href="images/Maj_Carswell.jpeg" id="id119" media-type="image/jpeg"/>
+    <item href="images/Maj_Cheli.jpeg" id="id120" media-type="image/jpeg"/>
+    <item href="images/Maj_Davis_Jr.jpeg" id="id121" media-type="image/jpeg"/>
+    <item href="images/Maj_Day.jpeg" id="id122" media-type="image/jpeg"/>
+    <item href="images/Maj_Dethlefsen.jpeg" id="id123" media-type="image/jpeg"/>
+    <item href="images/Maj_Fisher.jpeg" id="id124" media-type="image/jpeg"/>
+    <item href="images/Maj_Jerstad.jpeg" id="id125" media-type="image/jpeg"/>
+    <item href="images/Maj_McGuire.jpeg" id="id126" media-type="image/jpeg"/>
+    <item href="images/Maj_Sebille.jpeg" id="id127" media-type="image/jpeg"/>
+    <item href="images/Maj_Shomo.jpeg" id="id128" media-type="image/jpeg"/>
+    <item href="images/Maj_Wilkins.jpeg" id="id129" media-type="image/jpeg"/>
+    <item href="images/Maj_Zeamer.jpeg" id="id130" media-type="image/jpeg"/>
+    <item href="images/Major_Loring.jpeg" id="id117" media-type="image/jpeg"/>
+    <item href="images/P-40_Warhawks.jpeg" id="id131" media-type="image/jpeg"/>
+    <item href="images/Section_1C.jpeg" id="id132" media-type="image/jpeg"/>
+    <item href="images/Sgt_Mathies.jpeg" id="id133" media-type="image/jpeg"/>
+    <item href="images/Sgt_Smith.jpeg" id="id134" media-type="image/jpeg"/>
+    <item href="images/SSgt_Erwin.jpeg" id="id135" media-type="image/jpeg"/>
+    <item href="images/TSgt_Vosler.jpeg" id="id136" media-type="image/jpeg"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id2"/>
+  </spine>
+  <guide>
+    <reference href="titlepage.xhtml" title="Cover" type="cover"/>
+  </guide>
+</package>

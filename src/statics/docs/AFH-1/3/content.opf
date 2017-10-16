@@ -1,0 +1,44 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title>Chapter 3, Organization</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">79d3372e-6b9a-49e7-afc1-3aa246370558</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:publisher>USAF</dc:publisher>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">79d3372e-6b9a-49e7-afc1-3aa246370558</dc:identifier>
+    <meta name="calibre:title_sort" content="Chapter 3, Organization"/>
+    <meta name="calibre:timestamp" content="2017-09-22T12:20:47.945000+00:00"/>
+    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="index.html" id="id2" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="images/image-1.jpeg" id="id3" media-type="image/jpeg"/>
+    <item href="images/image-1.png" id="id4" media-type="image/png"/>
+    <item href="images/image-2.jpeg" id="id5" media-type="image/jpeg"/>
+    <item href="images/image-2.png" id="id6" media-type="image/png"/>
+    <item href="images/image-3.jpeg" id="id7" media-type="image/jpeg"/>
+    <item href="images/image-3.png" id="id8" media-type="image/png"/>
+    <item href="images/image-4.jpeg" id="id9" media-type="image/jpeg"/>
+    <item href="images/image-4.png" id="id10" media-type="image/png"/>
+    <item href="images/image-5.jpeg" id="id11" media-type="image/jpeg"/>
+    <item href="images/image-5.png" id="id12" media-type="image/png"/>
+    <item href="images/image-6.jpeg" id="id13" media-type="image/jpeg"/>
+    <item href="images/image-6.png" id="id14" media-type="image/png"/>
+    <item href="images/image-7.jpeg" id="id15" media-type="image/jpeg"/>
+    <item href="images/image-8.jpeg" id="id16" media-type="image/jpeg"/>
+    <item href="images/image-9.jpeg" id="id17" media-type="image/jpeg"/>
+    <item href="images/image.jpeg" id="id18" media-type="image/jpeg"/>
+    <item href="images/image.png" id="id19" media-type="image/png"/>
+    <item href="images/untitled.png" id="id20" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="id2"/>
+  </spine>
+  <guide/>
+</package>

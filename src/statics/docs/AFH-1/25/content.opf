@@ -1,0 +1,26 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title>Chapter 25, Professionalism</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:publisher>USAF</dc:publisher>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">2d9864d3-0ce8-42b2-a846-c635960ce728</dc:identifier>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">2d9864d3-0ce8-42b2-a846-c635960ce728</dc:identifier>
+    <meta name="calibre:title_sort" content="Chapter 25, Professionalism"/>
+    <meta name="calibre:timestamp" content="2017-09-22T12:20:41.657000+00:00"/>
+    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="index.html" id="id2" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="id2"/>
+  </spine>
+  <guide/>
+</package>

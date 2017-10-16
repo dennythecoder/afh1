@@ -1,0 +1,374 @@
+.block_ {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_1 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 12pt
+    }
+.block_2 {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_3 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_4 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_5 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_6 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_7 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 18pt
+    }
+.block_8 {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_9 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_10 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.1pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_11 {
+    display: block;
+    letter-spacing: -0.1pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_12 {
+    display: block;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_13 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 18pt
+    }
+.block_14 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt
+    }
+.block_15 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 45pt
+    }
+.block_16 {
+    display: block;
+    letter-spacing: -0.1pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 18pt
+    }
+.block_17 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.15pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_18 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.2pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_19 {
+    display: block;
+    letter-spacing: -0.15pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_20 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0
+    }
+.block_21 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    border-bottom: black solid 1.5pt;
+    padding: 0 0 1pt;
+    margin: 0 0 6pt
+    }
+.block_22 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    border-bottom: black solid 1.5pt;
+    padding: 0 0 1pt;
+    margin: 0
+    }
+.block_23 {
+    display: block;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0
+    }
+.block_24 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0
+    }
+.block_25 {
+    display: block;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    border-bottom: black solid 1.5pt;
+    padding: 0 0 1pt;
+    margin: 0
+    }
+.block_26 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 6pt 0
+    }
+.block_27 {
+    display: block;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 18pt
+    }
+.block_28 {
+    display: block;
+    letter-spacing: -0.15pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_29 {
+    display: block;
+    letter-spacing: -0.25pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_30 {
+    display: block;
+    letter-spacing: -0.2pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_31 {
+    display: block;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_32 {
+    display: block;
+    letter-spacing: -0.1pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_33 {
+    display: block;
+    letter-spacing: -0.1pt;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 45.4pt
+    }
+.block_34 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 45.4pt
+    }
+.block_35 {
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.calibre {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    font-weight: bold
+    }
+.calibre2 {
+    font-style: italic
+    }
+.calibre3 {
+    white-space: pre-wrap
+    }
+.calibre4 {
+    display: block
+    }
+.calibre5 {
+    display: table-row-group;
+    vertical-align: middle
+    }
+.calibre6 {
+    display: table-row;
+    vertical-align: inherit
+    }
+.table_ {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 18pt;
+    margin-top: 0;
+    text-indent: 0;
+    border: black none 1pt;
+    padding: 0
+    }
+.td_ {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 497pt;
+    border-bottom: black none 1pt;
+    padding: 0.5ex 5.4pt
+    }
+.td_1 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 497pt;
+    border-top: black none 1pt;
+    padding: 0.5ex 5.4pt
+    }
+.text_ {
+    letter-spacing: -0.1pt
+    }
+.text_1 {
+    font-style: italic;
+    letter-spacing: -0.1pt
+    }
+.text_2 {
+    font-weight: bold;
+    letter-spacing: -0.25pt
+    }
+.text_3 {
+    letter-spacing: -0.25pt
+    }
+.text_4 {
+    font-style: italic;
+    letter-spacing: -0.25pt
+    }
+.text_5 {
+    letter-spacing: -0.3pt
+    }
+.text_6 {
+    font-style: italic;
+    letter-spacing: -0.3pt
+    }
+.text_7 {
+    letter-spacing: -0.15pt
+    }
+.text_8 {
+    font-style: italic;
+    letter-spacing: -0.15pt
+    }
+.text_9 {
+    font-weight: bold;
+    letter-spacing: -0.15pt
+    }
+.text_10 {
+    letter-spacing: -0.2pt
+    }
+.text_11 {
+    font-weight: bold;
+    letter-spacing: -0.2pt
+    }
+.text_12 {
+    font-style: italic;
+    letter-spacing: -0.2pt
+    }
+.text_13 {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -0.15pt
+    }
+.text_14 {
+    letter-spacing: -0.35pt
+    }
+.text_15 {
+    font-weight: bold;
+    letter-spacing: -0.1pt
+    }
+.text_16 {
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: -0.2pt
+    }

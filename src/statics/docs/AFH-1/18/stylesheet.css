@@ -1,0 +1,827 @@
+.block_ {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_1 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 12pt
+    }
+.block_2 {
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_3 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_4 {
+    color: black;
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_5 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_6 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_7 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt -5.4pt
+    }
+.block_8 {
+    display: block;
+    font-size: 1em;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 3.6pt
+    }
+.block_9 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 6pt 0
+    }
+.block_10 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_11 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_12 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 1pt
+    }
+.block_13 {
+    display: block;
+    font-size: 0.83333em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 1pt
+    }
+.block_14 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 1pt
+    }
+.block_15 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 1pt
+    }
+.block_16 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0
+    }
+.block_17 {
+    color: black;
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_18 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 45pt
+    }
+.block_19 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_20 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 0 18pt
+    }
+.block_21 {
+    display: block;
+    font-size: 1.29167em;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0
+    }
+.block_22 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 10pt
+    }
+.block_23 {
+    display: block;
+    text-align: justify;
+    text-indent: 36pt;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_24 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    text-indent: 36pt;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_25 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45.4pt
+    }
+.block_26 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 3pt
+    }
+.block_27 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 6pt 0 6pt 18pt
+    }
+.block_28 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 18pt
+    }
+.block_29 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt
+    }
+.block_30 {
+    display: block;
+    font-family: "TimesNewRoman,Bold", serif;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_31 {
+    display: block;
+    font-family: "TimesNewRoman,Bold", serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 18pt
+    }
+.block_32 {
+    display: block;
+    font-family: "TimesNewRoman,Bold", serif;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt
+    }
+.block_33 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 5pt 45pt
+    }
+.block_34 {
+    display: block;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_35 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 6pt 0 6pt 45pt
+    }
+.block_36 {
+    display: block;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_37 {
+    display: block;
+    font-family: "Palatino-Roman", serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 18pt
+    }
+.block_38 {
+    display: block;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_39 {
+    color: black;
+    display: block;
+    font-family: serif;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_40 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: -27.4pt;
+    padding: 0;
+    margin: 0 0 6pt 27.4pt
+    }
+.block_41 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 27.4pt
+    }
+.block_42 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 18pt
+    }
+.block_43 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt -6.3pt
+    }
+.block_44 {
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_45 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0
+    }
+.block_46 {
+    display: block;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 12pt 45.4pt
+    }
+.block_47 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_48 {
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_49 {
+    display: block;
+    font-family: "TimesNewRomanPS-BoldMT", serif;
+    padding: 0;
+    margin: 0 0 6pt
+    }
+.block_50 {
+    display: block;
+    font-family: "TimesNewRomanPSMT", serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 18pt
+    }
+.block_51 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_52 {
+    display: block;
+    font-family: "TimesNewRomanPSMT", serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 6pt 45pt
+    }
+.block_53 {
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    margin: 0
+    }
+.block_54 {
+    color: black;
+    display: block;
+    font-family: serif;
+    padding: 0;
+    margin: 0
+    }
+.block_55 {
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    padding: 0;
+    margin: 0 0 0 18pt
+    }
+.calibre {
+    color: #000;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    font-weight: bold
+    }
+.calibre2 {
+    font-style: italic
+    }
+.calibre3 {
+    font-size: 0.83333em;
+    line-height: 1.2;
+    vertical-align: sub
+    }
+.calibre4 {
+    display: table-row-group;
+    vertical-align: middle
+    }
+.calibre5 {
+    display: table-row;
+    vertical-align: inherit
+    }
+.calibre6 {
+    white-space: pre-wrap
+    }
+.calibre7 {
+    display: block;
+    float: left;
+    height: 286pt;
+    width: 455pt
+    }
+.tab {
+    white-space: pre-wrap
+    }
+.table_ {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 23.4pt;
+    margin-top: 0;
+    text-indent: 0;
+    padding: 0;
+    border: black solid 1pt
+    }
+.table_1 {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 5.4pt;
+    margin-top: 0;
+    text-indent: 0;
+    padding: 0;
+    border: black solid 1pt
+    }
+.table_2 {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    text-indent: 0;
+    padding: 0;
+    border: black solid 1pt
+    }
+.table_3 {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 5.4pt;
+    margin-top: 0;
+    text-indent: 0;
+    padding: 0;
+    border: #000 solid 1pt
+    }
+.table_4 {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 18pt;
+    margin-top: 0;
+    text-indent: 0;
+    padding: 0;
+    border: black none 1pt
+    }
+.td_ {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 369pt;
+    padding: 0.5ex 5.75pt 0;
+    border-bottom: black solid 1pt
+    }
+.td_1 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 369pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_2 {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 495pt;
+    padding: 0.5ex 5.75pt 0;
+    border-bottom: black solid 1pt
+    }
+.td_3 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 18pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_4 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 159pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_5 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 183pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_6 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 135pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_7 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 18pt;
+    padding: 0;
+    border-top: black solid 1.5pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt
+    }
+.td_8 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 159pt;
+    padding: 0;
+    border-top: black solid 1.5pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt
+    }
+.td_9 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 183pt;
+    padding: 0;
+    border-top: black solid 1.5pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt
+    }
+.td_10 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 135pt;
+    padding: 0;
+    border-top: black solid 1.5pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt
+    }
+.td_11 {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 509pt;
+    padding: 0.5ex 5.75pt 0;
+    border-bottom: black solid 1pt
+    }
+.td_12 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 170pt;
+    padding: 0 5.75pt 0 0;
+    border-top: black solid 1pt;
+    border-right: black none 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt
+    }
+.td_13 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 170pt;
+    padding: 0 5.75pt;
+    border-top: black solid 1pt;
+    border-right: black none 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black none 1pt
+    }
+.td_14 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 170pt;
+    padding: 0 0 0 5.75pt;
+    border-top: black solid 1pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black none 1pt
+    }
+.td_15 {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 515pt;
+    padding: 0.5ex 5.4pt 0;
+    border-bottom: black solid 1pt
+    }
+.td_16 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: middle;
+    width: 129pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_17 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: bottom;
+    width: 129pt;
+    padding: 0;
+    border: black solid 1pt
+    }
+.td_18 {
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: middle;
+    width: 129pt;
+    padding: 0 5.4pt 0.5ex;
+    border-top: black solid 1pt;
+    border-right: black none 1pt
+    }
+.td_19 {
+    border-bottom-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: middle;
+    width: 129pt;
+    padding: 0 0 0.5ex 5.4pt;
+    border-top: black solid 1pt;
+    border-right: black solid 1pt;
+    border-left: black none 1pt
+    }
+.td_20 {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 499pt;
+    padding: 0.5ex 5.75pt 0;
+    border-bottom: #000 solid 1pt
+    }
+.td_21 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 134pt;
+    padding: 0 5.75pt 0.5ex;
+    border-top: #000 solid 1pt
+    }
+.td_22 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 109pt;
+    padding: 0 5.75pt 0.5ex;
+    border-top: #000 solid 1pt
+    }
+.td_23 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 127pt;
+    padding: 0.5ex 5.75pt
+    }
+.td_24 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 128pt;
+    padding: 0.5ex 5.75pt
+    }
+.td_25 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 134pt;
+    padding: 0.5ex 5.75pt
+    }
+.td_26 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 109pt;
+    padding: 0.5ex 5.75pt
+    }
+.td_27 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 477pt;
+    padding: 0.5ex 5.4pt;
+    border-bottom: black none 1pt
+    }
+.td_28 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 477pt;
+    padding: 0.5ex 5.4pt;
+    border-top: black none 1pt
+    }
+.text_ {
+    text-decoration: underline
+    }
+.text_1 {
+    font-size: 1em
+    }
+.text_2 {
+    font-size: 1em;
+    font-weight: bold
+    }
+.text_3 {
+    font-size: 1.29167em;
+    line-height: 1.2
+    }
+.text_4 {
+    color: #000
+    }
+.text_5 {
+    color: #00F;
+    text-decoration: underline
+    }
+.text_6 {
+    color: #000;
+    text-decoration: underline
+    }
+.text_7 {
+    font-family: "Times New Roman", serif
+    }
+.text_8 {
+    font-family: "Times New Roman", serif;
+    font-weight: bold
+    }
+.text_9 {
+    font-family: "Times New Roman Bold", serif;
+    font-weight: bold
+    }
+.text_10 {
+    font-style: italic;
+    font-weight: bold
+    }
+.text_11 {
+    font-size: 1em;
+    font-style: italic
+    }
+.text_12 {
+    color: #000;
+    font-family: "Times New Roman", serif
+    }
+.text_13 {
+    color: #000;
+    font-family: "TimesNewRoman,Bold", serif
+    }
+.text_14 {
+    color: #00F;
+    font-family: "Times New Roman", serif;
+    text-decoration: underline
+    }
+.text_15 {
+    font-family: "TimesNewRomanPSMT", serif
+    }
+.text_16 {
+    font-family: "TimesNewRomanPS-BoldMT", serif;
+    font-weight: bold
+    }
+.text_17 {
+    color: #000;
+    font-family: "TimesNewRomanPS-BoldMT", serif
+    }
+.text_18 {
+    color: #000;
+    font-family: "TimesNewRomanPSMT", serif
+    }
+.text_19 {
+    color: #000;
+    font-family: "Times New Roman", serif;
+    text-decoration: underline
+    }
+.text_20 {
+    font-family: "TimesNewRomanPSMT", serif;
+    font-style: italic
+    }
+.text_21 {
+    font-family: "TimesNewRomanPS-ItalicMT", serif;
+    font-style: italic
+    }

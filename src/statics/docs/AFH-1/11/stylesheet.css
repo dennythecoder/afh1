@@ -1,0 +1,821 @@
+.block_ {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 6pt;
+    padding: 0
+    }
+.block_1 {
+    color: black;
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 6pt;
+    padding: 0
+    }
+.block_2 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 6pt;
+    padding: 0
+    }
+.block_3 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt 18pt;
+    padding: 0
+    }
+.block_4 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt 45pt;
+    padding: 0
+    }
+.block_5 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 6pt 6.05pt 6pt 18pt;
+    padding: 0
+    }
+.block_6 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 6pt 5.75pt 6pt 18pt;
+    padding: 0
+    }
+.block_7 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 5.75pt 6pt 4.3pt;
+    padding: 0
+    }
+.block_8 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 5.8pt 6pt 18pt;
+    padding: 0
+    }
+.block_9 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 6pt 4.3pt;
+    padding: 0
+    }
+.block_10 {
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt 18pt;
+    padding: 0
+    }
+.block_11 {
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt 45pt;
+    padding: 0
+    }
+.block_12 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 6pt 4.5pt;
+    padding: 0
+    }
+.block_13 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    margin: 0 0 6pt 45pt;
+    padding: 0
+    }
+.block_14 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 0 5pt 4.5pt;
+    padding: 0
+    }
+.block_15 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 5pt 18pt;
+    padding: 0
+    }
+.block_16 {
+    display: block;
+    text-align: justify;
+    margin: 0 0 5pt 18pt;
+    padding: 0
+    }
+.block_17 {
+    display: block;
+    text-align: justify;
+    margin: 0 0 5pt 45pt;
+    padding: 0
+    }
+.block_18 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 5pt 45pt;
+    padding: 0
+    }
+.block_19 {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 6pt;
+    padding: 0
+    }
+.block_20 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt;
+    padding: 0
+    }
+.block_21 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 6pt 0;
+    padding: 0
+    }
+.block_22 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 0 6pt 40.5pt;
+    padding: 0
+    }
+.block_23 {
+    color: black;
+    display: block;
+    font-family: serif;
+    margin: 0;
+    padding: 0
+    }
+.block_24 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    page-break-after: avoid;
+    margin: 0 0 10pt;
+    padding: 0
+    }
+.block_25 {
+    color: black;
+    display: block;
+    font-family: serif;
+    line-height: 13.7pt;
+    margin: 0 0 0 5.1pt;
+    padding: 0
+    }
+.block_26 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 0 5.05pt;
+    padding: 0
+    }
+.block_27 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    line-height: 13.7pt;
+    text-align: center;
+    margin: 0 0 0 5.05pt;
+    padding: 0
+    }
+.block_28 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    line-height: 13.7pt;
+    text-align: center;
+    margin: 0 0 0 5.1pt;
+    padding: 0
+    }
+.block_29 {
+    color: black;
+    display: block;
+    line-height: 1.2;
+    margin: 0 0 0 3.5pt;
+    padding: 0
+    }
+.block_30 {
+    color: black;
+    display: block;
+    line-height: 1.2;
+    margin: 0 0 0 4.5pt;
+    padding: 0
+    }
+.block_31 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 0 -1.45pt;
+    padding: 0
+    }
+.block_32 {
+    color: black;
+    display: block;
+    line-height: 13.1pt;
+    margin: 0 0 0 3.5pt;
+    padding: 0
+    }
+.block_33 {
+    color: black;
+    display: block;
+    line-height: 13.1pt;
+    margin: 0 0 0 4.5pt;
+    padding: 0
+    }
+.block_34 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    line-height: 13.2pt;
+    text-align: center;
+    margin: 0 0 0 -1.45pt;
+    padding: 0
+    }
+.block_35 {
+    color: black;
+    display: block;
+    margin: 0 35.2pt 0 3.5pt;
+    padding: 0
+    }
+.block_36 {
+    color: black;
+    display: block;
+    margin: 0 98.6pt 0 4.5pt;
+    padding: 0
+    }
+.block_37 {
+    color: black;
+    display: block;
+    margin: 0 27pt 0 3.5pt;
+    padding: 0
+    }
+.block_38 {
+    color: black;
+    display: block;
+    line-height: 13.2pt;
+    margin: 0 0 0 3.5pt;
+    padding: 0
+    }
+.block_39 {
+    color: black;
+    display: block;
+    letter-spacing: -0.05pt;
+    line-height: 13.1pt;
+    margin: 0 0 0 4.5pt;
+    padding: 0
+    }
+.block_40 {
+    color: black;
+    display: block;
+    margin: 0 174pt 0 4.5pt;
+    padding: 0
+    }
+.block_41 {
+    color: black;
+    display: block;
+    margin: 0 122pt 0 4.5pt;
+    padding: 0
+    }
+.block_42 {
+    color: black;
+    display: block;
+    line-height: 13.2pt;
+    margin: 0 34.6pt 0 3.5pt;
+    padding: 0
+    }
+.block_43 {
+    color: black;
+    display: block;
+    line-height: 13.2pt;
+    margin: 0.05pt 141pt 0 4.5pt;
+    padding: 0
+    }
+.block_44 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0 9.15pt 0 3.05pt;
+    padding: 0
+    }
+.block_45 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 9.15pt 0 36pt;
+    padding: 0
+    }
+.block_46 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 19.2pt 0 36pt;
+    padding: 0
+    }
+.block_47 {
+    color: black;
+    display: block;
+    text-align: justify;
+    margin: 0 15.1pt 6pt 36pt;
+    padding: 0
+    }
+.block_48 {
+    color: black;
+    display: block;
+    font-family: serif;
+    line-height: 13.1pt;
+    margin: 0 0 0 4.5pt;
+    padding: 0
+    }
+.block_49 {
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-align: justify;
+    margin: 6pt 15.1pt 6pt 0;
+    padding: 0
+    }
+.block_50 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    margin: 0 0 6pt 18pt;
+    padding: 0
+    }
+.block_51 {
+    color: black;
+    display: block;
+    font-family: serif;
+    text-align: justify;
+    margin: 0 0 6pt 27.4pt;
+    padding: 0
+    }
+.calibre {
+    color: #000;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    font-style: italic
+    }
+.calibre2 {
+    font-weight: bold
+    }
+.calibre3 {
+    display: table-row-group;
+    vertical-align: middle
+    }
+.calibre4 {
+    font-weight: bold;
+    line-height: 1.2
+    }
+.calibre5 {
+    white-space: pre-wrap
+    }
+.table_ {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    display: table;
+    margin-bottom: 0;
+    margin-left: 33.2pt;
+    margin-top: 0;
+    text-indent: 0;
+    width: 479pt;
+    border: black solid 1pt;
+    padding: 0
+    }
+.td_ {
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 479pt;
+    border-bottom: black solid 1pt;
+    padding: 0.5ex 0
+    }
+.td_1 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 31.1pt;
+    border-top: black solid 1pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    padding: 0.5ex 0
+    }
+.td_2 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 215pt;
+    border: black solid 1pt;
+    padding: 0.5ex 0
+    }
+.td_3 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 233pt;
+    border-top: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt;
+    padding: 0.5ex 0
+    }
+.td_4 {
+    display: table-cell;
+    text-align: inherit;
+    vertical-align: top;
+    width: 479pt;
+    border-top: black solid 1pt;
+    padding: 0.5ex 0
+    }
+.text_ {
+    letter-spacing: 0.1pt
+    }
+.text_1 {
+    letter-spacing: -0.05pt
+    }
+.text_2 {
+    letter-spacing: 0.05pt
+    }
+.text_3 {
+    letter-spacing: 2.95pt
+    }
+.text_4 {
+    letter-spacing: 1.2pt
+    }
+.text_5 {
+    letter-spacing: 1.15pt
+    }
+.text_6 {
+    letter-spacing: 3.75pt
+    }
+.text_7 {
+    letter-spacing: 1.55pt
+    }
+.text_8 {
+    letter-spacing: 1.5pt
+    }
+.text_9 {
+    letter-spacing: 0.65pt
+    }
+.text_10 {
+    letter-spacing: 0.6pt
+    }
+.text_11 {
+    letter-spacing: 0.75pt
+    }
+.text_12 {
+    letter-spacing: 5.25pt
+    }
+.text_13 {
+    letter-spacing: 0.85pt
+    }
+.text_14 {
+    letter-spacing: 0.8pt
+    }
+.text_15 {
+    letter-spacing: 4.35pt
+    }
+.text_16 {
+    letter-spacing: 2.25pt
+    }
+.text_17 {
+    letter-spacing: 2.2pt
+    }
+.text_18 {
+    letter-spacing: 3.65pt
+    }
+.text_19 {
+    letter-spacing: 0.9pt
+    }
+.text_20 {
+    letter-spacing: 0.95pt
+    }
+.text_21 {
+    letter-spacing: 3.25pt
+    }
+.text_22 {
+    letter-spacing: 5.15pt
+    }
+.text_23 {
+    letter-spacing: 0.35pt
+    }
+.text_24 {
+    letter-spacing: 0.45pt
+    }
+.text_25 {
+    letter-spacing: 0.4pt
+    }
+.text_26 {
+    letter-spacing: 2.15pt
+    }
+.text_27 {
+    letter-spacing: 3.95pt
+    }
+.text_28 {
+    letter-spacing: 1.1pt
+    }
+.text_29 {
+    letter-spacing: 0.7pt
+    }
+.text_30 {
+    letter-spacing: 1.35pt
+    }
+.text_31 {
+    letter-spacing: 1.65pt
+    }
+.text_32 {
+    letter-spacing: 1.8pt
+    }
+.text_33 {
+    letter-spacing: 1.75pt
+    }
+.text_34 {
+    letter-spacing: 1.7pt
+    }
+.text_35 {
+    letter-spacing: 3.35pt
+    }
+.text_36 {
+    letter-spacing: 2.9pt
+    }
+.text_37 {
+    letter-spacing: 2.6pt
+    }
+.text_38 {
+    letter-spacing: 2.55pt
+    }
+.text_39 {
+    letter-spacing: 2.65pt
+    }
+.text_40 {
+    letter-spacing: 2.5pt
+    }
+.text_41 {
+    letter-spacing: 3.85pt
+    }
+.text_42 {
+    letter-spacing: 1.4pt
+    }
+.text_43 {
+    letter-spacing: 0.55pt
+    }
+.text_44 {
+    letter-spacing: 4.85pt
+    }
+.text_45 {
+    letter-spacing: 3.15pt
+    }
+.text_46 {
+    letter-spacing: 0.5pt
+    }
+.text_47 {
+    letter-spacing: -0.1pt
+    }
+.text_48 {
+    letter-spacing: 1.05pt
+    }
+.text_49 {
+    letter-spacing: 4.05pt
+    }
+.text_50 {
+    letter-spacing: 0.2pt
+    }
+.text_51 {
+    letter-spacing: 0.25pt
+    }
+.text_52 {
+    letter-spacing: 0.15pt
+    }
+.text_53 {
+    letter-spacing: 2.45pt
+    }
+.text_54 {
+    letter-spacing: 1.25pt
+    }
+.text_55 {
+    letter-spacing: 1.85pt
+    }
+.text_56 {
+    letter-spacing: 2.85pt
+    }
+.text_57 {
+    font-style: italic;
+    letter-spacing: 0.1pt
+    }
+.text_58 {
+    font-style: italic;
+    letter-spacing: 0.05pt
+    }
+.text_59 {
+    letter-spacing: 1.45pt
+    }
+.text_60 {
+    letter-spacing: 1.3pt
+    }
+.text_61 {
+    letter-spacing: 1.95pt
+    }
+.text_62 {
+    letter-spacing: 2pt
+    }
+.text_63 {
+    letter-spacing: 1.9pt
+    }
+.text_64 {
+    letter-spacing: 2.05pt
+    }
+.text_65 {
+    letter-spacing: 1.6pt
+    }
+.text_66 {
+    font-style: italic;
+    letter-spacing: 1.7pt
+    }
+.text_67 {
+    font-style: italic;
+    letter-spacing: 1.65pt
+    }
+.text_68 {
+    font-style: italic;
+    letter-spacing: 1.95pt
+    }
+.text_69 {
+    font-style: italic;
+    letter-spacing: 1.85pt
+    }
+.text_70 {
+    font-style: italic;
+    letter-spacing: 1.8pt
+    }
+.text_71 {
+    font-style: italic;
+    letter-spacing: 1.25pt
+    }
+.text_72 {
+    font-style: italic;
+    letter-spacing: 1.2pt
+    }
+.text_73 {
+    font-weight: bold;
+    letter-spacing: 1.5pt
+    }
+.text_74 {
+    font-weight: bold;
+    letter-spacing: -0.05pt
+    }
+.text_75 {
+    font-weight: bold;
+    letter-spacing: 0.1pt
+    }
+.text_76 {
+    letter-spacing: 2.35pt
+    }
+.text_77 {
+    letter-spacing: 2.3pt
+    }
+.text_78 {
+    font-weight: bold;
+    letter-spacing: 2.9pt
+    }
+.text_79 {
+    letter-spacing: 3.45pt
+    }
+.text_80 {
+    font-style: italic;
+    font-weight: bold
+    }
+.text_81 {
+    color: #000
+    }
+.text_82 {
+    font-weight: bold;
+    letter-spacing: -0.05pt;
+    line-height: 1.2
+    }
+.text_83 {
+    font-weight: bold;
+    letter-spacing: 0.05pt;
+    line-height: 1.2
+    }
+.text_84 {
+    font-style: italic;
+    letter-spacing: -0.05pt
+    }
+.text_85 {
+    letter-spacing: 2.75pt
+    }
+.text_86 {
+    letter-spacing: 4.45pt
+    }
+.text_87 {
+    letter-spacing: 4.75pt
+    }
+.text_88 {
+    letter-spacing: 3.55pt
+    }
+.text_89 {
+    letter-spacing: 5.05pt
+    }
+.text_90 {
+    letter-spacing: 4.95pt
+    }
+.text_91 {
+    font-style: italic;
+    letter-spacing: 3.85pt
+    }
+.text_92 {
+    font-style: italic;
+    letter-spacing: -0.1pt
+    }
+.text_93 {
+    letter-spacing: 4.15pt
+    }
+.text_94 {
+    color: #333
+    }
+.tr_ {
+    display: table-row;
+    height: 14pt;
+    vertical-align: inherit
+    }
+.tr_1 {
+    display: table-row;
+    height: 55.4pt;
+    vertical-align: inherit
+    }
+.tr_2 {
+    display: table-row;
+    height: 13.5pt;
+    vertical-align: inherit
+    }
+.tr_3 {
+    display: table-row;
+    height: 18.3pt;
+    vertical-align: inherit
+    }
+.tr_4 {
+    display: table-row;
+    height: 27.3pt;
+    vertical-align: inherit
+    }
+.tr_5 {
+    display: table-row;
+    height: 75pt;
+    vertical-align: inherit
+    }
+.tr_6 {
+    display: table-row;
+    height: 53.9pt;
+    vertical-align: inherit
+    }
+.tr_7 {
+    display: table-row;
+    height: 32.5pt;
+    vertical-align: inherit
+    }
+.tr_8 {
+    display: table-row;
+    height: 17.2pt;
+    vertical-align: inherit
+    }
+.tr_9 {
+    display: table-row;
+    height: 280pt;
+    vertical-align: inherit
+    }
