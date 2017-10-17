@@ -69,9 +69,9 @@ const store = new Vuex.Store({
     state.isBookInitialized = true;
   },
 
-  createBookmark() {
-    this.saveLastLocation();
-    var bookmark = this.lastLocation;
+  createBookmark(state) {
+    this.mutations.saveLastLocation();
+    const bookmark = this.lastLocation;
     this.bookmarks.push(bookmark);
     localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
   },
@@ -89,16 +89,16 @@ const store = new Vuex.Store({
     let store = this;
     store.book.gotoCfi(cfi).then(function() {
       store.$forceUpdate();
-      store.saveLastLocation();
+      store.mutations.saveLastLocation();
     });
   },
-  nextPage() {
-    this.book.nextPage();
-    this.saveLastLocation();
+  nextPage(state) {
+    state.book.nextPage();
+    this.mutations.saveLastLocation();
   },
-  prevPage() {
-    this.book.prevPage();
-    this.saveLastLocation();
+  prevPage(state) {
+    state.book.prevPage();
+    this.mutations.saveLastLocation();
   },
 
   saveLastLocation(state) {

@@ -34,42 +34,41 @@
 
 <script>
 export default {
-	computed: {
-		isBookmarked() {
-			return mb.store.isBookmarked;
-		},
-		isReader() {
-			return mb.store.isReader;
-		},
-		isSearcher() {
-			return mb.store.isSearcher;
-		}
-	},
+  computed: {
+    isBookmarked() {
+      return mb.store.isBookmarked;
+    },
+    isReader() {
+      return mb.store.isReader;
+    },
+    isSearcher() {
+      return mb.store.isSearcher;
+    }
+  },
 
-	methods: {
-		gotoTOC() {
-			window.location.hash = '#/toc';
-		},
-		gotoHome() {
-			window.location.hash = '#/home';
-		},
-		gotoSearcher() {
-			window.location.hash = '#/searcher';
-		},
-		prevPage() {
-			mb.store.prevPage();
-		},
-		nextPage() {
-			mb.store.nextPage();
-		},
-		createBookmark() {
-			mb.store.createBookmark();
-		},
-		destroyBookmark() {
-			mb.store.destroyBookmark();
-		}
-
-	}
+  methods: {
+    gotoTOC() {
+      window.location.hash = "#/toc";
+    },
+    gotoHome() {
+      window.location.hash = "#/home";
+    },
+    gotoSearcher() {
+      window.location.hash = "#/searcher";
+    },
+    prevPage() {
+      mb.store.prevPage();
+    },
+    nextPage() {
+      mb.store.nextPage();
+    },
+    createBookmark() {
+      mb.store.createBookmark();
+    },
+    destroyBookmark() {
+      mb.store.destroyBookmark();
+    }
+  }
 };
 </script>
 

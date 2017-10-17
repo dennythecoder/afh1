@@ -24,25 +24,25 @@
 
 <script>
 export default {
-	data() {
-		return {
-			id: 'epubViewer',
-			resizeCount: 0,
-			book: {}
-		}
-	},
-	computed: {
-		bookmarks() {
-			return mb.store.bookmarks;
-		}
-	},
-	methods: {
-		gotoLocation(bookmark) {
-			const bookmarkLocation = bookmark.location;
-			if (location) {
-				window.location.hash = '#/reader/' + bookmarkLocation;
-			}
-		}
-	}
+  data() {
+    return {
+      id: "epubViewer",
+      resizeCount: 0,
+      book: {}
+    };
+  },
+  computed: {
+    bookmarks() {
+      return this.$store.bookmarks;
+    }
+  },
+  methods: {
+    gotoLocation(bookmark) {
+      const bookmarkLocation = bookmark.location;
+      if (location) {
+        window.location.hash = "#/reader/" + bookmarkLocation;
+      }
+    }
+  }
 };
 </script>

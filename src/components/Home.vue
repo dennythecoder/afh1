@@ -35,49 +35,37 @@
 </style>
 
 <script>
-mb.store = mb.store || {};
-
-module.exports = {
-
-	methods:{
-	
-		gotoReading: function(){
-			window.location.hash = '#/toc';
-		},
-		gotoBookmarks: function(){	
-			window.location.hash = '#/bookmarks';
-		},
-		gotoSearcher: function(){
-			window.location.hash = '#/searcher';
-		},
-		gotoLastViewed:function(){
-			const lastLocation = localStorage.getItem('lastLocation');			
-			if(lastLocation){
-				window.location.hash = '#/reader/' + mb.store.lastLocation.location;
-			}
-		}
-	},
-	computed:{
-		hasLastViewed:function(){
-			let lastLocation = localStorage.getItem('lastLocation');
-			return lastLocation && true;	
-			
-		},
-		hasBookmarks:function(){
-			var bookmarks = localStorage.getItem('bookmarks');
-			if(!bookmarks) return false;
-			var bookmarksArr = JSON.parse(bookmarks);
-			return bookmarksArr.length>0;
-		}
-	
-	}
-
-
-
-
-
-}
-
-
+export default {
+  methods: {
+    gotoReading: function() {
+      window.location.hash = "#/toc";
+    },
+    gotoBookmarks: function() {
+      window.location.hash = "#/bookmarks";
+    },
+    gotoSearcher: function() {
+      window.location.hash = "#/searcher";
+    },
+    gotoLastViewed: function() {
+      const lastLocation = localStorage.getItem("lastLocation");
+      if (lastLocation) {
+        window.location.hash =
+          "#/reader/" + this.$store.getters.lastLocation.location;
+      }
+    }
+  },
+  computed: {
+    hasLastViewed: function() {
+      let lastLocation = localStorage.getItem("lastLocation");
+      return lastLocation && true;
+    },
+    hasBookmarks: function() {
+      var bookmarks = localStorage.getItem("bookmarks");
+      if (!bookmarks) return false;
+      var bookmarksArr = JSON.parse(bookmarks);
+      return bookmarksArr.length > 0;
+    }
+  }
+};
 </script>
 
