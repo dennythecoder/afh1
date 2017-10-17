@@ -4,25 +4,26 @@
  * 
  */
 
-
-function slowlyParseJSONArray(json){
-    let jsonArr = json.replace(/\[|\]/g,'').split('},');
-    jsonArr.forEach(function(jsonItem){
-        try{
-            postMessage(JSON.parse(jsonItem + '}'));
-        }catch(e){
-            return '';
-        }
-        
-    });
+function slowlyParseJSONArray(json) {
+  let jsonArr = json.replace(/\[|\]/g, "").split("},");
+  jsonArr.forEach(function(jsonItem) {
+    try {
+      postMessage(JSON.parse(jsonItem + "}"));
+    }
+ catch (e) {
+      return "";
+    }
+  });
 }
 
+function parseJSON(json) {
+  slowlyParseJSONArray(json);
+}
 
-
- function parseJSON(json){
-    slowlyParseJSONArray(json);
- }
-
- self.addEventListener("message",function(e){
+self.addEventListener(
+  "message",
+  function(e) {
     parseJSON(e.data);
- }, false);
+  },
+  false
+);

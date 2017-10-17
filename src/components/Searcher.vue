@@ -6,9 +6,10 @@
                 <i @click="searchPages" class="fa fa-search"></i>
             </div>
 			<ul class="list">
-				<li v-for="result in results"
+				<li v-for="(result, index) in results"
 					@click="gotoResult(result)"
 					class="ripple"
+                    :key="index"
 				>
 					
 					{{result.page}}
