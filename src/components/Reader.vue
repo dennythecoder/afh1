@@ -1,10 +1,10 @@
 <template>
 	<div class="reader" v-touch-swipe="swipeHandler">
-		<toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
+		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
 			<div v-inserted="init" class="content" :style="styleObj" :id="id">
 			</div>
 
-		</toolbar>
+		</Toolbar>
 
 	</div>
 </template>
@@ -35,6 +35,7 @@
 
 <script>
 let ePub = window.ePub;
+import Toolbar from "./Toolbar.vue";
 
 export default {
   data() {
@@ -123,6 +124,9 @@ export default {
         this.gotoCfi("epubcfi(" + val.replace(/-/g, "/") + ")");
       }
     }
+  },
+  components: {
+    Toolbar
   }
 };
 </script>

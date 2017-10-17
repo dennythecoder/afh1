@@ -1,6 +1,6 @@
 <template>
 	<div class="searcher">
-		<toolbar>
+		<Toolbar>
             <div class="search-bar">
                 <input type="text" v-model="searchTerm" @keyup.enter="searchPages" />
                 <i @click="searchPages" class="fa fa-search"></i>
@@ -16,7 +16,7 @@
 					
 				</li>
 			</ul>
-		</toolbar>
+		</Toolbar>
 	</div>
 </template>
 <style>
@@ -48,6 +48,7 @@
 </style>
 <script>
 import Vue from "vue";
+import Toolbar from "./Toolbar.vue";
 export default {
   data: function() {
     return {
@@ -65,6 +66,9 @@ export default {
       cfi = cfi.replace(/\//g, "-");
       window.location.hash = "#/reader/" + cfi;
     }
+  },
+  components: {
+    Toolbar
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<div class="bookmarks">
-		<toolbar>
+		<Toolbar>
 			<ul class="list">
 				<li 
 					v-for="(bookmark, index) in bookmarks" 
@@ -9,7 +9,7 @@
 					{{bookmark.chapterName}}
 				</li>
 			</ul>
-		</toolbar>
+		</Toolbar>
 
 	</div>
 </template>
@@ -23,6 +23,7 @@
 
 
 <script>
+import Toolbar from "./Toolbar.vue";
 export default {
   data() {
     return {
@@ -43,6 +44,9 @@ export default {
         window.location.hash = "#/reader/" + bookmarkLocation;
       }
     }
+  },
+  components: {
+    Toolbar
   }
 };
 </script>
