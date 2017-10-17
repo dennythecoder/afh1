@@ -34,11 +34,12 @@
 
 
 <script>
+import ePub from "epubjs";
+
 export default {
   data() {
     return {
       id: "epubViewer",
-      resizeCount: 0,
       bookmarks: [],
       currentCfi: ""
     };
@@ -49,15 +50,15 @@ export default {
     },
     nextPage() {
       this.$store.commit("nextPage");
-	},
-	swipeHandler(swipe){
-		if(swipe.direction === "left"){
-			this.nextPage();
-		}
-		if(swipe.direction === "right"){
-			this.prevPage();
-		}
-	},
+    },
+    swipeHandler(swipe) {
+      if (swipe.direction === "left") {
+        this.nextPage();
+      }
+      if (swipe.direction === "right") {
+        this.prevPage();
+      }
+    },
 
     gotoCfi(cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
@@ -66,7 +67,7 @@ export default {
     },
 
     init() {
-      var vm = this;
+      let vm = this;
 
       var el = document.getElementById(vm.id);
       var computedStyle = window.getComputedStyle(el);
@@ -97,8 +98,6 @@ export default {
   },
   computed: {
     styleObj() {
-      var resizeCount = this.resizeCount;
-      var height = window.innerHeight - 60 + "px";
       var width = window.innerWidth - 40 + "px";
       return {
         height: "85vh",
