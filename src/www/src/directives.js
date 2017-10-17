@@ -1,4 +1,5 @@
 import Vue from "vue";
+import Hammer from "hammerjs";
 
 Vue.directive(
   "inserted",
