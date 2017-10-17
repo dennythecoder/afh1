@@ -35,37 +35,37 @@
 <script>
 export default {
 	computed: {
-		isBookmarked: function() {
+		isBookmarked() {
 			return mb.store.isBookmarked;
 		},
-		isReader: function() {
+		isReader() {
 			return mb.store.isReader;
 		},
-		isSearcher: function() {
+		isSearcher() {
 			return mb.store.isSearcher;
 		}
 	},
 
 	methods: {
-		gotoTOC: function() {
+		gotoTOC() {
 			window.location.hash = '#/toc';
 		},
-		gotoHome: function() {
+		gotoHome() {
 			window.location.hash = '#/home';
 		},
-		gotoSearcher: function() {
+		gotoSearcher() {
 			window.location.hash = '#/searcher';
 		},
-		prevPage: function() {
+		prevPage() {
 			mb.store.prevPage();
 		},
-		nextPage: function() {
+		nextPage() {
 			mb.store.nextPage();
 		},
-		createBookmark: function() {
+		createBookmark() {
 			mb.store.createBookmark();
 		},
-		destroyBookmark: function() {
+		destroyBookmark() {
 			mb.store.destroyBookmark();
 		}
 
