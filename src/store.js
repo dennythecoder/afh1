@@ -10,15 +10,15 @@ let store = new Vue({
     isBookInitialized: false,
     pages: []
   },
-  router: router,
+  router,
   computed: {
-    isReader: function() {
+    isReader() {
       return this.$route.path.indexOf("/reader") !== -1;
     },
-    isSearcher: function() {
+    isSearcher() {
       return this.$route.path.indexOf("/searcher") !== -1;
     },
-    isBookmarked: function() {
+    isBookmarked() {
       let bookmarks = this.bookmarks,
         lastLocation = this.lastLocation;
       for (var i = 0; i < bookmarks.length; i++) {
@@ -30,7 +30,7 @@ let store = new Vue({
     }
   },
   methods: {
-    generatePagination: function() {
+    generatePagination() {
       let store = this;
       store.pages.splice(1, this.pages.length - 1);
       const localStoragePages = localStorage.getItem("pages");
@@ -47,7 +47,7 @@ let store = new Vue({
         });
       }
     },
-    searchPages: function(searchTerm) {
+    searchPages(searchTerm) {
       let result = [];
       for (var i = 0; i < this.pages.length; i++) {
         var page = this.pages[i];
