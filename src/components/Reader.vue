@@ -1,5 +1,5 @@
 <template>
-	<div class="reader" v-touch-swipe>
+	<div class="reader" v-touch-swipe="swipeHandler">
 		<toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
 			<div v-inserted="init" class="content" :style="styleObj" :id="id">
 			</div>
@@ -49,28 +49,20 @@ export default {
     },
     nextPage() {
       this.$store.commit("nextPage");
-    },
+	},
+	swipeHandler(swipe){
+		if(swipe.direction === "left"){
+			this.nextPage();
+		}
+		if(swipe.direction === "right"){
+			this.prevPage();
+		}
+	},
 
     gotoCfi(cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
       this.$store.commit("gotoCfi", cfi);
       this.placeSwipeListener();
-    },
-    placeSwipeListener() {
-      var vm = this;
-      var iframe = document.querySelector("#epubViewer iframe");
-      if (!iframe || !iframe.contentDocument) {
-        return;
-      }
-      var el = iframe.contentDocument.body;
-      if (!el.hasListener) {
-        var hammertime = new Hammer(el);
-
-        hammertime.on("swipeleft", vm.nextPage);
-        hammertime.on("swiperight", vm.prevPage);
-      }
-
-      el.hasListener = true;
     },
 
     init() {
