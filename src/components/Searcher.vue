@@ -47,8 +47,7 @@
 
 </style>
 <script>
-mb.store = mb.store || {};
-
+import Vue from "vue";
 module.exports = {
   data: function() {
     return {
@@ -58,7 +57,7 @@ module.exports = {
   },
   methods: {
     searchPages: function() {
-      let results = mb.store.searchPages(this.searchTerm);
+      let results = this.$store.commit("searchPages", this.searchTerm);
       Vue.set(this, "results", results);
     },
     gotoResult: function(result) {
