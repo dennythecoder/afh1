@@ -2,9 +2,8 @@ import Vue from "vue";
 import router from "./router";
 import Vuex from "vuex";
 
-
-const store =  new Vuex.Store({
-  state:{
+const store = new Vuex.Store({
+  state: {
     bookmarks: [],
     lastLocation: {},
     book: {},
@@ -140,4 +139,4 @@ function init(store) {
   return store;
 }
 
-export default init(store)
+export default init(store);
