@@ -50,7 +50,7 @@
 import Vue from "vue";
 import Toolbar from "./Toolbar.vue";
 export default {
-  data: function() {
+  data() {
     return {
       searchTerm: "",
       results: []
