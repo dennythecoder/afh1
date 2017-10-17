@@ -2,9 +2,10 @@
 	<div class="toc">
 		<toolbar>
 			<ul class="list">
-				<li v-for="chapter, chapterIndex in chapters"
+				<li v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
 					class="ripple"
+          :key="chapterIndex"
 				>
 					
 					{{chapter.label}}
