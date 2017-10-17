@@ -82,7 +82,7 @@ let store = new Vue({
         }
       }
     },
-    gotoCfi: function(cfi) {
+    gotoCfi(cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
       let store = this;
       store.book.gotoCfi(cfi).then(function() {
@@ -90,16 +90,16 @@ let store = new Vue({
         store.saveLastLocation();
       });
     },
-    nextPage: function() {
+    nextPage() {
       this.book.nextPage();
       this.saveLastLocation();
     },
-    prevPage: function() {
+    prevPage() {
       this.book.prevPage();
       this.saveLastLocation();
     },
 
-    saveLastLocation: function() {
+    saveLastLocation() {
       let store = this;
       function getChapterName(href) {
         for (var i = 0; i < store.chapters.length; i++) {
@@ -126,7 +126,7 @@ let store = new Vue({
       Vue.set(this, "lastLocation", lastLocation);
     }
   },
-  created: function() {
+  created() {
     const jsonBookmarks = localStorage.getItem("bookmarks");
     if (jsonBookmarks) {
       Vue.set(this, "bookmarks", JSON.parse(jsonBookmarks));
