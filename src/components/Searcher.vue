@@ -57,11 +57,11 @@ export default {
     };
   },
   methods: {
-    searchPages: function() {
+    searchPages() {
       let results = this.$store.commit("searchPages", this.searchTerm);
       Vue.set(this, "results", results);
     },
-    gotoResult: function(result) {
+    gotoResult(result) {
       let cfi = /epubcfi\((.*?)\)/.exec(result.cfi)[1];
       cfi = cfi.replace(/\//g, "-");
       window.location.hash = "#/reader/" + cfi;
