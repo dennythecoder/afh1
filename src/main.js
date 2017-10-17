@@ -28,10 +28,6 @@ import "quasar-extras/material-icons";
 
 Quasar.start(() => {
   /* eslint-disable no-new */
-  router.beforeEach((to, from, next) => {
-    console.log(to);
-  });
-
   new Vue({
     el: "#q-app",
     router,

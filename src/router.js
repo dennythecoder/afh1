@@ -1,12 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Bookmarks from "./components/Bookmarks.vue";
+import Home from "./components/Home.vue";
+import Reader from "./components/Reader.vue";
+import Searcher from "./components/Searcher.vue";
+import TOC from "./components/TOC.vue";
 
 Vue.use(VueRouter);
-
-function load(component) {
-  // '@' is aliased to src/components
-  return () => require(`@/${component}.vue`);
-}
 
 export default new VueRouter({
   mode: "hash",
@@ -16,14 +16,26 @@ export default new VueRouter({
 
   routes: [
     {
-      path: "/",
-      component: load("Home")
+      path: "/Bookmarks",
+      component: Bookmarks
+    },
+    {
+      path: "/Reader",
+      component: Reader
+    },
+    {
+      path: "/Searcher",
+      component: Searcher
+    },
+    {
+      path: "/TOC",
+      component: TOC
     },
 
     // Always leave this last one
     {
       path: "*",
-      component: load("Home")
+      component: Home
     } // Not found
   ]
 });
