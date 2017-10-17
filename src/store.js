@@ -16,10 +16,10 @@ const store = new Vuex.Store({
   },
   getters: {
     isReader(state) {
-      return state.$route.path.indexOf("/reader") !== -1;
+      return state.router.currentRoute.path.indexOf("/reader") !== -1;
     },
     isSearcher(state) {
-      return state.$route.path.indexOf("/searcher") !== -1;
+      return state.router.currentRoute.path.indexOf("/searcher") !== -1;
     },
     isBookmarked(state) {
       let bookmarks = this.bookmarks,
