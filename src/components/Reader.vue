@@ -34,7 +34,7 @@
 
 
 <script>
-import ePub from "epubjs";
+import ePub from "../../epub/epub";
 
 export default {
   data() {

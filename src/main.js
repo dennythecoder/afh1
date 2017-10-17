@@ -13,12 +13,10 @@ require(`quasar/dist/quasar.${__THEME}.css`);
 import Vue from "vue";
 import Quasar from "quasar";
 import router from "./router";
-import Vuex from "vuex";
 import store from "./store";
 
 Vue.config.productionTip = false;
 Vue.use(Quasar); // Install Quasar Framework
-Vue.use(Vuex);
 
 if (__THEME === "mat") {
   require("quasar-extras/roboto-font");
@@ -30,6 +28,10 @@ import "quasar-extras/material-icons";
 
 Quasar.start(() => {
   /* eslint-disable no-new */
+  router.beforeEach((to, from, next) => {
+    console.log(to);
+  });
+
   new Vue({
     el: "#q-app",
     router,

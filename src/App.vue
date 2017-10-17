@@ -1,14 +1,12 @@
 <template>
   <!-- Don't drop "q-app" class -->
   <div id="q-app">
+    <h4>Test</h4>
     <router-view />
   </div>
 </template>
 
 <script>
-/*
- * Root component
- */
 export default {};
 </script>
 
