@@ -36,13 +36,13 @@
 export default {
   computed: {
     isBookmarked() {
-      return mb.store.isBookmarked;
+      return this.$store.getters.isBookmarked;
     },
     isReader() {
-      return mb.store.isReader;
+      return this.$store.getters.isReader;
     },
     isSearcher() {
-      return mb.store.isSearcher;
+      return this.$store.getters.isSearcher;
     }
   },
 
@@ -57,16 +57,16 @@ export default {
       window.location.hash = "#/searcher";
     },
     prevPage() {
-      mb.store.prevPage();
+      this.$store.commit("prevPage");
     },
     nextPage() {
-      mb.store.nextPage();
+      this.$store.commit("nextPage");
     },
     createBookmark() {
-      mb.store.createBookmark();
+      this.$store.commit("createBookmark");
     },
     destroyBookmark() {
-      mb.store.destroyBookmark();
+      this.$store.commit("destroyBookmark");
     }
   }
 };
