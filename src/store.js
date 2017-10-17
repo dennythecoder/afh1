@@ -102,20 +102,19 @@ const store =  new Vuex.Store({
     this.saveLastLocation();
   },
 
-  saveLastLocation() {
-    let store = this;
+  saveLastLocation(state) {
     function getChapterName(href) {
-      for (var i = 0; i < store.chapters.length; i++) {
-        if (store.chapters[i].href === href) {
-          return store.chapters[i].label;
+      for (var i = 0; i < state.chapters.length; i++) {
+        if (state.chapters[i].href === href) {
+          return state.chapters[i].label;
         }
       }
     }
 
-    const cfi = this.book.getCurrentLocationCfi();
+    const cfi = state.book.getCurrentLocationCfi();
     let result = /epubcfi\((.*)\)/.exec(cfi);
     let location = result[1].replace(/\//g, "-");
-    let href = this.book.currentChapter.href;
+    let href = state.book.currentChapter.href;
     let chapterName = getChapterName(href);
     let lastLocation = {
       location: location,
@@ -124,9 +123,8 @@ const store =  new Vuex.Store({
     };
 
     const json = JSON.stringify(lastLocation);
-
     localStorage.setItem("lastLocation", json);
-    Vue.set(this, "lastLocation", lastLocation);
+    state.lastLocation = lastLocation;
   }
 });
 
