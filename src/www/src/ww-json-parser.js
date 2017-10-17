@@ -9,8 +9,7 @@ function slowlyParseJSONArray(json) {
   jsonArr.forEach(function(jsonItem) {
     try {
       postMessage(JSON.parse(jsonItem + "}"));
-    }
- catch (e) {
+    } catch (e) {
       return "";
     }
   });

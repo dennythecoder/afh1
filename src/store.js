@@ -1,6 +1,7 @@
-window.mb = window.mb || {};
+import Vue from "vue";
+import router from "./router";
 
-mb.store = new Vue({
+let store = new Vue({
   data: {
     bookmarks: [],
     lastLocation: {},
@@ -9,7 +10,7 @@ mb.store = new Vue({
     isBookInitialized: false,
     pages: []
   },
-  router: mb.router,
+  router: router,
   computed: {
     isReader: function() {
       return this.$route.path.indexOf("/reader") !== -1;
@@ -39,8 +40,7 @@ mb.store = new Vue({
           store.pages.push(response.data);
         };
         worker.postMessage(localStoragePages);
-      }
- else {
+      } else {
         store.book.generatePagination().then(function(pages) {
           Vue.set(store, "pages", pages);
           localStorage.setItem("pages", JSON.stringify(pages));
@@ -62,21 +62,21 @@ mb.store = new Vue({
       return result;
     },
 
-    setBook: function(book) {
+    setBook(book) {
       Vue.set(this, "book", book);
       this.isBookInitialized = true;
     },
 
-    createBookmark: function() {
+    createBookmark() {
       this.saveLastLocation();
       var bookmark = this.lastLocation;
       this.bookmarks.push(bookmark);
       localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
     },
-    destroyBookmark: function() {
+    destroyBookmark() {
       for (var i = 0; i < this.bookmarks.length; i++) {
-        var bookmark = this.bookmarks[i];
-        if (this.bookmarks[i].location == this.lastLocation.location) {
+        const bookmark = this.bookmarks[i];
+        if (bookmark.location === this.lastLocation.location) {
           this.bookmarks.splice(i, 1);
           localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
         }
@@ -100,10 +100,11 @@ mb.store = new Vue({
     },
 
     saveLastLocation: function() {
+      let store = this;
       function getChapterName(href) {
-        for (var i = 0; i < mb.store.chapters.length; i++) {
-          if (mb.store.chapters[i].href === href) {
-            return mb.store.chapters[i].label;
+        for (var i = 0; i < store.chapters.length; i++) {
+          if (store.chapters[i].href === href) {
+            return store.chapters[i].label;
           }
         }
       }
@@ -136,3 +137,5 @@ mb.store = new Vue({
     }
   }
 });
+
+export default store;
