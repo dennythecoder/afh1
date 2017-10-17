@@ -35,11 +35,11 @@
 
 <script>	
 
-mb.store = mb.store || {};
+import Hammer from "hammerjs";
 
-module.exports = {
+export default {
 
-	data: function() {
+	data() {
 
 		return {
 			id: 'epubViewer',
@@ -50,21 +50,21 @@ module.exports = {
 	},
 	methods: {
 
-		prevPage: function() {
+		prevPage() {
 			vm.placeSwipeListener();
 		},
-		nextPage: function() {
+		nextPage() {
 			mb.store.nextPage();
 		},
 
 
 
-		gotoCfi: function(cfi) {
+		gotoCfi(cfi) {
 			//expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
 			mb.store.gotoCfi(cfi);
 			this.placeSwipeListener();
 		},
-		placeSwipeListener: function() {
+		placeSwipeListener() {
 			var vm = this;
 			var iframe = document.querySelector('#epubViewer iframe');
 			if (!iframe || !iframe.contentDocument) { return; }
@@ -88,7 +88,7 @@ module.exports = {
 		},
 
 
-		init: function() {
+		init() {
 			var vm = this;
 
 
@@ -127,7 +127,7 @@ module.exports = {
 		}
 	},
 	computed: {
-		styleObj: function() {
+		styleObj() {
 			var resizeCount = this.resizeCount;
 			var height = window.innerHeight - 60 + 'px';
 			var width = window.innerWidth - 40 + 'px';
@@ -139,15 +139,14 @@ module.exports = {
 			}
 		},
 
-		isVisible: function() {
+		isVisible() {
 			return mb.store.isReader;
 		}
 
 	},
 	watch: {
-		isVisible: function(newValue) {
+		isVisible(newValue) {
 			if (newValue) {
-
 				document.body.style.overflow = 'hidden';
 			} else {
 				document.body.style.overflow = 'visible';

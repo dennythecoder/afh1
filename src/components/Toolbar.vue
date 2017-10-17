@@ -33,12 +33,7 @@
 </template>
 
 <script>
-
-
-
-module.exports = {
-
-
+export default {
 	computed: {
 		isBookmarked: function() {
 			return mb.store.isBookmarked;
