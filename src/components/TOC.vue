@@ -1,6 +1,6 @@
 <template>
 	<div class="toc">
-		<toolbar>
+		<Toolbar>
 			<ul class="list">
 				<li v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
@@ -12,8 +12,7 @@
 					
 				</li>
 			</ul>
-		</toolbar>
-
+		</Toolbar>
 	</div>
 </template>
 <style>
@@ -23,6 +22,7 @@
 	}
 </style>
 <script>
+import Toolbar from "./Toolbar.vue";
 export default {
   computed: {
     chapters: function() {
@@ -34,6 +34,9 @@ export default {
       const cfi = chapter.cfi.replace(/\//g, "-"); // making url friendly
       window.location.hash = "#/reader/" + cfi;
     }
+  },
+  components: {
+    Toolbar
   }
 };
 </script>

@@ -23,7 +23,7 @@
 			<div class="icon" v-if="isReader" @click="nextPage">
 				<i class="fa fa-arrow-right"></i>
 			</div>
-			<span style="color:black">{{$route.path}}</span>
+			<span style="color:black">{{$router.path}}</span>
 		</div>
 
 		<div class="toolbar-content">

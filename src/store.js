@@ -30,6 +30,9 @@ const store = new Vuex.Store({
         }
       }
       return false;
+    },
+    path(state) {
+      return state.route;
     }
   },
   mutation: {
