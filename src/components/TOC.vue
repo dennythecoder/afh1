@@ -1,17 +1,16 @@
 <template>
 	<div class="toc">
 		<Toolbar>
-			<ul class="list">
-				<li v-for="(chapter, chapterIndex) in chapters"
+			<div class="btn-container">
+				<q-btn rounded color="primary" class="full-width"
+					v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
-					class="ripple"
-          :key="chapterIndex"
+				
+					:key="chapterIndex"
 				>
-					
 					{{chapter.label}}
-					
-				</li>
-			</ul>
+				</q-btn>
+			</div>
 		</Toolbar>
 	</div>
 </template>
@@ -23,6 +22,7 @@
 </style>
 <script>
 import Toolbar from "./Toolbar.vue";
+import { QBtn } from "quasar";
 export default {
   computed: {
     chapters: function() {
@@ -36,7 +36,8 @@ export default {
     }
   },
   components: {
-    Toolbar
+    Toolbar,
+    QBtn
   }
 };
 </script>

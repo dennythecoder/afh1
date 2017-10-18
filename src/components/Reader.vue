@@ -1,8 +1,9 @@
 <template>
 	<div class="reader" >
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
-			<div v-touch-swipe="swipeHandler"  class="content" :style="styleObj" :id="id">
-			</div>
+      <div v-touch-swipe="swipeHandler">
+			  <div  class="content" :style="styleObj" :id="id"></div>
+      </div>
 		</Toolbar>
 	</div>
 </template>
@@ -65,7 +66,6 @@ export default {
     gotoCfi(cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
       this.$store.commit("gotoCfi", cfi);
-      this.placeSwipeListener();
     },
 
     init() {
@@ -120,6 +120,7 @@ export default {
     },
     "$route.params.cfi": function(val) {
       if (val && this.$store.getters.isBookInitialized) {
+        console.log(val);
         this.gotoCfi("epubcfi(" + val.replace(/-/g, "/") + ")");
       }
     }
