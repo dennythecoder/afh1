@@ -2,7 +2,6 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Bookmarks from "./components/Bookmarks.vue";
 import Home from "./components/Home.vue";
-import Reader from "./components/Reader.vue";
 import Searcher from "./components/Searcher.vue";
 import TOC from "./components/TOC.vue";
 
@@ -20,12 +19,10 @@ export default new VueRouter({
       component: Bookmarks
     },
     {
-      path: "/Reader/:cfi",
-      component: Reader
+      path: "/Reader/:cfi"
     },
     {
-      path: "/Reader",
-      component: Reader
+      path: "/Reader"
     },
     {
       path: "/Searcher",

@@ -16,7 +16,8 @@ const store = new Vuex.Store({
   },
   getters: {
     isReader(state) {
-      return state.router.currentRoute.path.indexOf("/reader") !== -1;
+      let currentRoute = state.router.currentRoute;
+      return currentRoute.path.indexOf("/reader") !== -1;
     },
     isSearcher(state) {
       return state.router.currentRoute.path.indexOf("/searcher") !== -1;
@@ -36,6 +37,12 @@ const store = new Vuex.Store({
     },
     pages(state) {
       return state.pages;
+    },
+    lastLocation(state) {
+      return state.lastLocation;
+    },
+    isBookInitialized(state) {
+      return state.isBookInitialized;
     }
   },
   mutations: {
@@ -95,8 +102,9 @@ const store = new Vuex.Store({
     },
     gotoCfi(state, cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
+      if (!state.book.gotoCfi) return;
       state.book.gotoCfi(cfi).then(() => {
-        state.$forceUpdate();
+        // state.$forceUpdate();
         this.commit("saveLastLocation");
       });
     },
@@ -139,11 +147,11 @@ const store = new Vuex.Store({
 function init(store) {
   const jsonBookmarks = localStorage.getItem("bookmarks");
   if (jsonBookmarks) {
-    Vue.set(store, "bookmarks", JSON.parse(jsonBookmarks));
+    Vue.set(store.state, "bookmarks", JSON.parse(jsonBookmarks));
   }
   const jsonLastLocation = localStorage.getItem("lastLocation");
   if (jsonLastLocation) {
-    Vue.set(store, "lastLocation", JSON.parse(jsonLastLocation));
+    Vue.set(store.state, "lastLocation", JSON.parse(jsonLastLocation));
   }
   return store;
 }
