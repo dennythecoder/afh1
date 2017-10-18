@@ -1,29 +1,29 @@
 <template>
 	<div class="toolbar-container">
 		<div class="toolbar">
-
-			<div class="icon" @click="gotoHome">
-				<i class="fa fa-home"></i>
-			</div>
-			<div class="icon" @click="gotoTOC">
-				<i class="fa fa-list"></i>
-			</div>
-			<div class="icon" @click="gotoSearcher" v-if="!isSearcher">
-				<i class="fa fa-search"></i>
-			</div>
-			<div class="icon" v-if="isReader && !isBookmarked" @click="createBookmark">
-				<i class="fa fa-bookmark-o"></i>
-			</div>
-			<div class="icon" v-if="isReader && isBookmarked" @click="destroyBookmark">
-				<i class="fa fa-bookmark"></i>
-			</div>
-			<div class="icon" v-if="isReader" @click="prevPage">
-				<i class="fa fa-arrow-left"></i>
-			</div>
-			<div class="icon" v-if="isReader" @click="nextPage">
-				<i class="fa fa-arrow-right"></i>
-			</div>
-			<span style="color:black">{{$router.path}}</span>
+			<q-btn @click="gotoHome">
+				<q-icon name="fa-home" color="primary"></q-icon>
+			</q-btn>
+			
+			<q-btn @click="gotoTOC">
+				<q-icon name="fa-list" color="primary"></q-icon>
+			</q-btn>
+			<q-btn @click="gotoSearcher" v-if="!isSearcher">
+				<q-icon name="fa-search" color="primary"></q-icon>
+			</q-btn>
+			<q-btn v-if="isReader && !isBookmarked" @click="createBookmark">
+				<q-icon name="fa-bookmark-o" color="primary"></q-icon>
+			</q-btn>
+			<q-btn  v-if="isReader && isBookmarked" @click="destroyBookmark">
+				<q-icon name="fa-bookmark" color="primary"></q-icon>
+			</q-btn>
+			<q-btn  v-if="isReader" @click="prevPage">
+				<q-icon name="fa-arrow-left" color="primary"></q-icon>
+			</q-btn>
+			<q-btn v-if="isReader" @click="nextPage">
+				<q-icon name="fa-arrow-right" color="primary"></q-icon>
+			</q-btn>
+			<span style="color:black" color="primary">{{$router.path}}</span>
 		</div>
 
 		<div class="toolbar-content">
@@ -33,7 +33,12 @@
 </template>
 
 <script>
+import { QBtn, QIcon } from "quasar";
 export default {
+  components: {
+    QBtn,
+    QIcon
+  },
   computed: {
     isBookmarked() {
       return this.$store.getters.isBookmarked;
