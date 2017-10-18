@@ -5,17 +5,13 @@
           <input type="text" v-model="searchTerm" @keyup.enter="searchPages" />
           <i @click="searchPages" class="fa fa-search"></i>
       </div>
-			<ul class="list">
-				<li v-for="(result, index) in results"
-					@click="gotoResult(result)"
-					class="ripple"
-          :key="index"
-				>
-					
-					{{result.page}}
-					
-				</li>
-			</ul>
+      <div class="btn-container">
+        <q-btn v-for="(result, index) in searchResults"
+            @click="gotoResult(result)"
+            :key="index" outline color="primary" class="full-width">
+            {{result.page}}
+        </q-btn>
+      </div>
 		</Toolbar>
 	</div>
 </template>
@@ -47,19 +43,22 @@
 
 </style>
 <script>
-import Vue from "vue";
 import Toolbar from "./Toolbar.vue";
+import { QBtn } from "quasar";
 export default {
   data() {
     return {
-      searchTerm: "",
-      results: []
+      searchTerm: this.$store.getters.searchTerm
     };
+  },
+  computed: {
+    searchResults() {
+      return this.$store.getters.searchResults;
+    }
   },
   methods: {
     searchPages() {
-      let results = this.$store.commit("searchPages", this.searchTerm);
-      Vue.set(this, "results", results);
+      this.$store.commit("searchPages", this.searchTerm);
     },
     gotoResult(result) {
       let cfi = /epubcfi\((.*?)\)/.exec(result.cfi)[1];
@@ -68,7 +67,8 @@ export default {
     }
   },
   components: {
-    Toolbar
+    Toolbar,
+    QBtn
   }
 };
 </script>

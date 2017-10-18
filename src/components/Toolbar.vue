@@ -23,10 +23,8 @@
 				<q-btn flat v-if="isReader" @click="nextPage">
 					<q-icon name="fa-arrow-right" color="primary"></q-icon>
 				</q-btn>
-			</div>
-			
+			</div>	
 		</q-toolbar>
-
 		<div class="toolbar-content">
 			<slot scope="default"></slot>
 		</div>

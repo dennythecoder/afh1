@@ -63,6 +63,9 @@ const store = new Vuex.Store({
         }
       }
       return result;
+    },
+    searchTerm(state) {
+      return state.searchTerm;
     }
   },
   mutations: {

@@ -5,7 +5,6 @@
 				<q-btn outline color="primary" class="full-width"
 					v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
-				
 					:key="chapterIndex"
 				>
 					{{chapter.label}}
