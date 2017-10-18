@@ -31,11 +31,11 @@ const store = new Vuex.Store({
       }
       return false;
     },
-    path(state) {
-      return state.route;
+    chapters(state) {
+      return state.chapters;
     }
   },
-  mutation: {
+  mutations: {
     generatePagination(state) {
       let store = this;
       store.pages.splice(1, this.pages.length - 1);
@@ -66,69 +66,69 @@ const store = new Vuex.Store({
         }
       }
       return result;
-    }
-  },
+    },
 
-  setBook(state, book) {
-    state.book = book;
-    state.isBookInitialized = true;
-  },
+    setBook(state, book) {
+      state.book = book;
+      state.isBookInitialized = true;
+    },
 
-  createBookmark(state) {
-    this.mutations.saveLastLocation();
-    const bookmark = this.lastLocation;
-    this.bookmarks.push(bookmark);
-    localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
-  },
-  destroyBookmark() {
-    for (var i = 0; i < this.bookmarks.length; i++) {
-      const bookmark = this.bookmarks[i];
-      if (bookmark.location === this.lastLocation.location) {
-        this.bookmarks.splice(i, 1);
-        localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
-      }
-    }
-  },
-  gotoCfi(cfi) {
-    // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
-    let store = this;
-    store.book.gotoCfi(cfi).then(function() {
-      store.$forceUpdate();
-      store.mutations.saveLastLocation();
-    });
-  },
-  nextPage(state) {
-    state.book.nextPage();
-    this.mutations.saveLastLocation();
-  },
-  prevPage(state) {
-    state.book.prevPage();
-    this.mutations.saveLastLocation();
-  },
-
-  saveLastLocation(state) {
-    function getChapterName(href) {
-      for (var i = 0; i < state.chapters.length; i++) {
-        if (state.chapters[i].href === href) {
-          return state.chapters[i].label;
+    createBookmark(state) {
+      this.mutations.saveLastLocation();
+      const bookmark = this.lastLocation;
+      this.bookmarks.push(bookmark);
+      localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
+    },
+    destroyBookmark() {
+      for (var i = 0; i < this.bookmarks.length; i++) {
+        const bookmark = this.bookmarks[i];
+        if (bookmark.location === this.lastLocation.location) {
+          this.bookmarks.splice(i, 1);
+          localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
         }
       }
+    },
+    gotoCfi(cfi) {
+      // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
+      let store = this;
+      store.book.gotoCfi(cfi).then(function() {
+        store.$forceUpdate();
+        store.mutations.saveLastLocation();
+      });
+    },
+    nextPage(state) {
+      state.book.nextPage();
+      this.mutations.saveLastLocation();
+    },
+    prevPage(state) {
+      state.book.prevPage();
+      this.mutations.saveLastLocation();
+    },
+
+    saveLastLocation(state) {
+      function getChapterName(href) {
+        for (var i = 0; i < state.chapters.length; i++) {
+          if (state.chapters[i].href === href) {
+            return state.chapters[i].label;
+          }
+        }
+      }
+
+      const cfi = state.book.getCurrentLocationCfi();
+      let result = /epubcfi\((.*)\)/.exec(cfi);
+      let location = result[1].replace(/\//g, "-");
+      let href = state.book.currentChapter.href;
+      let chapterName = getChapterName(href);
+      let lastLocation = {
+        location: location,
+        href: href,
+        chapterName: chapterName
+      };
+
+      const json = JSON.stringify(lastLocation);
+      localStorage.setItem("lastLocation", json);
+      state.lastLocation = lastLocation;
     }
-
-    const cfi = state.book.getCurrentLocationCfi();
-    let result = /epubcfi\((.*)\)/.exec(cfi);
-    let location = result[1].replace(/\//g, "-");
-    let href = state.book.currentChapter.href;
-    let chapterName = getChapterName(href);
-    let lastLocation = {
-      location: location,
-      href: href,
-      chapterName: chapterName
-    };
-
-    const json = JSON.stringify(lastLocation);
-    localStorage.setItem("lastLocation", json);
-    state.lastLocation = lastLocation;
   }
 });
 
