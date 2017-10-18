@@ -132,7 +132,6 @@ export default {
     Toolbar
   },
   mounted() {
-    console.log(this.$store);
     this.$nextTick(() => this.init());
   }
 };

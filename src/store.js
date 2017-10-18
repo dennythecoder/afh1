@@ -33,22 +33,24 @@ const store = new Vuex.Store({
     },
     chapters(state) {
       return state.chapters;
+    },
+    pages(state) {
+      return state.pages;
     }
   },
   mutations: {
     generatePagination(state) {
-      let store = this;
-      store.pages.splice(1, this.pages.length - 1);
+      state.pages.splice(1, state.pages.length - 1);
       const localStoragePages = localStorage.getItem("pages");
       if (localStoragePages) {
         let worker = new Worker("./src/ww-json-parser.js");
         worker.onmessage = function(response) {
-          store.pages.push(response.data);
+          state.pages.push(response.data);
         };
         worker.postMessage(localStoragePages);
       } else {
-        store.book.generatePagination().then(function(pages) {
-          Vue.set(store, "pages", pages);
+        state.book.generatePagination().then(function(pages) {
+          Vue.set(state, "pages", pages);
           localStorage.setItem("pages", JSON.stringify(pages));
         });
       }
