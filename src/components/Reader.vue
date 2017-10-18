@@ -3,9 +3,7 @@
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
 			<div v-touch-swipe="swipeHandler"  class="content" :style="styleObj" :id="id">
 			</div>
-
 		</Toolbar>
-
 	</div>
 </template>
 
