@@ -20,6 +20,10 @@ export default new VueRouter({
       component: Bookmarks
     },
     {
+      path: "/Reader/:cfi",
+      component: Reader
+    },
+    {
       path: "/Reader",
       component: Reader
     },

@@ -42,7 +42,6 @@ export default {
   data() {
     return {
       id: "epubViewer",
-      bookmarks: [],
       currentCfi: ""
     };
   },
@@ -86,11 +85,10 @@ export default {
         vm.currentCfi = location.replace(/\//g, "-");
       });
       vm.book.forceSingle();
-
+      this.$store.commit("setBook", vm.book);
       if (vm.$route.params.cfi) {
         vm.gotoCfi("epubcfi(" + vm.$route.params.cfi.replace(/-/g, "/") + ")");
       }
-      this.$store.commit("setBook", vm.book);
 
       vm.book.getToc().then(function(chapters) {
         chapters.forEach(function(chapter) {

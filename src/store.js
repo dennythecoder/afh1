@@ -95,10 +95,9 @@ const store = new Vuex.Store({
     },
     gotoCfi(state, cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
-      let store = this;
-      store.book.gotoCfi(cfi).then(function() {
-        store.$forceUpdate();
-        store.mutations.saveLastLocation();
+      state.book.gotoCfi(cfi).then(function() {
+        state.$forceUpdate();
+        state.mutations.saveLastLocation();
       });
     },
     nextPage(state) {
@@ -148,5 +147,5 @@ function init(store) {
   }
   return store;
 }
-
+window.store = store;
 export default init(store);
