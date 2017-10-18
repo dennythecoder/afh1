@@ -2,7 +2,7 @@
 	<div class="toc">
 		<Toolbar>
 			<div class="btn-container">
-				<q-btn rounded color="primary" class="full-width"
+				<q-btn outline color="primary" class="full-width"
 					v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
 				
