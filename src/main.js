@@ -13,7 +13,7 @@ require(`./themes/app.${__THEME}.styl`);
 import Vue from "vue";
 import Quasar from "quasar";
 import router from "./router";
-import store from "./store";
+import store from "./store/index";
 import Toolbar from "./components/Toolbar.vue";
 
 Vue.config.productionTip = false;
