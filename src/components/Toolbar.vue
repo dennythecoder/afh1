@@ -1,30 +1,31 @@
 <template>
 	<div class="toolbar-container">
-		<div class="toolbar">
-			<q-btn @click="gotoHome">
-				<q-icon name="fa-home" color="primary"></q-icon>
-			</q-btn>
+		<q-toolbar class="toolbar">
+			<div style="width:95%;margin:auto;text-align:center;">
+				<q-btn flat @click="gotoHome">
+					<q-icon name="fa-home" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat @click="gotoTOC">
+					<q-icon name="fa-list" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat @click="gotoSearcher" v-if="!isSearcher">
+					<q-icon name="fa-search" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat v-if="isReader && !isBookmarked" @click="createBookmark">
+					<q-icon name="fa-bookmark-o" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat  v-if="isReader && isBookmarked" @click="destroyBookmark">
+					<q-icon name="fa-bookmark" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat v-if="isReader" @click="prevPage">
+					<q-icon name="fa-arrow-left" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat v-if="isReader" @click="nextPage">
+					<q-icon name="fa-arrow-right" color="primary"></q-icon>
+				</q-btn>
+			</div>
 			
-			<q-btn @click="gotoTOC">
-				<q-icon name="fa-list" color="primary"></q-icon>
-			</q-btn>
-			<q-btn @click="gotoSearcher" v-if="!isSearcher">
-				<q-icon name="fa-search" color="primary"></q-icon>
-			</q-btn>
-			<q-btn v-if="isReader && !isBookmarked" @click="createBookmark">
-				<q-icon name="fa-bookmark-o" color="primary"></q-icon>
-			</q-btn>
-			<q-btn  v-if="isReader && isBookmarked" @click="destroyBookmark">
-				<q-icon name="fa-bookmark" color="primary"></q-icon>
-			</q-btn>
-			<q-btn  v-if="isReader" @click="prevPage">
-				<q-icon name="fa-arrow-left" color="primary"></q-icon>
-			</q-btn>
-			<q-btn v-if="isReader" @click="nextPage">
-				<q-icon name="fa-arrow-right" color="primary"></q-icon>
-			</q-btn>
-			<span style="color:black" color="primary">{{$router.path}}</span>
-		</div>
+		</q-toolbar>
 
 		<div class="toolbar-content">
 			<slot scope="default"></slot>
@@ -33,11 +34,12 @@
 </template>
 
 <script>
-import { QBtn, QIcon } from "quasar";
+import { QBtn, QIcon, QToolbar } from "quasar";
 export default {
   components: {
     QBtn,
-    QIcon
+    QIcon,
+    QToolbar
   },
   computed: {
     isBookmarked() {

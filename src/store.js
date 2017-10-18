@@ -12,7 +12,8 @@ const store = new Vuex.Store({
     chapters: [],
     isBookInitialized: false,
     pages: [],
-    router
+    router,
+    searchTerm: ""
   },
   getters: {
     isReader(state) {
@@ -43,6 +44,25 @@ const store = new Vuex.Store({
     },
     isBookInitialized(state) {
       return state.isBookInitialized;
+    },
+    bookmarks(state) {
+      return state.bookmarks;
+    },
+    searchResults(state) {
+      let result = [];
+      let searchTerm = state.searchTerm;
+      if (searchTerm === "") return result;
+      for (var i = 0; i < state.pages.length; i++) {
+        var page = state.pages[i];
+        if (
+          page &&
+          page.content &&
+          page.content.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
+        ) {
+          result.push(page);
+        }
+      }
+      return result;
     }
   },
   mutations: {
@@ -66,18 +86,7 @@ const store = new Vuex.Store({
       }
     },
     searchPages(state, searchTerm) {
-      let result = [];
-      for (var i = 0; i < this.pages.length; i++) {
-        var page = this.pages[i];
-        if (
-          page &&
-          page.content &&
-          page.content.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
-        ) {
-          result.push(page);
-        }
-      }
-      return result;
+      state.searchTerm = searchTerm;
     },
 
     setBook(state, book) {
@@ -86,17 +95,17 @@ const store = new Vuex.Store({
     },
 
     createBookmark(state) {
-      this.mutations.saveLastLocation();
-      const bookmark = this.lastLocation;
-      this.bookmarks.push(bookmark);
-      localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
+      this.commit("saveLastLocation");
+      const bookmark = state.lastLocation;
+      state.bookmarks.push(bookmark);
+      localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
     },
     destroyBookmark(state) {
-      for (var i = 0; i < this.bookmarks.length; i++) {
-        const bookmark = this.bookmarks[i];
-        if (bookmark.location === this.lastLocation.location) {
-          this.bookmarks.splice(i, 1);
-          localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
+      for (var i = 0; i < state.bookmarks.length; i++) {
+        const bookmark = state.bookmarks[i];
+        if (bookmark.location === state.lastLocation.location) {
+          state.bookmarks.splice(i, 1);
+          localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
         }
       }
     },
