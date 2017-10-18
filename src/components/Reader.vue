@@ -1,7 +1,7 @@
 <template>
 	<div class="reader" v-touch-swipe="swipeHandler">
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
-			<div v-inserted="init" class="content" :style="styleObj" :id="id">
+			<div  class="content" :style="styleObj" :id="id">
 			</div>
 
 		</Toolbar>
@@ -36,6 +36,7 @@
 <script>
 let ePub = window.ePub;
 import Toolbar from "./Toolbar.vue";
+import { TouchSwipe } from "quasar";
 
 export default {
   data() {
@@ -44,6 +45,9 @@ export default {
       bookmarks: [],
       currentCfi: ""
     };
+  },
+  directives: {
+    TouchSwipe
   },
   methods: {
     prevPage() {
@@ -93,7 +97,6 @@ export default {
           vm.$store.commit("addChapter", chapter);
         });
       });
-      vm.placeSwipeListener();
       this.$store.commit("generatePagination");
     }
   },
@@ -127,6 +130,10 @@ export default {
   },
   components: {
     Toolbar
+  },
+  mounted() {
+    console.log(this.$store);
+    this.$nextTick(() => this.init());
   }
 };
 </script>
