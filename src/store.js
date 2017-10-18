@@ -58,7 +58,7 @@ const store = new Vuex.Store({
         });
       }
     },
-    searchPages(searchTerm) {
+    searchPages(state, searchTerm) {
       let result = [];
       for (var i = 0; i < this.pages.length; i++) {
         var page = this.pages[i];
@@ -84,7 +84,7 @@ const store = new Vuex.Store({
       this.bookmarks.push(bookmark);
       localStorage.setItem("bookmarks", JSON.stringify(this.bookmarks));
     },
-    destroyBookmark() {
+    destroyBookmark(state) {
       for (var i = 0; i < this.bookmarks.length; i++) {
         const bookmark = this.bookmarks[i];
         if (bookmark.location === this.lastLocation.location) {
@@ -93,7 +93,7 @@ const store = new Vuex.Store({
         }
       }
     },
-    gotoCfi(cfi) {
+    gotoCfi(state, cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
       let store = this;
       store.book.gotoCfi(cfi).then(function() {
