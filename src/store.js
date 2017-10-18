@@ -22,8 +22,8 @@ const store = new Vuex.Store({
       return state.router.currentRoute.path.indexOf("/searcher") !== -1;
     },
     isBookmarked(state) {
-      let bookmarks = this.bookmarks,
-        lastLocation = this.lastLocation;
+      let bookmarks = state.bookmarks,
+        lastLocation = state.lastLocation;
       for (var i = 0; i < bookmarks.length; i++) {
         if (bookmarks[i].location === lastLocation.location) {
           return true;
@@ -95,18 +95,18 @@ const store = new Vuex.Store({
     },
     gotoCfi(state, cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
-      state.book.gotoCfi(cfi).then(function() {
+      state.book.gotoCfi(cfi).then(() => {
         state.$forceUpdate();
-        state.mutations.saveLastLocation();
+        this.commit("saveLastLocation");
       });
     },
     nextPage(state) {
       state.book.nextPage();
-      this.mutations.saveLastLocation();
+      this.commit("saveLastLocation");
     },
     prevPage(state) {
       state.book.prevPage();
-      this.mutations.saveLastLocation();
+      this.commit("saveLastLocation");
     },
 
     saveLastLocation(state) {

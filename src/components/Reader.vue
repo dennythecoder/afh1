@@ -1,7 +1,7 @@
 <template>
-	<div class="reader" v-touch-swipe="swipeHandler">
+	<div class="reader" >
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
-			<div  class="content" :style="styleObj" :id="id">
+			<div v-touch-swipe="swipeHandler"  class="content" :style="styleObj" :id="id">
 			</div>
 
 		</Toolbar>
