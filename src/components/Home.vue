@@ -3,10 +3,10 @@
 		<h3></h3>
 		<h1>Air Force Handbook 1 </h1>
     <div class="btn-container" >
-      <q-btn rounded color="primary" @click="gotoReading" class="full-width">Chapters</q-btn>
-      <q-btn rounded color="primary" @click="gotoSearcher" class="full-width">Search</q-btn>
-      <q-btn rounded color="primary" v-if="hasLastViewed" @click="gotoLastViewed" class="full-width">Continue Reading</q-btn>	
-      <q-btn rounded color="primary" v-if="hasBookmarks" @click="gotoBookmarks" class="full-width">Bookmarks</q-btn>	
+      <q-btn outline color="primary" @click="gotoReading" class="full-width">Chapters</q-btn>
+      <q-btn outline color="primary" @click="gotoSearcher" class="full-width">Search</q-btn>
+      <q-btn outline color="primary" v-if="hasLastViewed" @click="gotoLastViewed" class="full-width">Continue Reading</q-btn>	
+      <q-btn outline color="primary" v-if="hasBookmarks" @click="gotoBookmarks" class="full-width">Bookmarks</q-btn>	
     </div>	
 	</div>
 </template>
