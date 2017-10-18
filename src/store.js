@@ -39,11 +39,14 @@ const store = new Vuex.Store({
     }
   },
   mutations: {
+    addChapter(state, chapter) {
+      state.chapters.push(chapter);
+    },
     generatePagination(state) {
       state.pages.splice(1, state.pages.length - 1);
       const localStoragePages = localStorage.getItem("pages");
       if (localStoragePages) {
-        let worker = new Worker("./src/ww-json-parser.js");
+        let worker = new Worker("./statics/ww-json-parser.js");
         worker.onmessage = function(response) {
           state.pages.push(response.data);
         };

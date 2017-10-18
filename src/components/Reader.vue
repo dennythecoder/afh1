@@ -76,7 +76,7 @@ export default {
 
       var el = document.getElementById(vm.id);
       var computedStyle = window.getComputedStyle(el);
-      vm.book = ePub("docs/AFH-1/", {
+      vm.book = ePub("../statics/docs/AFH-1/", {
         width: computedStyle.width,
         height: computedStyle.height
       });
