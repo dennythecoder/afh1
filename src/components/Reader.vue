@@ -70,10 +70,10 @@ export default {
     },
 
     highlightText(text) {
+      if (!text) return;
       let doc = document.querySelector("iframe").contentDocument;
       let paragraphs = doc.querySelectorAll("p");
       const searchRegExp = new RegExp(text.toLocaleLowerCase(), "ig");
-      console.log(paragraphs.length);
       for (let i = 0; i < paragraphs.length; i++) {
         let paragraph = paragraphs[i];
         paragraph.innerHTML = paragraph.innerHTML.replace(

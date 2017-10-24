@@ -8,7 +8,10 @@
 				<q-btn flat @click="gotoTOC">
 					<q-icon name="fa-list" color="primary"></q-icon>
 				</q-btn>
-				<q-btn flat @click="gotoSearcher" v-if="!isSearcher">
+				<q-btn flat @click="gotoSearcher" v-if="!$store.getters.searchTerm && !isSearcher">
+					<q-icon name="fa-search" color="primary"></q-icon>
+				</q-btn>
+				<q-btn flat v-if="$store.getters.searchTerm && !isSearcher" @click="clearSearch" style="border-bottom:2px solid #17d">
 					<q-icon name="fa-search" color="primary"></q-icon>
 				</q-btn>
 				<q-btn flat v-if="isReader && !isBookmarked" @click="createBookmark">
@@ -72,6 +75,9 @@ export default {
     },
     destroyBookmark() {
       this.$store.commit("destroyBookmark");
+    },
+    clearSearch() {
+      this.$store.commit("searchPages", "");
     }
   }
 };
