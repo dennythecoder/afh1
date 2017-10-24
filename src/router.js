@@ -32,11 +32,9 @@ export default new VueRouter({
       path: "/TOC",
       component: TOC
     },
-
-    // Always leave this last one
     {
       path: "*",
       component: Home
-    } // Not found
+    }
   ]
 });
