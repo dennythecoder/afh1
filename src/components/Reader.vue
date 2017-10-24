@@ -78,13 +78,13 @@ export default {
         let paragraph = paragraphs[i];
         paragraph.innerHTML = paragraph.innerHTML.replace(
           searchRegExp,
-          result => "<mark class='highlight'>" + result + "</mark>"
+          result => "<mark class='highlight search'>" + result + "</mark>"
         );
       }
     },
     clearHighlights() {
       let doc = document.querySelector("iframe").contentDocument;
-      let highlights = doc.querySelectorAll("mark");
+      let highlights = doc.querySelectorAll("mark.highlight.search");
       for (let i = 0; i < highlights.length; i++) {
         highlights[i].outerHTML = highlights[i].innerHTML;
       }
