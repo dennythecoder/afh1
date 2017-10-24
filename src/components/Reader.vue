@@ -65,7 +65,29 @@ export default {
 
     gotoCfi(cfi) {
       // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
-      this.$store.commit("gotoCfi", cfi);
+      let promise = this.$store.dispatch("gotoCfi", cfi);
+      return promise;
+    },
+
+    highlightText(text) {
+      let doc = document.querySelector("iframe").contentDocument;
+      let paragraphs = doc.querySelectorAll("p");
+      const searchRegExp = new RegExp(text.toLocaleLowerCase(), "ig");
+      console.log(paragraphs.length);
+      for (let i = 0; i < paragraphs.length; i++) {
+        let paragraph = paragraphs[i];
+        paragraph.innerHTML = paragraph.innerHTML.replace(
+          searchRegExp,
+          result => "<mark class='highlight'>" + result + "</mark>"
+        );
+      }
+    },
+    clearHighlights() {
+      let doc = document.querySelector("iframe").contentDocument;
+      let highlights = doc.querySelectorAll("mark");
+      for (let i = 0; i < highlights.length; i++) {
+        highlights[i].outerHTML = highlights[i].innerHTML;
+      }
     },
 
     init() {
@@ -120,9 +142,17 @@ export default {
     },
     "$route.params.cfi": function(val) {
       if (val && this.$store.getters.isBookInitialized) {
-        console.log(val);
-        this.gotoCfi("epubcfi(" + val.replace(/-/g, "/") + ")");
+        this.gotoCfi("epubcfi(" + val.replace(/-/g, "/") + ")").then(() => {
+          this.clearHighlights();
+          if (this.$store.getters.searchTerm) {
+            this.highlightText(this.$store.getters.searchTerm);
+          }
+        });
       }
+    },
+    "$store.getters.searchTerm": function(val) {
+      this.clearHighlights();
+      this.highlightText(val);
     }
   },
   components: {

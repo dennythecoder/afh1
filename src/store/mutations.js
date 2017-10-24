@@ -44,14 +44,7 @@ export default {
       }
     }
   },
-  gotoCfi(state, cfi) {
-    // expecting string like this -- epubcfi(/6/2[titlepage]!/4/1:0)
-    if (!state.book.gotoCfi) return;
-    state.book.gotoCfi(cfi).then(() => {
-      // state.$forceUpdate();
-      this.commit("saveLastLocation");
-    });
-  },
+
   nextPage(state) {
     state.book.nextPage();
     this.commit("saveLastLocation");
