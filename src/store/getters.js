@@ -36,7 +36,7 @@ export default {
     let searchTerm = state.searchTerm;
     if (searchTerm === "") return result;
     for (var i = 0; i < state.pages.length; i++) {
-      var page = state.pages[i];
+      let page = state.pages[i];
       if (
         page &&
         page.content &&
