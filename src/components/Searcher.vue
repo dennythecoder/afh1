@@ -9,7 +9,7 @@
         <q-btn v-for="(result, index) in searchResults"
             @click="gotoResult(result)"
             :key="index" outline color="primary" class="full-width">
-            {{result.page}}
+            {{result.shortResult}}
         </q-btn>
       </div>
 		</Toolbar>

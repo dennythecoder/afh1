@@ -15,6 +15,7 @@ export default {
       worker.postMessage(localStoragePages);
     } else {
       state.book.generatePagination().then(function(pages) {
+        console.log(pages);
         Vue.set(state, "pages", pages);
         localStorage.setItem("pages", JSON.stringify(pages));
       });

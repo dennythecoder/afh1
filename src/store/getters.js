@@ -42,7 +42,19 @@ export default {
         page.content &&
         page.content.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
       ) {
-        result.push(page);
+        const index = page.content
+          .toLowerCase()
+          .indexOf(searchTerm.toLowerCase());
+        const buffer = 50;
+        const start = index - buffer > 0 ? index - buffer : 0;
+        const end =
+          index + buffer < page.content.length - 1
+            ? index + buffer
+            : page.content.length - 1;
+        result.push({
+          shortResult: "..." + page.content.substring(start, end) + "...",
+          ...page
+        });
       }
     }
     return result;

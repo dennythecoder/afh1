@@ -11,8 +11,8 @@
 				<q-btn flat @click="gotoSearcher" v-if="!$store.getters.searchTerm && !isSearcher">
 					<q-icon name="fa-search" color="primary"></q-icon>
 				</q-btn>
-				<q-btn flat v-if="$store.getters.searchTerm && !isSearcher" @click="clearSearch" style="border-bottom:2px solid #17d">
-					<q-icon name="fa-search" color="primary"></q-icon>
+				<q-btn flat v-if="$store.getters.searchTerm && !isSearcher" @click="clearSearch">
+					<q-icon name="fa-search cross-out" color="primary"></q-icon>
 				</q-btn>
 				<q-btn flat v-if="isReader && !isBookmarked" @click="createBookmark">
 					<q-icon name="fa-bookmark-o" color="primary"></q-icon>
@@ -100,6 +100,15 @@ export default {
 
 .toolbar-content {
 	margin-top: 13vh;
+}
+
+.cross-out:after{
+    position:absolute;
+    content:"/";
+    font-weight:bolder;
+    font-size:1.7em;
+    left:45%;
+    color:#33f;
 }
 
 </style>
