@@ -102,40 +102,4 @@ export default {
 	margin-top: 13vh;
 }
 
-.icon {
-	list-style: none;
-
-	background-color: white;
-	padding: 4px 4px;
-	font-family: Georgia;
-	margin-bottom: 5px;
-
-	color: #17d;
-	font-weight: bold;
-	border: solid 1px #39f;
-	border-radius: 4px 4px;
-	margin-top: 5px;
-	padding-top: 2vh;
-	height: 6vh;
-	width: 6vh;
-	vertical-align: bottom;
-	display: inline-block;
-}
-
-.icon:hover {
-	cursor: pointer;
-
-	color: #03a;
-	border: solid 1px #17d;
-}
-
-
-
-.icon:active {
-	background-color: #eee;
-}
-
-.icon i {
-	font-size: 5vh;
-}
 </style>
