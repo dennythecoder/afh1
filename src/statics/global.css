@@ -1,0 +1,11 @@
+
+
+
+.cross-out:after{
+    position:absolute;
+    content:"/";
+    font-weight:bolder;
+    font-size:1.7em;
+    left:7px;
+    top:-10px;
+}
