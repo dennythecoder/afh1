@@ -39,7 +39,8 @@
 
 <script>
 import { QBtn, QIcon, QToolbar } from "quasar";
-import { highlight } from "../highlight";
+import highlight from "../highlight";
+import { mapMutations } from "vuex";
 export default {
   components: {
     QBtn,
@@ -59,6 +60,17 @@ export default {
   },
 
   methods: {
+    ...mapMutations([
+      "prevPage",
+      "nextPage",
+      "createBookmark",
+      "destroyBookmark",
+      "createHighlight",
+      "destroyHighlight"
+    ]),
+    clearSearch() {
+      this.$store.commit("searchPages", "");
+    },
     gotoTOC() {
       window.location.hash = "#/toc";
     },
@@ -68,24 +80,11 @@ export default {
     gotoSearcher() {
       window.location.hash = "#/searcher";
     },
-    prevPage() {
-      this.$store.commit("prevPage");
-    },
-    nextPage() {
-      this.$store.commit("nextPage");
-    },
-    createBookmark() {
-      this.$store.commit("createBookmark");
-    },
-    destroyBookmark() {
-      this.$store.commit("destroyBookmark");
-    },
-    clearSearch() {
-      this.$store.commit("searchPages", "");
-    },
+
     highlight() {
       const win = document.querySelector("iframe").contentWindow;
-      highlight("yellow", win);
+      const selection = highlight("yellow", win);
+      this.createHighlight({ ...selection });
     }
   }
 };

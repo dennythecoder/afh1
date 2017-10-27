@@ -29,7 +29,20 @@ export default {
     state.book = book;
     state.isBookInitialized = true;
   },
-
+  createHighlight(state, highlight) {
+    this.commit("saveLastLocation");
+    highlight.location = state.lastLocation;
+    state.highlights.push(highlight);
+    localStorage.setItem("highlights", JSON.stringify(state.highlights));
+  },
+  destroyHighlight(state, highlight) {
+    for (let i = 0; i < state.highlights.length; i++) {
+      if (state.highlights[i] === highlight) {
+        state.highlights.splice(1, i);
+        localStorage.setItem("highlights", JSON.stringify(state.highlights));
+      }
+    }
+  },
   createBookmark(state) {
     this.commit("saveLastLocation");
     const bookmark = state.lastLocation;

@@ -1,4 +1,4 @@
-export function highlight(colour, win = window) {
+export default function highlight(colour, win = window) {
   const doc = win.document,
     sel = doc.getSelection();
   let col = colour;
@@ -19,8 +19,5 @@ export function highlight(colour, win = window) {
     doc.execCommand("BackColor", false, col);
   }
   doc.designMode = "off";
+  return sel;
 }
-
-export default {
-  highlight
-};

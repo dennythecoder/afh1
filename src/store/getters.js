@@ -1,4 +1,11 @@
 export default {
+  bookmarks: state => state.bookmarks,
+  chapters: state => state.chapters,
+  highlights: state => state.highlights,
+  isBookInitialized: state => state.isBookInitialized,
+  lastLocation: state => state.lastLocation,
+  pages: state => state.pages,
+  searchTerm: state => state.searchTerm,
   isReader(state) {
     let currentRoute = state.router.currentRoute;
     return currentRoute.path.indexOf("/reader") !== -1;
@@ -15,21 +22,6 @@ export default {
       }
     }
     return false;
-  },
-  chapters(state) {
-    return state.chapters;
-  },
-  pages(state) {
-    return state.pages;
-  },
-  lastLocation(state) {
-    return state.lastLocation;
-  },
-  isBookInitialized(state) {
-    return state.isBookInitialized;
-  },
-  bookmarks(state) {
-    return state.bookmarks;
   },
   searchResults(state) {
     let result = [];
@@ -58,8 +50,5 @@ export default {
       }
     }
     return result;
-  },
-  searchTerm(state) {
-    return state.searchTerm;
   }
 };
