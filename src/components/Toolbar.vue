@@ -26,6 +26,9 @@
 				<q-btn flat v-if="isReader" @click="nextPage">
 					<q-icon name="fa-arrow-right" color="primary"></q-icon>
 				</q-btn>
+				<q-btn flat v-if="isReader" @click="highlight">
+					<q-icon name="fa-pencil" color="primary"></q-icon>
+				</q-btn>
 			</div>	
 		</q-toolbar>
 		<div class="toolbar-content">
@@ -36,6 +39,7 @@
 
 <script>
 import { QBtn, QIcon, QToolbar } from "quasar";
+import { highlight } from "../highlight";
 export default {
   components: {
     QBtn,
@@ -78,6 +82,10 @@ export default {
     },
     clearSearch() {
       this.$store.commit("searchPages", "");
+    },
+    highlight() {
+      const win = document.querySelector("iframe").contentWindow;
+      highlight("yellow", win);
     }
   }
 };
