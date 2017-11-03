@@ -4,6 +4,7 @@ import Bookmarks from "./components/Bookmarks.vue";
 import Home from "./components/Home.vue";
 import Searcher from "./components/Searcher.vue";
 import TOC from "./components/TOC.vue";
+import Highlights from "./components/Highlights.vue";
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,10 @@ export default new VueRouter({
     {
       path: "/Bookmarks",
       component: Bookmarks
+    },
+    {
+      path: "/Highlights",
+      component: Highlights
     },
     {
       path: "/Reader/:cfi"
