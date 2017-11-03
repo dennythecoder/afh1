@@ -23,6 +23,10 @@ function init(store) {
   if (jsonLastLocation) {
     Vue.set(store.state, "lastLocation", JSON.parse(jsonLastLocation));
   }
+  const jsonHighlights = localStorage.getItem("highlights");
+  if (jsonHighlights) {
+    Vue.set(store.state, "highlights", JSON.parse(jsonHighlights));
+  }
   return store;
 }
 window.store = store;

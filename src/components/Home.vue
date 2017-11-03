@@ -19,16 +19,19 @@ export default {
     QBtn
   },
   methods: {
-    gotoReading: function() {
+    gotoReading() {
       window.location.hash = "#/toc";
     },
-    gotoBookmarks: function() {
+    gotoBookmarks() {
       window.location.hash = "#/bookmarks";
     },
-    gotoSearcher: function() {
+    gotoSearcher() {
       window.location.hash = "#/searcher";
     },
-    gotoLastViewed: function() {
+    gotoHighlights(){
+      window.location.hash = "#/highlights";
+    },
+    gotoLastViewed() {
       const lastLocation = localStorage.getItem("lastLocation");
       if (lastLocation) {
         window.location.hash =
@@ -37,15 +40,12 @@ export default {
     }
   },
   computed: {
-    hasLastViewed: function() {
+    hasLastViewed() {
       let lastLocation = localStorage.getItem("lastLocation");
       return lastLocation && true;
     },
-    hasBookmarks: function() {
-      var bookmarks = localStorage.getItem("bookmarks");
-      if (!bookmarks) return false;
-      var bookmarksArr = JSON.parse(bookmarks);
-      return bookmarksArr.length > 0;
+    hasBookmarks() {
+      return this.$store.getters.highlights.length > 0;
     }
   }
 };

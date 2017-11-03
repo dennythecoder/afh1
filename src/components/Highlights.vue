@@ -2,10 +2,10 @@
 	<div class="bookmarks">
 		<Toolbar>
       <q-btn outline color="primary" class="full-width"
-      		v-for="(bookmark, index) in bookmarks" 
-					@click="gotoLocation(bookmark)" 
+      		v-for="(highlight, index) in highlights" 
+					@click="gotoLocation(highlight.location)" 
 					:key="index"
-      >{{bookmark.chapterName}}</q-btn>	
+      >{{highlight.location.chapterName}}</q-btn>	
 
 		</Toolbar>
 
@@ -32,8 +32,8 @@ export default {
     };
   },
   computed: {
-    bookmarks() {
-      return this.$store.getters.bookmarks;
+    highlights() {
+      return this.$store.getters.highlights;
     }
   },
   methods: {

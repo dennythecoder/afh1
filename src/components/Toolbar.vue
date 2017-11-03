@@ -2,33 +2,15 @@
 	<div class="toolbar-container">
 		<q-toolbar class="toolbar">
 			<div style="width:95%;margin:auto;text-align:center;">
-				<q-btn flat @click="gotoHome">
-					<q-icon name="fa-home" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat @click="gotoTOC">
-					<q-icon name="fa-list" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat @click="gotoSearcher" v-if="!$store.getters.searchTerm && !isSearcher">
-					<q-icon name="fa-search" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat v-if="$store.getters.searchTerm && !isSearcher" @click="clearSearch">
-					<q-icon name="fa-search cross-out" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat v-if="isReader && !isBookmarked" @click="createBookmark">
-					<q-icon name="fa-bookmark-o" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat  v-if="isReader && isBookmarked" @click="destroyBookmark">
-					<q-icon name="fa-bookmark" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat v-if="isReader" @click="prevPage">
-					<q-icon name="fa-arrow-left" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat v-if="isReader" @click="nextPage">
-					<q-icon name="fa-arrow-right" color="primary"></q-icon>
-				</q-btn>
-				<q-btn flat v-if="isReader" @click="highlight">
-					<q-icon name="fa-pencil" color="primary"></q-icon>
-				</q-btn>
+        <ToolbarButton name="fa-home" @click="gotoHome" />
+        <ToolbarButton name="fa-list" @click="gotoTOC" />
+        <ToolbarButton name="fa-search" @click="gotoSearcher" v-if="!$store.getters.searchTerm && !isSearcher"/>
+        <ToolbarButton name="fa-search cross-out" @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher" />
+        <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />
+        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />
+        <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
+        <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
+        <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader" />
 			</div>	
 		</q-toolbar>
 		<div class="toolbar-content">
@@ -39,13 +21,15 @@
 
 <script>
 import { QBtn, QIcon, QToolbar } from "quasar";
-import highlight from "../highlight";
+import ToolbarButton from "./ToolbarButton";
+import { CreateHighlightManager } from "../highlight";
 import { mapMutations } from "vuex";
 export default {
   components: {
     QBtn,
     QIcon,
-    QToolbar
+    QToolbar,
+    ToolbarButton
   },
   computed: {
     isBookmarked() {
@@ -82,8 +66,8 @@ export default {
     },
 
     highlight() {
-      const win = document.querySelector("iframe").contentWindow;
-      const selection = highlight("yellow", win);
+      const hm = CreateHighlightManager();
+      const selection = hm.highlight("yellow");
       this.createHighlight({ ...selection });
     }
   }
