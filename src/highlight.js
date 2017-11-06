@@ -1,4 +1,8 @@
 class HighlightManager {
+  constructor(store) {
+    this.$store = store;
+  }
+
   get window() {
     return defaultWindow();
   }
@@ -37,7 +41,12 @@ class HighlightManager {
     let start = getNodeLocation(rng.startContainer);
     let end = getNodeLocation(rng.endContainer);
     start.offset = rng.startOffset;
-    end.offset = rng.startOffset;
+    if (rng.startContainer === rng.endContainer) {
+      end.offset = start.offset + rng.toString().length;
+    } else {
+      end.offset = rng.startOffset;
+    }
+
     let textContent = rng.toString();
     return {
       start,
@@ -48,19 +57,46 @@ class HighlightManager {
   createRange(start, end) {
     let startEl = this.findEl(start);
     let endEl = this.findEl(end);
+    if (!startEl || !endEl) return;
+    window.doc = this.document;
     let startNode = startEl.childNodes[start.index];
     let endNode = endEl.childNodes[end.index];
     let range = document.createRange();
-    range.setStart(startNode, start.offset);
-    range.setEnd(endNode, end.offset);
+    let startOffset = pickOffset(startNode, start);
+    let endOffset = pickOffset(endNode, end);
+    range.setStart(startNode, startOffset);
+    range.setEnd(endNode, endOffset);
     return range;
   }
   findEl(location) {
-    let elements = this.document.querySelectorAll(location.tagName);
-    for (let i = 0; i < elements.length; i++) {
-      if (elements[i].outerHTML === location.outerHTML) {
-        return elements[i];
+    return findElInDocument(location, this.document);
+  }
+  markHighlights() {
+    let highlights = this.$store.getters.highlights;
+    highlights.forEach(highlight => {
+      if (
+        highlight.location.chapterName ===
+        this.$store.getters.lastLocation.chapterName
+      ) {
+        let range = this.createRange(highlight.start, highlight.end);
+        if (range) {
+          this.highlightRange("yellow", range);
+          this.selection.removeAllRanges();
+        }
       }
+    });
+  }
+}
+
+function pickOffset(node, location) {
+  return node.length < location.offset ? node.length - 1 : location.offset;
+}
+
+function findElInDocument(location, doc) {
+  let elements = doc.querySelectorAll(location.tagName);
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i].outerHTML === location.outerHTML) {
+      return elements[i];
     }
   }
 }
@@ -84,16 +120,15 @@ function getNodeLocation(node) {
 
 let _defaultWindow;
 function defaultWindow() {
-  if (_defaultWindow) return _defaultWindow;
   let iframe = document.querySelector("iframe");
   _defaultWindow = iframe ? iframe.contentWindow : window;
   return _defaultWindow;
 }
 
 let _highlightManager;
-export function CreateHighlightManager() {
+export function CreateHighlightManager(store) {
   if (_highlightManager) return _highlightManager;
-  _highlightManager = new HighlightManager();
+  _highlightManager = new HighlightManager(store);
   window.hh = _highlightManager;
   return _highlightManager;
 }

@@ -96,15 +96,17 @@ export default {
 
       var el = document.getElementById(vm.id);
       var computedStyle = window.getComputedStyle(el);
-      vm.book = ePub("../statics/docs/AFH-1/", {
+      let handbookFolder = "./statics/docs/AFH-1/";
+      if (DEV) {
+        handbookFolder = "." + handbookFolder;
+      }
+      vm.book = ePub(handbookFolder, {
         width: computedStyle.width,
         height: computedStyle.height
       });
 
       vm.book.renderTo("epubViewer");
-      vm.book.on("renderer:locationChanged", function(location) {
-        vm.currentCfi = location.replace(/\//g, "-");
-      });
+      vm.book.on("renderer:locationChanged", this.locationChangeHandler);
       vm.book.forceSingle();
       this.$store.commit("setBook", vm.book);
       if (vm.$route.params.cfi) {
@@ -118,18 +120,13 @@ export default {
       });
       this.$store.commit("generatePagination");
     },
+    locationChangeHandler(location) {
+      this.currentCfi = location.replace(/\//g, "-");
+      this.markHighlights();
+    },
     markHighlights() {
-      const hm = CreateHighlightManager();
-      let highlights = this.$store.getters.highlights;
-      highlights.forEach(highlight => {
-        if (
-          highlight.location.chapterName ===
-          this.$store.getters.lastLocation.chapterName
-        ) {
-          let range = hm.createRange(highlight.start, highlight.end);
-          hm.highlightRange("yellow", range);
-        }
-      });
+      const hm = CreateHighlightManager(this.$store);
+      hm.markHighlights();
     }
   },
   computed: {
