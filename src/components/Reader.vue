@@ -36,6 +36,7 @@
 let ePub = window.ePub;
 import Toolbar from "./Toolbar.vue";
 import { TouchSwipe } from "quasar";
+import { CreateHighlightManager } from "../highlight";
 
 export default {
   data() {
@@ -116,6 +117,19 @@ export default {
         });
       });
       this.$store.commit("generatePagination");
+    },
+    markHighlights() {
+      const hm = CreateHighlightManager();
+      let highlights = this.$store.getters.highlights;
+      highlights.forEach(highlight => {
+        if (
+          highlight.location.chapterName ===
+          this.$store.getters.lastLocation.chapterName
+        ) {
+          let range = hm.createRange(highlight.start, highlight.end);
+          hm.highlightRange("yellow", range);
+        }
+      });
     }
   },
   computed: {
@@ -148,6 +162,7 @@ export default {
             this.highlightText(this.$store.getters.searchTerm);
           }
         });
+        this.markHighlights();
       }
     },
     "$store.getters.searchTerm": function(val) {

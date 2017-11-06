@@ -7,6 +7,7 @@
       <q-btn outline color="primary" @click="gotoSearcher" class="full-width">Search</q-btn>
       <q-btn outline color="primary" v-if="hasLastViewed" @click="gotoLastViewed" class="full-width">Continue Reading</q-btn>	
       <q-btn outline color="primary" v-if="hasBookmarks" @click="gotoBookmarks" class="full-width">Bookmarks</q-btn>	
+      <q-btn outline color="primary" v-if="hasHighlights" @click="gotoHighlights" class="full-width">Highlights</q-btn>	    
     </div>	
 	</div>
 </template>
@@ -28,7 +29,7 @@ export default {
     gotoSearcher() {
       window.location.hash = "#/searcher";
     },
-    gotoHighlights(){
+    gotoHighlights() {
       window.location.hash = "#/highlights";
     },
     gotoLastViewed() {
@@ -45,6 +46,9 @@ export default {
       return lastLocation && true;
     },
     hasBookmarks() {
+      return this.$store.getters.highlights.length > 0;
+    },
+    hasHighlights() {
       return this.$store.getters.highlights.length > 0;
     }
   }

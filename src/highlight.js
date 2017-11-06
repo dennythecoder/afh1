@@ -1,7 +1,9 @@
 class HighlightManager {
-  constructor() {
-    this.window = defaultWindow();
-    this.document = this.window.document;
+  get window() {
+    return defaultWindow();
+  }
+  get document() {
+    return this.window.document;
   }
   get selection() {
     return this.window.getSelection();
@@ -10,16 +12,16 @@ class HighlightManager {
   highlightRange(colour, range) {
     let sel = this.selection,
       doc = this.document;
-
     sel.removeAllRanges();
     sel.addRange(range);
+    let location = this.getLocation();
     doc.designMode = "on";
     doc.execCommand("HiliteColor", false, colour);
     doc.designMode = "off";
-    return this.getLocation();
+    return location;
   }
   highlight(colour) {
-    const sel = this.selection;
+    let sel = this.selection;
     let col = colour;
     if (!sel.baseNode) return;
     if (sel.baseNode.parentElement.style.backgroundColor === colour) {
@@ -35,7 +37,7 @@ class HighlightManager {
     let start = getNodeLocation(rng.startContainer);
     let end = getNodeLocation(rng.endContainer);
     start.offset = rng.startOffset;
-    end.offset = rng.endOffset;
+    end.offset = rng.startOffset;
     let textContent = rng.toString();
     return {
       start,
@@ -54,9 +56,7 @@ class HighlightManager {
     return range;
   }
   findEl(location) {
-    let elements = this.document.querySelectorAll(
-      location.tagName + "." + location.className
-    );
+    let elements = this.document.querySelectorAll(location.tagName);
     for (let i = 0; i < elements.length; i++) {
       if (elements[i].outerHTML === location.outerHTML) {
         return elements[i];
