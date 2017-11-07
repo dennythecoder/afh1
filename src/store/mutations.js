@@ -36,9 +36,9 @@ export default {
   },
   destroyHighlight(state, highlight) {
     for (let i = 0; i < state.highlights.length; i++) {
-      console.log(state.highlights[i], highlight);
       if (state.highlights[i] === highlight) {
-        state.highlights.splice(1, i);
+        state.destroyedHighlights.push(highlight);
+        state.highlights.splice(i, 1);
         localStorage.setItem("highlights", JSON.stringify(state.highlights));
       }
     }

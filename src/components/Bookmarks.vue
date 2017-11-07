@@ -1,12 +1,13 @@
 <template>
 	<div class="bookmarks">
 		<Toolbar>
-      <q-btn outline color="primary" class="full-width"
-      		v-for="(bookmark, index) in bookmarks" 
-					@click="gotoLocation(bookmark)" 
-					:key="index"
-      >{{bookmark.chapterName}}</q-btn>	
-
+      <template v-for="(bookmark, index) in bookmarks">
+        <q-btn outline color="primary" class="full-width"
+            @click="gotoLocation(bookmark)" 
+            :key="index"
+        >{{bookmark.chapterName}}</q-btn>	
+        <bookmarks-context-menu :key="index" :bookmark="bookmark"></bookmarks-context-menu>
+      </template> 
 		</Toolbar>
 
 	</div>
@@ -22,6 +23,7 @@
 
 <script>
 import Toolbar from "./Toolbar.vue";
+import BookmarksContextMenu from "./BookmarksContextMenu";
 import { QBtn } from "quasar";
 export default {
   data() {
@@ -44,8 +46,16 @@ export default {
       }
     }
   },
+  watch: {
+    "bookmarks.length": function(val) {
+      if (!val) {
+        window.location.hash = "#/home";
+      }
+    }
+  },
   components: {
     Toolbar,
+    BookmarksContextMenu,
     QBtn
   }
 };

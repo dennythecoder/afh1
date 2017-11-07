@@ -56,6 +56,13 @@ export default {
       this.$store.commit("removeHighlight");
     }
   },
+  watch: {
+    "highlights.length": function(val) {
+      if (!val) {
+        window.location.hash = "#/home";
+      }
+    }
+  },
   components: {
     Toolbar,
     QBtn,

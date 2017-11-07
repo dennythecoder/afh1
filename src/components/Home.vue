@@ -46,7 +46,7 @@ export default {
       return lastLocation && true;
     },
     hasBookmarks() {
-      return this.$store.getters.highlights.length > 0;
+      return this.$store.getters.bookmarks.length > 0;
     },
     hasHighlights() {
       return this.$store.getters.highlights.length > 0;
