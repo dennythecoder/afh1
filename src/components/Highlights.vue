@@ -1,28 +1,32 @@
 <template>
 	<div class="bookmarks">
 		<Toolbar>
-      <q-btn outline color="primary" class="full-width"
-      		v-for="(highlight, index) in highlights" 
-					@click="gotoLocation(highlight.location)" 
-					:key="index"
-      >{{highlight.location.chapterName}}</q-btn>	
+      <template	v-for="(highlight, index) in highlights" >
 
+      <q-btn outline color="primary" 
+					@click="gotoLocation(highlight.location)" :key="index" 
+          class="full-width"
+      >
+
+        {{highlight.location.chapterName}}
+        {{highlight.textContent | shortened}}
+        
+      </q-btn>	
+      <highlights-context-menu :highlight="highlight" :key="index"></highlights-context-menu>
+      </template>
+      
 		</Toolbar>
 
 	</div>
 </template>
 
-<style>
-.bookmarks {
-	background-color: white;
-	height: 84vh;
-}
-</style>
+
 
 
 <script>
-import Toolbar from "./Toolbar.vue";
 import { QBtn } from "quasar";
+import Toolbar from "./Toolbar.vue";
+import HighlightsContextMenu from "./HighlightsContextMenu.vue";
 export default {
   data() {
     return {
@@ -30,6 +34,11 @@ export default {
       resizeCount: 0,
       book: {}
     };
+  },
+  filters: {
+    shortened(text) {
+      return text.length > 30 ? text.substr(0, 30) + "..." : text;
+    }
   },
   computed: {
     highlights() {
@@ -42,11 +51,21 @@ export default {
       if (location) {
         window.location.hash = "#/reader/" + bookmarkLocation;
       }
+    },
+    removeHighlight(highlight) {
+      this.$store.commit("removeHighlight");
     }
   },
   components: {
     Toolbar,
-    QBtn
+    QBtn,
+    HighlightsContextMenu
   }
 };
 </script>
+<style>
+.bookmarks {
+	background-color: white;
+	height: 84vh;
+}
+</style>
