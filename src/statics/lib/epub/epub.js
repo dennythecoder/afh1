@@ -2885,7 +2885,8 @@ EPUBJS.Book.prototype.unpack = function(packageXml){
 				book.pageList = book.contents.pageList = pageList;
 
 				// Replace HREFs with CFI
-				book.pageList.forEach(function(pg){
+
+				_.each(book.pageList, function(pg){
 					if(!pg.cfi) {
 						wait += 1;
 						epubcfi.generateCfiFromHref(pg.href, book).then(function(cfi){
@@ -2990,7 +2991,7 @@ EPUBJS.Book.prototype.generatePageList = function(width, height, flag){
 			spinePos = next;
 			chapter = new EPUBJS.Chapter(this.spine[spinePos], this.store);
 			pager.displayChapter(chapter, this.globalLayoutProperties).then(function(chap){
-				pager.pageMap.forEach(function(item){
+				_.each(pager.pageMap, function(item){
 					currentPage += 1;
 					pageList.push({
 						"cfi" : item.start,
@@ -3106,7 +3107,7 @@ EPUBJS.Book.prototype.networkListeners = function(){
 // Listen to all events the renderer triggers and pass them as book events
 EPUBJS.Book.prototype.listenToRenderer = function(renderer){
 	var book = this;
-	renderer.Events.forEach(function(eventName){
+	_.each(renderer.Events, function(eventName){
 		renderer.on(eventName, function(e){
 			book.trigger(eventName, e);
 		});
@@ -3170,7 +3171,7 @@ EPUBJS.Book.prototype.loadChange = function(url){
 };
 
 EPUBJS.Book.prototype.unlistenToRenderer = function(renderer){
-	renderer.Events.forEach(function(eventName){
+	_.each(renderer.Events, function(eventName){
 		renderer.off(eventName);
 	});
 };
@@ -4342,7 +4343,7 @@ EPUBJS.Chapter.prototype.replace = function(query, func, finished, progress){
 		finished(false);
 		return;
 	}
-	resources.forEach(function(item){
+	_.each(resources, function(item){
 		var called = false;
 		var after = function(result, full){
 			if(called === false) {
@@ -4373,7 +4374,7 @@ EPUBJS.Chapter.prototype.replaceWithStored = function(query, attr, func, callbac
 			},
 			finished = function(notempty) {
 				if(callback) callback();
-				EPUBJS.core.values(_oldUrls).forEach(function(url){
+				_.each(EPUBJS.core.values(_oldUrls), function(url){
 					_store.revokeUrl(url);
 				});
 
@@ -4777,7 +4778,7 @@ EPUBJS.core.resolveUrl = function(base, path) {
 	folders.pop();
 
 	paths = path.split("/");
-	paths.forEach(function(p){
+	_.each(paths, function(p){
 		if(p === ".."){
 			folders.pop();
 		}else{
@@ -4979,7 +4980,7 @@ EPUBJS.core.nsResolver = function(prefix) {
 //https://stackoverflow.com/questions/13482352/xquery-looking-for-text-with-single-quote/13483496#13483496
 EPUBJS.core.cleanStringForXpath = function(str)  {
 		var parts = str.match(/[^'"]+|['"]/g);
-		parts = parts.map(function(part){
+		parts = _.map(parts, function(part){
 				if (part === "'")  {
 						return '\"\'\"'; // output "'"
 				}
@@ -5021,7 +5022,7 @@ EPUBJS.core.defaults = function(obj) {
 
 EPUBJS.core.extend = function(target) {
     var sources = [].slice.call(arguments, 1);
-    sources.forEach(function (source) {
+    _.each(sources, function (source) {
       if(!source) return;
       Object.getOwnPropertyNames(source).forEach(function(propName) {
         Object.defineProperty(target, propName, Object.getOwnPropertyDescriptor(source, propName));
@@ -5110,7 +5111,7 @@ EPUBJS.EpubCFI.prototype.generateChapterComponent = function(_spineNodeIndex, _p
 };
 
 EPUBJS.EpubCFI.prototype.generatePathComponent = function(steps) {
-  return steps.map(function(part) {
+  return _.map(steps, function(part) {
     return (part.index + 1) * 2 + (part.id ? '[' + part.id + ']' : '');
   }).join('/');
 };
@@ -5237,7 +5238,7 @@ EPUBJS.EpubCFI.prototype.parse = function(cfiStr) {
 
   cfi.steps = [];
 
-  path.forEach(function(part){
+  _.each(path, function(part){
     var step;
 
     if(part) {
@@ -5530,7 +5531,7 @@ EPUBJS.EpubCFI.prototype.generateCfiFromRange = function(range, base) {
 EPUBJS.EpubCFI.prototype.generateXpathFromSteps = function(steps) {
   var xpath = [".", "*"];
 
-  steps.forEach(function(step){
+  _.each(steps,function(step){
     var position = step.index + 1;
 
     if(step.id){
@@ -5548,7 +5549,7 @@ EPUBJS.EpubCFI.prototype.generateXpathFromSteps = function(steps) {
 EPUBJS.EpubCFI.prototype.generateQueryFromSteps = function(steps) {
   var query = ["html"];
 
-  steps.forEach(function(step){
+  _.each(steps, function(step){
     var position = step.index + 1;
 
     if(step.id){
@@ -5705,14 +5706,14 @@ EPUBJS.Hooks = (function(){
 	hooks.prototype.getHooks = function(){
 		var plugs;
 		this.hooks = {};
-		Array.prototype.slice.call(arguments).forEach(function(arg){
+		_.each(Array.prototype.slice.call(arguments), function(arg){
 			this.hooks[arg] = [];
-		}, this);
+		}.bind(this));
 
 		for (var plugType in this.hooks) {
 			plugs = EPUBJS.core.values(EPUBJS.hooks[plugType]);
 
-			plugs.forEach(function(hook){
+			_.each(plugs,function(hook){
 				this.registerHook(plugType, hook);
 			}, this);
 		}
@@ -5731,7 +5732,7 @@ EPUBJS.Hooks = (function(){
 					this.hooks[type].push(toAdd);
 				}
 			}else if(Array.isArray(toAdd)){
-				toAdd.forEach(function(hook){
+				_.each(toAdd, function(hook){
 					if(toFront) {
 						this.hooks[type].unshift(hook);
 					}else{
@@ -5747,7 +5748,7 @@ EPUBJS.Hooks = (function(){
 				this.hooks[type] = [toAdd];
 			}else if(Array.isArray(toAdd)){
 				this.hooks[type] = [];
-				toAdd.forEach(function(hook){
+				_.each(toAdd, function(hook){
 					this.hooks[type].push(hook);
 				}, this);
 			}
@@ -5766,7 +5767,7 @@ EPUBJS.Hooks = (function(){
 					this.hooks[type].splice(index, 1);
 				}
 			}else if(Array.isArray(toRemove)){
-				toRemove.forEach(function(hook){
+				_.each(toRemove, function(hook){
 					index = this.hooks[type].indexOf(hook);
 					if (index > -1) {
 						this.hooks[type].splice(index, 1);
@@ -5793,7 +5794,7 @@ EPUBJS.Hooks = (function(){
 			if(count <= 0 && callback) callback();
 		}
 
-		hooks.forEach(function(hook){
+		_.each(hooks, function(hook){
 			hook(countdown, passed);
 		});
 	};
@@ -6264,7 +6265,7 @@ EPUBJS.Pagination = function(pageList) {
 };
 
 EPUBJS.Pagination.prototype.process = function(pageList){
-	pageList.forEach(function(item){
+	_.each(pageList, function(item){
 		this.pages.push(item.page);
 		this.locations.push(item.cfi);
 	}, this);
@@ -6436,7 +6437,7 @@ EPUBJS.Parser.prototype.packageContents = function(packageXml, baseUrl){
 	spine = parse.spine(spineNode, manifest);
 
 	spineIndexByURL = {};
-	spine.forEach(function(item){
+	_.each(spine, function(item){
 		spineIndexByURL[item.href] = item.index;
 	});
 
@@ -6564,7 +6565,7 @@ EPUBJS.Parser.prototype.manifest = function(manifestXml){
 		items = Array.prototype.slice.call(selected);
 
 	//-- Create an object with the id as key
-	items.forEach(function(item){
+	_.each(items, function(item){
 		var id = item.getAttribute('id'),
 				href = item.getAttribute('href') || '',
 				type = item.getAttribute('media-type') || '',
@@ -6593,7 +6594,7 @@ EPUBJS.Parser.prototype.spine = function(spineXml, manifest){
 	var epubcfi = new EPUBJS.EpubCFI();
 
 	//-- Add to array to mantain ordering and cross reference with manifest
-	return items.map(function(item, index) {
+	return _.map(items, function(item, index) {
 		var Id = item.getAttribute('idref');
 		var cfiBase = epubcfi.generateChapterComponent(spineNodeIndex, index, Id);
 		var props = item.getAttribute('properties') || '';
@@ -7377,7 +7378,7 @@ EPUBJS.Renderer.prototype.reconcileLayoutSettings = function(global, chapter){
 		}
 	}
 	//-- Get the chapter's display type
-	chapter.forEach(function(prop){
+	_.each(chapter, function(prop){
 		var rendition = prop.replace("rendition:", '');
 		var split = rendition.indexOf("-");
 		var property, value;
@@ -7805,7 +7806,7 @@ EPUBJS.Renderer.prototype.mapPage = function(){
 		var result;
 		var ranges = renderer.splitTextNodeIntoWordsRanges(node);
 
-		ranges.forEach(function(range){
+		_.each(ranges, function(range){
 			var pos = range.getBoundingClientRect();
 
 			if(!pos || (pos.width === 0 && pos.height === 0)) {
@@ -8329,9 +8330,10 @@ EPUBJS.Renderer.prototype.addEventListeners = function(){
 	if(!this.render.document) {
 		return;
 	}
-	this.listenedEvents.forEach(function(eventName){
+
+	_.each(this.listenedEvents, function(eventName){
 		this.render.document.addEventListener(eventName, this.triggerEvent.bind(this), false);
-	}, this);
+	}.bind(this));
 
 };
 
@@ -8339,9 +8341,9 @@ EPUBJS.Renderer.prototype.removeEventListeners = function(){
 	if(!this.render.document) {
 		return;
 	}
-	this.listenedEvents.forEach(function(eventName){
+	_.each(this.listenedEvents, function(eventName){
 		this.render.document.removeEventListener(eventName, this.triggerEvent, false);
-	}, this);
+	}.bind(this));
 
 };
 
@@ -8418,7 +8420,7 @@ EPUBJS.Renderer.prototype.replace = function(query, func, finished, progress){
 		finished(false);
 		return;
 	}
-	resources.forEach(function(item){
+	_.each(resources, function(item){
 		var called = false;
 		var after = function(result, full){
 			if(called === false) {
@@ -8613,7 +8615,7 @@ EPUBJS.replace.cssImports = function (_store, base, text) {
     deferred.resolve(allImportText);
   }
 
-  importFiles.forEach(function (fileUrl) {
+  _.each(importFiles, function (fileUrl) {
       var full = EPUBJS.core.resolveUrl(base, fileUrl);
       full = EPUBJS.core.uri(full).path;
       _store.getText(full).then(function(importText){
@@ -8642,7 +8644,7 @@ EPUBJS.replace.cssUrls = function(_store, base, text){
 		return deferred.promise;
 	}
 
-	var promises = matches.map(function(str) {
+	var promises = _.map(matches, function(str) {
 		var full = EPUBJS.core.resolveUrl(base, str.replace(/url\(|[|\)|\'|\"]|\?.*$/g, ''));
 		return _store.getUrl(full).then(function(url) {
 			text = text.replace(str, 'url("'+url+'")');
@@ -9035,7 +9037,7 @@ EPUBJS.Unarchiver.prototype.toStorage = function(entries){
 		if(count === 0) that.afterSaved();
 	}
 
-	entries.forEach(function(entry){
+	_.each(entries, function(entry){
 
 		setTimeout(function(entry){
 			that.saveEntryFileToStorage(entry, callback);
