@@ -1,5 +1,4 @@
 import Vue from "vue";
-
 export default {
   addChapter(state, chapter) {
     state.chapters.push(chapter);
@@ -37,6 +36,8 @@ export default {
   destroyHighlight(state, highlight) {
     for (let i = 0; i < state.highlights.length; i++) {
       if (state.highlights[i] === highlight) {
+        highlight.start = highlight.endLocation.start;
+        highlight.end = highlight.endLocation.end;
         state.destroyedHighlights.push(highlight);
         state.highlights.splice(i, 1);
         localStorage.setItem("highlights", JSON.stringify(state.highlights));

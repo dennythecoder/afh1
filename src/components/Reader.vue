@@ -1,5 +1,5 @@
 <template>
-	<div class="reader" >
+	<div class="reader" :class="appearHandler">
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
       <div v-touch-swipe="swipeHandler">
 			  <div  class="content" :style="styleObj" :id="id"></div>
@@ -22,6 +22,18 @@
 	z-index: -1;
 }
 
+.reader-in{
+  animation-name: slowly-appear;
+  animation-duration:1.5s;
+}
+@keyframes slowly-appear {
+  0%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+}
 .content {
 
 	min-height: 80vh !important;
@@ -42,7 +54,8 @@ export default {
   data() {
     return {
       id: "epubViewer",
-      currentCfi: ""
+      currentCfi: "",
+      appearHandler: ""
     };
   },
   directives: {
@@ -165,6 +178,16 @@ export default {
     "$store.getters.searchTerm": function(val) {
       this.clearHighlights();
       this.highlightText(val);
+    },
+    "$store.getters.isReader": function(val) {
+      const hm = CreateHighlightManager();
+      hm.markHighlights();
+      if (val) {
+        this.appearHandler = "reader-in";
+        setTimeout(() => {
+          this.appearHandler = "";
+        }, 2000);
+      }
     }
   },
   components: {

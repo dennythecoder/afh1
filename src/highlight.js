@@ -22,6 +22,7 @@ class HighlightManager {
     doc.designMode = "on";
     doc.execCommand("HiliteColor", false, colour);
     doc.designMode = "off";
+    location.endLocation = this.getLocation();
     return location;
   }
   highlight(colour) {
@@ -44,7 +45,7 @@ class HighlightManager {
     if (rng.startContainer === rng.endContainer) {
       end.offset = start.offset + rng.toString().length;
     } else {
-      end.offset = rng.startOffset;
+      end.offset = rng.endOffset;
     }
 
     let textContent = rng.toString();
@@ -73,14 +74,24 @@ class HighlightManager {
   }
   markHighlights() {
     let highlights = this.$store.getters.highlights;
+    let destroyedHighlights = this.$store.getters.destroyedHighlights;
+    this.markSelectedHighlights(highlights, "yellow");
+    this.markSelectedHighlights(destroyedHighlights, "transparent");
+  }
+  markSelectedHighlights(highlights, color) {
     highlights.forEach(highlight => {
       if (
         highlight.location.chapterName ===
         this.$store.getters.lastLocation.chapterName
       ) {
-        let range = this.createRange(highlight.start, highlight.end);
+        let range =
+          highlight.range && highlight.range.anchorNode
+            ? highlight.range
+            : this.createRange(highlight.start, highlight.end);
         if (range) {
-          this.highlightRange("yellow", range);
+          this.highlightRange(color, range);
+          highlight.range = this.selection.getRangeAt(0);
+
           this.selection.removeAllRanges();
         }
       }

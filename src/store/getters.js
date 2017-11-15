@@ -2,6 +2,7 @@ export default {
   bookmarks: state => state.bookmarks,
   chapters: state => state.chapters,
   highlights: state => state.highlights,
+  destroyedHighlights: state => state.destroyedHighlights,
   isBookInitialized: state => state.isBookInitialized,
   lastLocation: state => state.lastLocation,
   pages: state => state.pages,
