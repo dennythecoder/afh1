@@ -57,6 +57,17 @@ export default {
     Toolbar,
     BookmarksContextMenu,
     QBtn
+  },
+  beforeCreate() {
+    window.addEventListener("selectstart", onSelectListener);
+  },
+  beforeDestroy() {
+    window.removeEventListener("selectstart", onSelectListener);
   }
 };
+
+function onSelectListener(e) {
+  e.preventDefault();
+  return false;
+}
 </script>

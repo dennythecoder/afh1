@@ -69,10 +69,10 @@ export default {
     HighlightsContextMenu
   },
   beforeCreate() {
-    window.addEventListener("select", onSelectListener);
+    window.addEventListener("selectstart", onSelectListener);
   },
   beforeDestroy() {
-    window.removeEventListener("select", onSelectListener);
+    window.removeEventListener("selectstart", onSelectListener);
   }
 };
 
