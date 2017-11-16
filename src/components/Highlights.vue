@@ -67,8 +67,19 @@ export default {
     Toolbar,
     QBtn,
     HighlightsContextMenu
+  },
+  beforeCreate() {
+    window.addEventListener("select", onSelectListener);
+  },
+  beforeDestroy() {
+    window.removeEventListener("select", onSelectListener);
   }
 };
+
+function onSelectListener(e) {
+  e.preventDefault();
+  return false;
+}
 </script>
 <style>
 .bookmarks {

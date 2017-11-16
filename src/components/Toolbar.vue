@@ -2,10 +2,7 @@
 	<div class="toolbar-container">
 		<q-toolbar class="toolbar">
 			<div style="width:95%;margin:auto;text-align:center;">
-        <ToolbarButton name="fa-home" @click="gotoHome" />
-        <ToolbarButton name="fa-list" @click="gotoTOC" />
-        <ToolbarButton name="fa-search" @click="gotoSearcher" v-if="!$store.getters.searchTerm && !isSearcher"/>
-        <ToolbarButton name="fa-search cross-out" @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher" />
+        <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
         <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />
         <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
@@ -13,23 +10,49 @@
         <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader" />
 			</div>	
 		</q-toolbar>
-		<div class="toolbar-content">
-			<slot scope="default"></slot>
-		</div>
+    <q-layout ref="layout" view="hHr LpR Fff">
+      <div class="toolbar-content">
+        <slot scope="default"></slot>
+      </div>
+
+    <div slot="left">
+      <q-side-link item to="/home">
+        <ToolbarButton name="fa-home" />
+        Home
+      </q-side-link>
+      <q-side-link item to="/toc">
+        <ToolbarButton name="fa-list" />
+        Table of Contents
+      </q-side-link>
+      <q-side-link item to="/searcher">
+        <ToolbarButton name="fa-search" />
+        Search
+      </q-side-link>
+
+      <q-item @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher">
+        <ToolbarButton name="fa-search cross-out"  />
+        Clear Search
+      </q-item>     
+    
+    </div>
+    </q-layout>
+
 	</div>
 </template>
 
 <script>
-import { QBtn, QIcon, QToolbar } from "quasar";
+import { QToolbar, QCollapsible, QLayout, QItem, QSideLink } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import { CreateHighlightManager } from "../highlight";
 import { mapMutations } from "vuex";
 export default {
   components: {
-    QBtn,
-    QIcon,
     QToolbar,
-    ToolbarButton
+    ToolbarButton,
+    QCollapsible,
+    QLayout,
+    QItem,
+    QSideLink
   },
   computed: {
     isBookmarked() {
@@ -54,17 +77,25 @@ export default {
     ]),
     clearSearch() {
       this.$store.commit("searchPages", "");
+      this.toggleLeft();
     },
     gotoTOC() {
       window.location.hash = "#/toc";
+      this.toggleLeft();
     },
     gotoHome() {
-      window.location.hash = "#/home";
+      this.toggleLeft();
+      setTimeout(() => {
+        window.location.hash = "#/home";
+      }, 50);
     },
     gotoSearcher() {
       window.location.hash = "#/searcher";
+      this.toggleLeft();
     },
-
+    toggleLeft() {
+      this.$refs.layout.toggleLeft();
+    },
     highlight() {
       const hm = CreateHighlightManager();
       const selection = hm.highlight("yellow");

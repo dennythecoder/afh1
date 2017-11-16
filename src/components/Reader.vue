@@ -1,9 +1,8 @@
 <template>
 	<div class="reader" :class="appearHandler">
 		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
-      <div v-touch-swipe="swipeHandler">
-			  <div  class="content" :style="styleObj" :id="id"></div>
-      </div>
+			<div  class="content" :style="styleObj" :id="id"></div>
+      <div v-touch-swipe="swipeHandler" id="swipe-handler" :style="styleObj"></div>
 		</Toolbar>
 	</div>
 </template>
@@ -103,6 +102,32 @@ export default {
         highlights[i].outerHTML = highlights[i].innerHTML;
       }
     },
+    removeContextMenu(win) {
+      win.oncontextmenu = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      };
+    },
+    onBookReady() {
+      let vm = this;
+      vm.book.on("renderer:locationChanged", this.locationChangeHandler);
+      vm.book.forceSingle();
+      this.$store.commit("setBook", vm.book);
+      if (vm.$route.params.cfi) {
+        vm.gotoCfi("epubcfi(" + vm.$route.params.cfi.replace(/-/g, "/") + ")");
+      }
+      let win = document.querySelector("iframe").contentWindow;
+      this.removeContextMenu(win);
+      this.removeContextMenu(window);
+
+      vm.book.getToc().then(function(chapters) {
+        chapters.forEach(function(chapter) {
+          vm.$store.commit("addChapter", chapter);
+        });
+      });
+      this.$store.commit("generatePagination");
+    },
 
     init() {
       let vm = this;
@@ -118,22 +143,12 @@ export default {
         height: computedStyle.height
       });
 
-      vm.book.renderTo("epubViewer");
-      vm.book.on("renderer:locationChanged", this.locationChangeHandler);
-      vm.book.forceSingle();
-      this.$store.commit("setBook", vm.book);
-      if (vm.$route.params.cfi) {
-        vm.gotoCfi("epubcfi(" + vm.$route.params.cfi.replace(/-/g, "/") + ")");
-      }
-
-      vm.book.getToc().then(function(chapters) {
-        chapters.forEach(function(chapter) {
-          vm.$store.commit("addChapter", chapter);
-        });
-      });
-      this.$store.commit("generatePagination");
+      vm.book.renderTo("epubViewer").then(() => this.onBookReady());
     },
     locationChangeHandler(location) {
+      let win = document.querySelector("iframe").contentWindow;
+      this.removeContextMenu(win);
+      this.removeContextMenu(window);
       this.currentCfi = location.replace(/\//g, "-");
       this.markHighlights();
     },
