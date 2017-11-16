@@ -3,8 +3,7 @@
 		<q-toolbar class="toolbar">
 			<div style="width:95%;margin:auto;text-align:center;">
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
-        <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />
-        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />
+
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
         <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader" />
@@ -32,7 +31,16 @@
       <q-item @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher">
         <ToolbarButton name="fa-search cross-out"  />
         Clear Search
-      </q-item>     
+      </q-item> 
+      <q-item @click="createBookmark" v-if="isReader && !isBookmarked" >
+        <ToolbarButton name="fa-bookmark-o"/>
+        Create Bookmark
+      </q-item>
+      <q-item @click="destroyBookmark" v-if="isReader && isBookmarked" >
+        <ToolbarButton name="fa-bookmark" />
+        Remove Bookmark
+      </q-item>
+        
     
     </div>
     </q-layout>
@@ -41,7 +49,7 @@
 </template>
 
 <script>
-import { QToolbar, QCollapsible, QLayout, QItem, QSideLink } from "quasar";
+import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import { CreateHighlightManager } from "../highlight";
 import { mapMutations } from "vuex";
@@ -49,7 +57,6 @@ export default {
   components: {
     QToolbar,
     ToolbarButton,
-    QCollapsible,
     QLayout,
     QItem,
     QSideLink
@@ -70,11 +77,19 @@ export default {
     ...mapMutations([
       "prevPage",
       "nextPage",
-      "createBookmark",
-      "destroyBookmark",
       "createHighlight",
       "destroyHighlight"
     ]),
+    createBookmark() {
+      this.$store.commit("createBookmark");
+      this.toggleLeft();
+      Toast.create({ html: "Bookmark Created!" });
+    },
+    destroyBookmark() {
+      this.$store.commit("destroyBookmark");
+      this.toggleLeft();
+      Toast.create({ html: "Bookmark Removed!" });
+    },
     clearSearch() {
       this.$store.commit("searchPages", "");
       this.toggleLeft();

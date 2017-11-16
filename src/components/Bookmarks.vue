@@ -49,7 +49,8 @@ export default {
   watch: {
     "bookmarks.length": function(val) {
       if (!val) {
-        window.location.hash = "#/home";
+        let push = () => this.$router.push({ path: "/home" });
+        setTimeout(push, 5);
       }
     }
   },
@@ -58,6 +59,7 @@ export default {
     BookmarksContextMenu,
     QBtn
   },
+
   beforeCreate() {
     window.addEventListener("selectstart", onSelectListener);
   },
