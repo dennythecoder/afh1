@@ -7,6 +7,7 @@
     <author email="dennis.headrick.2@us.af.mil" href="http://cordova.io">
     </author>
     <content src="index.html" />
+    <preference name="loadUrlTimeoutValue" value="120000" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
