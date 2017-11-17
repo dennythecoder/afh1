@@ -5575,11 +5575,10 @@ EPUBJS.EpubCFI.prototype.generateRangeFromCfi = function(cfi, _doc) {
   var textLength;
   var query;
   var startContainerParent;
-
   if(typeof cfi === 'string') {
     cfi = this.parse(cfi);
   }
-
+	console.warn(cfi);
   // check spinePos
   if(cfi.spinePos === -1) {
     // Not a valid CFI

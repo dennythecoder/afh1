@@ -7,11 +7,14 @@ export default {
     state.pages.splice(1, state.pages.length - 1);
     const localStoragePages = localStorage.getItem("pages");
     if (localStoragePages) {
-      let worker = new Worker("./statics/ww-json-parser.js");
+      /* let worker = new Worker("./statics/ww-json-parser.js");
       worker.onmessage = function(response) {
         state.pages.push(response.data);
       };
       worker.postMessage(localStoragePages);
+      */
+      let pages = JSON.parse(localStoragePages);
+      Vue.set(state, "pages", pages);
     } else {
       state.book.generatePagination().then(function(pages) {
         Vue.set(state, "pages", pages);
