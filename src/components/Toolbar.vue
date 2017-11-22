@@ -3,10 +3,11 @@
 		<q-toolbar class="toolbar">
 			<div style="width:95%;margin:auto;text-align:center;">
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
-
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
-        <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader" />
+        <ToolbarButton name="fa-pencil-square-o" @click="toggleIsTextSelectable" v-if="isReader && !isTextSelectable" />
+        <ToolbarButton name="fa-pencil-square-o cross-out" @click="toggleIsTextSelectable" v-if="isReader && isTextSelectable" />
+        <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader && isTextSelectable" />
 			</div>	
 		</q-toolbar>
     <q-layout ref="layout" view="hHr LpR Fff">
@@ -28,15 +29,15 @@
         Search
       </q-side-link>
 
-      <q-item @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher">
+      <q-item highlight @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher">
         <ToolbarButton name="fa-search cross-out"  />
         Clear Search
       </q-item> 
-      <q-item @click="createBookmark" v-if="isReader && !isBookmarked" >
+      <q-item highlight @click="createBookmark" v-if="isReader && !isBookmarked" >
         <ToolbarButton name="fa-bookmark-o"/>
         Create Bookmark
       </q-item>
-      <q-item @click="destroyBookmark" v-if="isReader && isBookmarked" >
+      <q-item highlight @click="destroyBookmark" v-if="isReader && isBookmarked" >
         <ToolbarButton name="fa-bookmark" />
         Remove Bookmark
       </q-item>
@@ -52,7 +53,7 @@
 import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import { CreateHighlightManager } from "../highlight";
-import { mapMutations } from "vuex";
+import { mapMutations, mapGetters } from "vuex";
 export default {
   components: {
     QToolbar,
@@ -62,15 +63,12 @@ export default {
     QSideLink
   },
   computed: {
-    isBookmarked() {
-      return this.$store.getters.isBookmarked;
-    },
-    isReader() {
-      return this.$store.getters.isReader;
-    },
-    isSearcher() {
-      return this.$store.getters.isSearcher;
-    }
+    ...mapGetters([
+      "isBookmarked",
+      "isReader",
+      "isSearcher",
+      "isTextSelectable"
+    ])
   },
 
   methods: {
@@ -78,7 +76,8 @@ export default {
       "prevPage",
       "nextPage",
       "createHighlight",
-      "destroyHighlight"
+      "destroyHighlight",
+      "toggleIsTextSelectable"
     ]),
     createBookmark() {
       this.$store.commit("createBookmark");
@@ -146,6 +145,10 @@ export default {
     font-size:1.7em;
     left:45%;
     color:#33f;
+}
+
+.q-item-highlight:hover{
+  cursor:pointer;
 }
 
 </style>

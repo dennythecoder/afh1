@@ -71,7 +71,9 @@ export default {
     state.book.prevPage();
     this.commit("saveLastLocation");
   },
-
+  toggleIsTextSelectable(state) {
+    state.isTextSelectable = !state.isTextSelectable;
+  },
   saveLastLocation(state) {
     function getChapterName(href) {
       for (var i = 0; i < state.chapters.length; i++) {

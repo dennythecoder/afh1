@@ -7,6 +7,7 @@ export default {
   book: {},
   chapters: [],
   isBookInitialized: false,
+  isTextSelectable: false,
   pages: [],
   router,
   searchTerm: ""

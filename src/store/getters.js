@@ -24,6 +24,9 @@ export default {
     }
     return false;
   },
+  isTextSelectable(state) {
+    return state.isTextSelectable;
+  },
   searchResults(state) {
     let result = [];
     let searchTerm = state.searchTerm;

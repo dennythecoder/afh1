@@ -5578,7 +5578,7 @@ EPUBJS.EpubCFI.prototype.generateRangeFromCfi = function(cfi, _doc) {
   if(typeof cfi === 'string') {
     cfi = this.parse(cfi);
   }
-	console.warn(cfi);
+
   // check spinePos
   if(cfi.spinePos === -1) {
     // Not a valid CFI
@@ -6267,7 +6267,7 @@ EPUBJS.Pagination.prototype.process = function(pageList){
 	_.each(pageList, function(item){
 		this.pages.push(item.page);
 		this.locations.push(item.cfi);
-	}, this);
+	}.bind(this));
 	
 	this.pageList = pageList;
 	this.firstPage = parseInt(this.pages[0]);

@@ -1,21 +1,29 @@
 <template>
 	<div class="reader" :class="appearHandler">
-		<Toolbar :is-chapter="true" @next-page="nextPage" @prev-page="prevPage">
-			<div  class="content" :style="styleObj" :id="id"></div>
-      <div v-touch-swipe="swipeHandler" id="swipe-handler" :style="styleObj"></div>
+		<Toolbar>
+			<div class="content" :style="styleObj" :id="id"></div>
+      <div v-show="!isTextSelectable" class="swipe-overlay" v-touch-swipe="swipeHandler"></div>
 		</Toolbar>
 	</div>
 </template>
 
 
 <style>
+.swipe-overlay{
+  height:80vh;
+  width:95%;
+  margin:auto;
+  top:8vh;
+  position:absolute;
+  z-index:3;
+}
 .reader {
 
 	height: 80vh;
 	width: 95%;
 	padding-right: 10px;
 	padding-left: 10px;
-	margin: 0 0;
+	margin: auto;
 	position: absolute;
 	top: 0vh;
 	z-index: -1;
@@ -140,7 +148,10 @@ export default {
       }
       vm.book = ePub(handbookFolder, {
         width: computedStyle.width,
-        height: computedStyle.height
+        height: computedStyle.height,
+        style: {
+          padding: "10px"
+        }
       });
 
       vm.book.renderTo("epubViewer").then(() => this.onBookReady());
@@ -159,7 +170,8 @@ export default {
   },
   computed: {
     styleObj() {
-      var width = window.innerWidth - 40 + "px";
+      var width = window.innerWidth;
+      width *= 0.5;
       return {
         height: "85vh",
         width: width,
@@ -169,6 +181,9 @@ export default {
 
     isVisible() {
       return this.$store.getters.isReader;
+    },
+    isTextSelectable() {
+      return this.$store.getters.isTextSelectable;
     }
   },
   watch: {
