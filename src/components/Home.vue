@@ -1,23 +1,30 @@
 <template>
 	<div class="home">
-		<h3></h3>
+		<h3 @click="debugClicks++"></h3>
 		<h1>Air Force Handbook 1 </h1>
     <div class="btn-container" >
-      <q-btn outline color="primary" @click="gotoReading" class="full-width">Chapters</q-btn>
-      <q-btn outline color="primary" @click="gotoSearcher" class="full-width">Search</q-btn>
-      <q-btn outline color="primary" v-if="hasLastViewed" @click="gotoLastViewed" class="full-width">Continue Reading</q-btn>	
-      <q-btn outline color="primary" v-if="hasBookmarks" @click="gotoBookmarks" class="full-width">Bookmarks</q-btn>	
-      <q-btn outline color="primary" v-if="hasHighlights" @click="gotoHighlights" class="full-width">Highlights</q-btn>	    
+      <list-button @click="gotoReading">Chapters</list-button>
+      <list-button @click="gotoSearcher">Search</list-button>
+      <list-button v-if="hasLastViewed" @click="gotoLastViewed">Continue Reading</list-button>
+      <list-button v-if="hasBookmarks" @click="gotoBookmarks">Bookmarks</list-button>
+      <list-button v-if="hasHighlights" @click="gotoHighlights">Highlights</list-button>
     </div>	
 	</div>
 </template>
 
 <script>
 import { QBtn } from "quasar";
+import ListButton from "./ListButton.vue";
 
 export default {
+  data() {
+    return {
+      debugClicks: 0
+    };
+  },
   components: {
-    QBtn
+    QBtn,
+    ListButton
   },
   methods: {
     gotoReading() {
@@ -38,6 +45,9 @@ export default {
         window.location.hash =
           "#/reader/" + this.$store.getters.lastLocation.location;
       }
+    },
+    gotoDebug() {
+      window.location.hash = "#/debug";
     }
   },
   computed: {

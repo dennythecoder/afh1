@@ -3,15 +3,14 @@
 		<Toolbar>
       <template	v-for="(highlight, index) in highlights" >
 
-      <q-btn outline color="primary" 
+      <list-button 
 					@click="gotoLocation(highlight.location)" :key="index" 
-          class="full-width"
       >
 
         {{highlight.location.chapterName}}
         {{highlight.textContent | shortened}}
         
-      </q-btn>	
+      </list-button>	
       <highlights-context-menu :highlight="highlight" :key="index"></highlights-context-menu>
       </template>
       
@@ -27,6 +26,7 @@
 import { QBtn } from "quasar";
 import Toolbar from "./Toolbar.vue";
 import HighlightsContextMenu from "./HighlightsContextMenu.vue";
+import ListButton from "./ListButton.vue";
 export default {
   data() {
     return {
@@ -66,7 +66,8 @@ export default {
   components: {
     Toolbar,
     QBtn,
-    HighlightsContextMenu
+    HighlightsContextMenu,
+    ListButton
   },
   beforeCreate() {
     window.addEventListener("selectstart", onSelectListener);

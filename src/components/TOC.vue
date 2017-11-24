@@ -2,13 +2,12 @@
 	<div class="toc">
 		<Toolbar>
 			<div class="btn-container">
-				<q-btn outline color="primary" class="full-width"
-					v-for="(chapter, chapterIndex) in chapters"
+				<list-button 					
+				  v-for="(chapter, chapterIndex) in chapters"
 					@click="gotoChapter(chapter)"
-					:key="chapterIndex"
-				>
+					:key="chapterIndex">
 					{{chapter.label}}
-				</q-btn>
+				</list-button>
 			</div>
 		</Toolbar>
 	</div>
@@ -22,21 +21,23 @@
 <script>
 import Toolbar from "./Toolbar.vue";
 import { QBtn } from "quasar";
+import ListButton from "./ListButton.vue";
 export default {
   computed: {
-    chapters: function() {
+    chapters() {
       return this.$store.getters.chapters;
     }
   },
   methods: {
-    gotoChapter: function(chapter) {
+    gotoChapter(chapter) {
       const cfi = chapter.cfi.replace(/\//g, "-"); // making url friendly
       window.location.hash = "#/reader/" + cfi;
     }
   },
   components: {
     Toolbar,
-    QBtn
+    QBtn,
+    ListButton
   }
 };
 </script>

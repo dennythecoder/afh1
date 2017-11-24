@@ -2,10 +2,10 @@
 	<div class="bookmarks">
 		<Toolbar>
       <template v-for="(bookmark, index) in bookmarks">
-        <q-btn outline color="primary" class="full-width"
+        <list-button
             @click="gotoLocation(bookmark)" 
             :key="index"
-        >{{bookmark.chapterName}}</q-btn>	
+        >{{bookmark.chapterName}}</list-button>	
         <bookmarks-context-menu :key="index" :bookmark="bookmark"></bookmarks-context-menu>
       </template> 
 		</Toolbar>
@@ -25,6 +25,7 @@
 import Toolbar from "./Toolbar.vue";
 import BookmarksContextMenu from "./BookmarksContextMenu";
 import { QBtn } from "quasar";
+import ListButton from "./ListButton";
 export default {
   data() {
     return {
@@ -57,7 +58,8 @@ export default {
   components: {
     Toolbar,
     BookmarksContextMenu,
-    QBtn
+    QBtn,
+    ListButton
   },
 
   beforeCreate() {
