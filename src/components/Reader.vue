@@ -2,7 +2,7 @@
 	<div class="reader" :class="appearHandler">
 		<Toolbar>
 			<div class="content" :style="styleObj" :id="id"></div>
-      <div v-show="!isTextSelectable" class="swipe-overlay" v-touch-swipe="swipeHandler"></div>
+    <!--  <div v-long-press="onLongPress" v-show="!isTextSelectable" class="swipe-overlay" v-touch-swipe="swipeHandler"></div>-->
 		</Toolbar>
 	</div>
 </template>
@@ -56,6 +56,39 @@ let ePub = window.ePub;
 import Toolbar from "./Toolbar.vue";
 import { TouchSwipe } from "quasar";
 import { CreateHighlightManager } from "../highlight";
+import Hammer from "hammerjs";
+
+let duration = 1000;
+
+let LongPress = {
+  bind(el, binding) {
+    el._onmousedown = function(e) {
+      el._mouseup = false;
+      el._timout = setTimeout(() => {
+        if (el._timeout) {
+          clearInterval(el._timeout);
+          delete el._timeout;
+        }
+        if (!el._mouseup) {
+          binding.value.call(el, e);
+        }
+      }, duration);
+    };
+    el._onmouseup = function(e) {
+      el._mouseup = true;
+    };
+    el.addEventListener("mousedown", el._onmousedown);
+    el.addEventListener("mouseup", el._onmouseup);
+    el.addEventListener("touchstart", el._onmousedown);
+    el.addEventListener("touchend", el._onmouseup);
+  },
+  unbind(el, binding) {
+    el.removeEventListener("mousedown", el._onmousedown);
+    el.removeEventListener("mouseup", el._onmouseup);
+    el.removeEventListener("touchstart", el._onmousedown);
+    el.removeEventListener("touchend", el._onmouseup);
+  }
+};
 
 export default {
   data() {
@@ -66,7 +99,8 @@ export default {
     };
   },
   directives: {
-    TouchSwipe
+    TouchSwipe,
+    LongPress
   },
   methods: {
     prevPage() {
@@ -117,8 +151,34 @@ export default {
         return false;
       };
     },
+    onLongPress(e) {
+      this.$store.commit("toggleIsTextSelectable");
+    },
+    appendHandlers() {
+      let iframe = document.querySelector("iframe"),
+        body = iframe.contentDocument.body;
+      if (body._onswipeleft && body._onswiperight) return;
+      body._onswipeleft = true;
+      body._onswiperight = true;
+      delete Hammer.defaults.cssProps.userSelect;
+      let hammer = new Hammer(body);
+      hammer.on("swipe", e => {
+        switch (e.direction) {
+          case 2: // left
+            this.nextPage();
+            break;
+          case 4: // right
+            this.prevPage();
+            break;
+          default:
+            break;
+        }
+      });
+      window.hammer = hammer;
+    },
     onBookReady() {
       let vm = this;
+
       vm.book.on("renderer:locationChanged", this.locationChangeHandler);
       vm.book.forceSingle();
       this.$store.commit("setBook", vm.book);
@@ -157,6 +217,7 @@ export default {
       vm.book.renderTo("epubViewer").then(() => this.onBookReady());
     },
     locationChangeHandler(location) {
+      this.appendHandlers();
       let win = document.querySelector("iframe").contentWindow;
       this.removeContextMenu(win);
       this.removeContextMenu(window);
@@ -204,6 +265,7 @@ export default {
         });
         this.markHighlights();
       }
+      this.appendHandlers();
     },
     "$store.getters.searchTerm": function(val) {
       this.clearHighlights();
