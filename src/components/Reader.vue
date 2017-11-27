@@ -2,7 +2,6 @@
 	<div class="reader" :class="appearHandler">
 		<Toolbar>
 			<div class="content" :style="styleObj" :id="id"></div>
-    <!--  <div v-long-press="onLongPress" v-show="!isTextSelectable" class="swipe-overlay" v-touch-swipe="swipeHandler"></div>-->
 		</Toolbar>
 	</div>
 </template>
@@ -58,38 +57,6 @@ import { TouchSwipe } from "quasar";
 import { CreateHighlightManager } from "../highlight";
 import Hammer from "hammerjs";
 
-let duration = 1000;
-
-let LongPress = {
-  bind(el, binding) {
-    el._onmousedown = function(e) {
-      el._mouseup = false;
-      el._timout = setTimeout(() => {
-        if (el._timeout) {
-          clearInterval(el._timeout);
-          delete el._timeout;
-        }
-        if (!el._mouseup) {
-          binding.value.call(el, e);
-        }
-      }, duration);
-    };
-    el._onmouseup = function(e) {
-      el._mouseup = true;
-    };
-    el.addEventListener("mousedown", el._onmousedown);
-    el.addEventListener("mouseup", el._onmouseup);
-    el.addEventListener("touchstart", el._onmousedown);
-    el.addEventListener("touchend", el._onmouseup);
-  },
-  unbind(el, binding) {
-    el.removeEventListener("mousedown", el._onmousedown);
-    el.removeEventListener("mouseup", el._onmouseup);
-    el.removeEventListener("touchstart", el._onmousedown);
-    el.removeEventListener("touchend", el._onmouseup);
-  }
-};
-
 export default {
   data() {
     return {
@@ -99,8 +66,7 @@ export default {
     };
   },
   directives: {
-    TouchSwipe,
-    LongPress
+    TouchSwipe
   },
   methods: {
     prevPage() {
@@ -157,9 +123,9 @@ export default {
     appendHandlers() {
       let iframe = document.querySelector("iframe"),
         body = iframe.contentDocument.body;
-      if (body._onswipeleft && body._onswiperight) return;
-      body._onswipeleft = true;
-      body._onswiperight = true;
+      if (body._hashandlers) return;
+      body._hashandlers = true;
+
       delete Hammer.defaults.cssProps.userSelect;
       let hammer = new Hammer(body);
       hammer.on("swipe", e => {
@@ -174,7 +140,13 @@ export default {
             break;
         }
       });
-      window.hammer = hammer;
+      iframe.contentDocument.addEventListener("selectionchange", e => {
+        if (iframe.contentWindow.getSelection().toString().length) {
+          this.$store.commit("setIsTextSelectable", true);
+        } else {
+          this.$store.commit("setIsTextSelectable", false);
+        }
+      });
     },
     onBookReady() {
       let vm = this;

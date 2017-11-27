@@ -17,6 +17,7 @@ import store from "./store/index";
 import Toolbar from "./components/Toolbar.vue";
 
 Vue.config.productionTip = false;
+
 Vue.use(Quasar); // Install Quasar Framework
 
 if (__THEME === "mat") {

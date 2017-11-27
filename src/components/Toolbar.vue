@@ -5,8 +5,6 @@
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
-        <ToolbarButton name="fa-pencil-square-o" @click="toggleIsTextSelectable" v-if="isReader && !isTextSelectable" />
-        <ToolbarButton name="fa-pencil-square-o cross-out" @click="toggleIsTextSelectable" v-if="isReader && isTextSelectable" />
         <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader && isTextSelectable" />
 			</div>	
 		</q-toolbar>

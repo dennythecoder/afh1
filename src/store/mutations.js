@@ -74,6 +74,9 @@ export default {
   toggleIsTextSelectable(state) {
     state.isTextSelectable = !state.isTextSelectable;
   },
+  setIsTextSelectable(state, val) {
+    state.isTextSelectable = val;
+  },
   saveLastLocation(state) {
     function getChapterName(href) {
       for (var i = 0; i < state.chapters.length; i++) {
