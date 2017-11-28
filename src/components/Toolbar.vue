@@ -27,7 +27,7 @@
         Search
       </q-side-link>
 
-      <q-item highlight @click="clearSearch" v-if="$store.getters.searchTerm && !isSearcher">
+      <q-item highlight @click="clearSearch" v-if="searchTerm && !isSearcher">
         <ToolbarButton name="fa-search cross-out"  />
         Clear Search
       </q-item> 
@@ -65,7 +65,8 @@ export default {
       "isBookmarked",
       "isReader",
       "isSearcher",
-      "isTextSelectable"
+      "isTextSelectable",
+      "searchTerm"
     ])
   },
 

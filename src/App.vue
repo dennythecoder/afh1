@@ -3,7 +3,7 @@
   <div id="q-app">
     <router-view />
     <Reader/> 
-    <ScrollManager/>>
+    <ScrollManager/>
   </div>
 </template>
 
