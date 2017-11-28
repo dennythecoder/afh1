@@ -6,6 +6,7 @@
   map["highlights"] = "visible";
   map["toc"] = "visible";
   map["bookmarks"] = "visible";
+  map["searcher"] = "visible";
 
   export default {
     render(h) {

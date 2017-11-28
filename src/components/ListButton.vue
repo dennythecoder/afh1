@@ -1,8 +1,9 @@
 <template>
     <q-btn outline color="primary" 
         @click="$emit('click')"  
-        class="full-width"
+        class=" list-button"
         big
+        rounded
     >
         <slot />
     </q-btn>       
@@ -15,4 +16,10 @@ export default {
   }
 };
 </script>
- 	
+<style>
+.list-button{
+    margin: 4px auto;
+    width:90%;
+    margin-left:5%;
+}
+</style>

@@ -81,14 +81,5 @@ export default {
 		top:0;
 		height:100%;
 		width:100%;
-	}
-	.btn-container{
-    width:95%;
-    margin:auto;
-  }
-  .btn-container button{
-    margin-bottom:4px;
-  }
-	
-	
+	}	
 </style>

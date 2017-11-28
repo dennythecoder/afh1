@@ -1,7 +1,7 @@
 <template>
 	<div class="reader" :class="appearHandler">
 		<Toolbar>
-			<div class="content" :style="styleObj" :id="id"></div>
+			<div class="content" style="height:85vh;width:100%;margin:auto;" :id="id"></div>
 		</Toolbar>
 	</div>
 </template>
@@ -204,15 +204,6 @@ export default {
     }
   },
   computed: {
-    styleObj() {
-      var width = window.innerWidth;
-      width *= 0.5;
-      return {
-        height: "85vh",
-        width: width,
-        margin: "auto"
-      };
-    },
     isTextSelectable() {
       return this.$store.getters.isTextSelectable;
     }
