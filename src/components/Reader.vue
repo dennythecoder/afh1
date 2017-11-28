@@ -8,14 +8,7 @@
 
 
 <style>
-.swipe-overlay{
-  height:80vh;
-  width:95%;
-  margin:auto;
-  top:8vh;
-  position:absolute;
-  z-index:3;
-}
+
 .reader {
 
 	height: 80vh;
@@ -46,6 +39,7 @@
 
 	width: 95%;
 }
+
 </style>
 
 
@@ -142,11 +136,18 @@ export default {
       });
       iframe.contentDocument.addEventListener("selectionchange", e => {
         if (iframe.contentWindow.getSelection().toString().length) {
-          this.$store.commit("setIsTextSelectable", true);
+          setTimeout(() => {
+            if (iframe.contentWindow.getSelection().toString().length) {
+              this.setIsTextSelectable(true);
+            }
+          }, 250);
         } else {
-          this.$store.commit("setIsTextSelectable", false);
+          this.setIsTextSelectable(false);
         }
       });
+    },
+    setIsTextSelectable(value) {
+      this.$store.commit("setIsTextSelectable", value);
     },
     onBookReady() {
       let vm = this;
@@ -160,7 +161,6 @@ export default {
       let win = document.querySelector("iframe").contentWindow;
       this.removeContextMenu(win);
       this.removeContextMenu(window);
-
       vm.book.getToc().then(function(chapters) {
         chapters.forEach(function(chapter) {
           vm.$store.commit("addChapter", chapter);
@@ -178,11 +178,12 @@ export default {
       if (DEV) {
         handbookFolder = "." + handbookFolder;
       }
+
       vm.book = ePub(handbookFolder, {
         width: computedStyle.width,
         height: computedStyle.height,
-        style: {
-          padding: "10px"
+        styles: {
+          paddingRight: "15px"
         }
       });
 
@@ -191,10 +192,11 @@ export default {
     locationChangeHandler(location) {
       this.appendHandlers();
       let win = document.querySelector("iframe").contentWindow;
+      win.getSelection().removeAllRanges();
       this.removeContextMenu(win);
       this.removeContextMenu(window);
       this.currentCfi = location.replace(/\//g, "-");
-      this.markHighlights();
+      setTimeout(() => this.markHighlights(), 50);
     },
     markHighlights() {
       const hm = CreateHighlightManager(this.$store);
