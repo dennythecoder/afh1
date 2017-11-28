@@ -12,44 +12,17 @@
       <div class="toolbar-content">
         <slot scope="default"></slot>
       </div>
+      <toolbar-side-menu slot="left" @action-complete="toggleLeft" />
 
-    <div slot="left">
-      <q-side-link item to="/home">
-        <ToolbarButton name="fa-home" />
-        Home
-      </q-side-link>
-      <q-side-link item to="/toc">
-        <ToolbarButton name="fa-list" />
-        Table of Contents
-      </q-side-link>
-      <q-side-link item to="/searcher">
-        <ToolbarButton name="fa-search" />
-        Search
-      </q-side-link>
-
-      <q-item highlight @click="clearSearch" v-if="searchTerm && !isSearcher">
-        <ToolbarButton name="fa-search cross-out"  />
-        Clear Search
-      </q-item> 
-      <q-item highlight @click="createBookmark" v-if="isReader && !isBookmarked" >
-        <ToolbarButton name="fa-bookmark-o"/>
-        Create Bookmark
-      </q-item>
-      <q-item highlight @click="destroyBookmark" v-if="isReader && isBookmarked" >
-        <ToolbarButton name="fa-bookmark" />
-        Remove Bookmark
-      </q-item>
-        
-    
-    </div>
     </q-layout>
 
 	</div>
 </template>
 
 <script>
-import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
+import { QToolbar, QLayout, QItem, QSideLink } from "quasar";
 import ToolbarButton from "./ToolbarButton";
+import ToolbarSideMenu from "./ToolbarSideMenu.vue";
 import { CreateHighlightManager } from "../highlight";
 import { mapMutations, mapGetters } from "vuex";
 export default {
@@ -58,7 +31,8 @@ export default {
     ToolbarButton,
     QLayout,
     QItem,
-    QSideLink
+    QSideLink,
+    ToolbarSideMenu
   },
   computed: {
     ...mapGetters([
@@ -66,32 +40,14 @@ export default {
       "isReader",
       "isSearcher",
       "isTextSelectable",
-      "searchTerm"
+      "searchTerm",
+      "bookmarks",
+      "highlights"
     ])
   },
 
   methods: {
-    ...mapMutations([
-      "prevPage",
-      "nextPage",
-      "createHighlight",
-      "destroyHighlight",
-      "toggleIsTextSelectable"
-    ]),
-    createBookmark() {
-      this.$store.commit("createBookmark");
-      this.toggleLeft();
-      Toast.create({ html: "Bookmark Created!" });
-    },
-    destroyBookmark() {
-      this.$store.commit("destroyBookmark");
-      this.toggleLeft();
-      Toast.create({ html: "Bookmark Removed!" });
-    },
-    clearSearch() {
-      this.$store.commit("searchPages", "");
-      this.toggleLeft();
-    },
+    ...mapMutations(["prevPage", "nextPage", "createHighlight"]),
     toggleLeft() {
       this.$refs.layout.toggleLeft();
     },
