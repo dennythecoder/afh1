@@ -2,6 +2,7 @@
     <q-btn outline color="primary" 
         @click="$emit('click')"  
         class="full-width"
+        big
     >
         <slot />
     </q-btn>       
