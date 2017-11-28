@@ -3,14 +3,17 @@
   <div id="q-app">
     <router-view />
     <Reader/> 
+    <ScrollManager/>>
   </div>
 </template>
 
 <script>
 import Reader from "./components/Reader.vue";
+import ScrollManager from "./components/ScrollManager.vue";
 export default {
   components: {
-    Reader
+    Reader,
+    ScrollManager
   }
 };
 </script>

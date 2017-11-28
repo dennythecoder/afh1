@@ -213,22 +213,11 @@ export default {
         margin: "auto"
       };
     },
-
-    isVisible() {
-      return this.$store.getters.isReader;
-    },
     isTextSelectable() {
       return this.$store.getters.isTextSelectable;
     }
   },
   watch: {
-    isVisible(newValue) {
-      if (newValue) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "visible";
-      }
-    },
     "$route.params.cfi": function(val) {
       if (val && this.$store.getters.isBookInitialized) {
         this.gotoCfi("epubcfi(" + val.replace(/-/g, "/") + ")").then(() => {
