@@ -53,7 +53,10 @@ export default {
     state.bookmarks.push(bookmark);
     localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
   },
-  destroyBookmark(state) {
+  destroyBookmark(state, argBookmark) {
+    if (argBookmark) {
+      return this.commit("destroyBookmarkByArg", argBookmark);
+    }
     for (var i = 0; i < state.bookmarks.length; i++) {
       const bookmark = state.bookmarks[i];
       if (bookmark.location === state.lastLocation.location) {
@@ -62,7 +65,15 @@ export default {
       }
     }
   },
-
+  destroyBookmarkByArg(state, argBookmark) {
+    for (var i = 0; i < state.bookmarks.length; i++) {
+      const bookmark = state.bookmarks[i];
+      if (bookmark === argBookmark) {
+        state.bookmarks.splice(i, 1);
+        localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
+      }
+    }
+  },
   nextPage(state) {
     state.book.nextPage();
     this.commit("saveLastLocation");
