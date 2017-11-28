@@ -79,7 +79,7 @@ export default {
 		text-align:center;
 		position:absolute;
 		top:0;
-		height:100%;
+		height:140%;
 		width:100%;
 	}	
 </style>
