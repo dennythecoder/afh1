@@ -92,20 +92,6 @@ export default {
       this.$store.commit("searchPages", "");
       this.toggleLeft();
     },
-    gotoTOC() {
-      window.location.hash = "#/toc";
-      this.toggleLeft();
-    },
-    gotoHome() {
-      this.toggleLeft();
-      setTimeout(() => {
-        window.location.hash = "#/home";
-      }, 50);
-    },
-    gotoSearcher() {
-      window.location.hash = "#/searcher";
-      this.toggleLeft();
-    },
     toggleLeft() {
       this.$refs.layout.toggleLeft();
     },
