@@ -4,10 +4,6 @@
       <ToolbarButton name="fa-home" />
       Home
     </q-side-link>
-    <q-side-link item to="/toc">
-      <ToolbarButton name="fa-list" />
-      Table of Contents
-    </q-side-link>
     <q-side-link v-if="bookmarks.length" item to="/bookmarks">
       <ToolbarButton name="fa-book" />
       Bookmarks
@@ -34,6 +30,17 @@
       <ToolbarButton name="fa-bookmark" />
       Remove Bookmark
     </q-item>
+    <q-item separated>
+      <strong><em>Chapters</em></strong>
+    </q-item>
+    <q-side-link  
+      v-for="chapter in chapters" 
+      :key="chapter.label" 
+      item :to="calcChapterPath(chapter)"
+      class="on-right"
+    >
+      {{chapter.label}}
+    </q-side-link>
   </div>
 </template>
 <script>
@@ -56,7 +63,8 @@ export default {
       "isTextSelectable",
       "searchTerm",
       "bookmarks",
-      "highlights"
+      "highlights",
+      "chapters"
     ])
   },
 
@@ -74,6 +82,10 @@ export default {
     clearSearch() {
       this.$store.commit("searchPages", "");
       this.$emit("action-complete");
+    },
+    calcChapterPath(chapter) {
+      const cfi = chapter.cfi.replace(/\//g, "-"); // making url friendly
+      return "/reader/" + cfi;
     }
   }
 };
