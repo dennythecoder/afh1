@@ -55,6 +55,7 @@ export default {
       const hm = CreateHighlightManager();
       const selection = hm.highlight("yellow");
       this.createHighlight({ ...selection });
+      hm.releaseSelection();
     }
   }
 };

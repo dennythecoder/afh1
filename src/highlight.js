@@ -110,6 +110,9 @@ class HighlightManager {
       }
     });
   }
+  releaseSelection() {
+    this.selection.removeAllRanges();
+  }
 }
 
 function s4() {
