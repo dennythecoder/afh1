@@ -1,6 +1,7 @@
 class HighlightManager {
   constructor(store) {
     this.$store = store;
+    window.store = store;
   }
 
   get window() {
@@ -13,16 +14,28 @@ class HighlightManager {
     return this.window.getSelection();
   }
 
-  highlightRange(colour, range) {
+  highlightRange(colour, range, guid) {
     let sel = this.selection,
       doc = this.document;
     sel.removeAllRanges();
     sel.addRange(range);
     let location = this.getLocation();
+    if (!guid) guid = createGuid();
     doc.designMode = "on";
     doc.execCommand("HiliteColor", false, colour);
+    if (colour !== "transparent") {
+      doc.execCommand(
+        "createLink",
+        false,
+        `javascript:if(confirm('delete highlight?')) window.top.store.commit('destroyHighlight',{guid:"${guid}"})`
+      );
+    } else {
+      doc.execCommand("unlink", false);
+    }
+
     doc.designMode = "off";
     location.endLocation = this.getLocation();
+    location.guid = guid;
     return location;
   }
   highlight(colour) {
@@ -89,7 +102,7 @@ class HighlightManager {
             ? highlight.range
             : this.createRange(highlight.start, highlight.end);
         if (range) {
-          this.highlightRange(color, range);
+          this.highlightRange(color, range, highlight.guid);
           highlight.range = this.selection.getRangeAt(0);
 
           this.selection.removeAllRanges();
@@ -97,6 +110,14 @@ class HighlightManager {
       }
     });
   }
+}
+
+function s4() {
+  return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+}
+
+function createGuid() {
+  return "guid-" + s4() + s4();
 }
 
 function pickOffset(node, location) {

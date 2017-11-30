@@ -38,10 +38,10 @@ export default {
   },
   destroyHighlight(state, highlight) {
     for (let i = 0; i < state.highlights.length; i++) {
-      if (state.highlights[i] === highlight) {
-        highlight.start = highlight.endLocation.start;
-        highlight.end = highlight.endLocation.end;
-        state.destroyedHighlights.push(highlight);
+      if (state.highlights[i].guid === highlight.guid) {
+        state.highlights[i].start = state.highlights[i].endLocation.start;
+        state.highlights[i].end = state.highlights[i].endLocation.end;
+        state.destroyedHighlights.push(state.highlights[i]);
         state.highlights.splice(i, 1);
         localStorage.setItem("highlights", JSON.stringify(state.highlights));
       }

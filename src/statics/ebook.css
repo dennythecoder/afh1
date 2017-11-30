@@ -1,0 +1,4 @@
+a[href^="javascript"]{
+  text-decoration:none;
+  color:black;
+}

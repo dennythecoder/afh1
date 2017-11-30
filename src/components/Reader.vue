@@ -149,9 +149,13 @@ export default {
     setIsTextSelectable(value) {
       this.$store.commit("setIsTextSelectable", value);
     },
+    insertCss() {
+      let path = "../../../ebook.css";
+      window.EPUBJS.core.addCss(path, null, this.book.renderer.doc.head);
+    },
     onBookReady() {
       let vm = this;
-
+      vm.book.on("renderer:chapterDisplayed", this.insertCss);
       vm.book.on("renderer:locationChanged", this.locationChangeHandler);
       vm.book.forceSingle();
       this.$store.commit("setBook", vm.book);
@@ -234,6 +238,9 @@ export default {
           this.appearHandler = "";
         }, 2000);
       }
+    },
+    "$store.getters.highlights.length": function(val) {
+      this.markHighlights();
     }
   },
   components: {
