@@ -1,16 +1,14 @@
 <template>
 	<div class="searcher">
 		<Toolbar>
-      <div class="search-bar">
-          <input type="text" v-model="searchTerm" @keyup.enter="searchPages" />
-          <i @click="searchPages" class="fa fa-search"></i>
-      </div>
+      <q-search v-model="searchTerm" @keyup.enter="searchPages" />
       <div class="btn-container">
-        <q-btn v-for="(result, index) in searchResults"
+        <list-button v-for="(result, index) in searchResults"
             @click="gotoResult(result)"
-            :key="index" outline color="primary" class="full-width">
+            :key="index">
             {{result.shortResult}}
-        </q-btn>
+        </list-button>
+
       </div>
 		</Toolbar>
 	</div>
@@ -44,7 +42,8 @@
 </style>
 <script>
 import Toolbar from "./Toolbar.vue";
-import { QBtn } from "quasar";
+import { QBtn, QSearch } from "quasar";
+import ListButton from "./ListButton.vue";
 export default {
   data() {
     return {
@@ -66,9 +65,18 @@ export default {
       window.location.hash = "#/reader/" + cfi;
     }
   },
+  watch: {
+    searchTerm(newVal) {
+      if (newVal === "") {
+        this.searchPages();
+      }
+    }
+  },
   components: {
     Toolbar,
-    QBtn
+    QBtn,
+    ListButton,
+    QSearch
   }
 };
 </script>
