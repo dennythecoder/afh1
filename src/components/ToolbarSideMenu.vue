@@ -30,7 +30,7 @@
       <ToolbarButton name="fa-bookmark" />
       Remove Bookmark
     </q-item>
-    <q-item separated>
+    <q-item separator>
       <strong><em>Chapters</em></strong>
     </q-item>
     <q-side-link  
