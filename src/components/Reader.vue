@@ -171,10 +171,9 @@ export default {
 
     init() {
       let vm = this;
-
       var el = document.getElementById(vm.id);
       var computedStyle = window.getComputedStyle(el);
-      let handbookFolder = "./statics/docs/AFH-1/";
+      let handbookFolder = "./statics/docs/afh1/";
       if (DEV) {
         handbookFolder = "." + handbookFolder;
       }
@@ -216,6 +215,7 @@ export default {
           if (this.$store.getters.searchTerm) {
             this.highlightText(this.$store.getters.searchTerm);
           }
+          this.appendHandlers();
         });
         this.markHighlights();
       }
