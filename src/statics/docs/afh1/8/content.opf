@@ -1,0 +1,48 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title>Chapter 8</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">efeb029a-d797-4d1f-8796-cac2ca2b03e0</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">efeb029a-d797-4d1f-8796-cac2ca2b03e0</dc:identifier>
+    <meta name="calibre:title_sort" content="Chapter 8"/>
+    <meta name="calibre:timestamp" content="2017-11-29T14:24:52.441000+00:00"/>
+    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="Chapter 8 - Military Customs, Courtesies, and Protocol for Special Events_split_000.htm" id="html4" media-type="application/xhtml+xml"/>
+    <item href="Chapter 8 - Military Customs, Courtesies, and Protocol for Special Events_split_001.htm" id="html3" media-type="application/xhtml+xml"/>
+    <item href="Chapter 8 - Military Customs, Courtesies, and Protocol for Special Events_split_002.htm" id="html2" media-type="application/xhtml+xml"/>
+    <item href="Chapter 8 - Military Customs, Courtesies, and Protocol for Special Events_split_003.htm" id="html1" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="image001.jpg" id="added3" media-type="image/jpeg"/>
+    <item href="image002.jpg" id="added4" media-type="image/jpeg"/>
+    <item href="image017.jpg" id="added9" media-type="image/jpeg"/>
+    <item href="image042.png" id="added5" media-type="image/png"/>
+    <item href="image043.png" id="added6" media-type="image/png"/>
+    <item href="image044.png" id="added7" media-type="image/png"/>
+    <item href="image045.png" id="added8" media-type="image/png"/>
+    <item href="image046.png" id="added10" media-type="image/png"/>
+    <item href="image047.png" id="added11" media-type="image/png"/>
+    <item href="image048.png" id="added12" media-type="image/png"/>
+    <item href="image049.png" id="added13" media-type="image/png"/>
+    <item href="image050.png" id="added14" media-type="image/png"/>
+    <item href="image051.png" id="added15" media-type="image/png"/>
+    <item href="image052.png" id="added16" media-type="image/png"/>
+    <item href="colorschememapping.xml" id="added2" media-type="application/xml"/>
+    <item href="filelist.xml" id="added" media-type="application/xml"/>
+    <item href="themedata.thmx" id="added1" media-type="application/octet-stream"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="html4"/>
+    <itemref idref="html3"/>
+    <itemref idref="html2"/>
+    <itemref idref="html1"/>
+  </spine>
+  <guide/>
+</package>
