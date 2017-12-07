@@ -1780,94 +1780,7 @@ PromiseHash.prototype._enumerate = function () {
   }
 };
 
-/**
-  `RSVP.hash` is similar to `RSVP.all`, but takes an object instead of an array
-  for its `promises` argument.
 
-  Returns a promise that is fulfilled when all the given promises have been
-  fulfilled, or rejected if any of them become rejected. The returned promise
-  is fulfilled with a hash that has the same key names as the `promises` object
-  argument. If any of the values in the object are not promises, they will
-  simply be copied over to the fulfilled object.
-
-  Example:
-
-  ```javascript
-  let promises = {
-    myPromise: RSVP.resolve(1),
-    yourPromise: RSVP.resolve(2),
-    theirPromise: RSVP.resolve(3),
-    notAPromise: 4
-  };
-
-  RSVP.hash(promises).then(function(hash){
-    // hash here is an object that looks like:
-    // {
-    //   myPromise: 1,
-    //   yourPromise: 2,
-    //   theirPromise: 3,
-    //   notAPromise: 4
-    // }
-  });
-  ````
-
-  If any of the `promises` given to `RSVP.hash` are rejected, the first promise
-  that is rejected will be given as the reason to the rejection handler.
-
-  Example:
-
-  ```javascript
-  let promises = {
-    myPromise: RSVP.resolve(1),
-    rejectedPromise: RSVP.reject(new Error('rejectedPromise')),
-    anotherRejectedPromise: RSVP.reject(new Error('anotherRejectedPromise')),
-  };
-
-  RSVP.hash(promises).then(function(hash){
-    // Code here never runs because there are rejected promises!
-  }, function(reason) {
-    // reason.message === 'rejectedPromise'
-  });
-  ```
-
-  An important note: `RSVP.hash` is intended for plain JavaScript objects that
-  are just a set of keys and values. `RSVP.hash` will NOT preserve prototype
-  chains.
-
-  Example:
-
-  ```javascript
-  function MyConstructor(){
-    this.example = RSVP.resolve('Example');
-  }
-
-  MyConstructor.prototype = {
-    protoProperty: RSVP.resolve('Proto Property')
-  };
-
-  let myObject = new MyConstructor();
-
-  RSVP.hash(myObject).then(function(hash){
-    // protoProperty will not be present, instead you will just have an
-    // object that looks like:
-    // {
-    //   example: 'Example'
-    // }
-    //
-    // hash.hasOwnProperty('protoProperty'); // false
-    // 'undefined' === typeof hash.protoProperty
-  });
-  ```
-
-  @method hash
-  @static
-  @for RSVP
-  @param {Object} object
-  @param {String} label optional string that describes the promise.
-  Useful for tooling.
-  @return {Promise} promise that is fulfilled when all properties of `promises`
-  have been fulfilled, or rejected if any of them become rejected.
-*/
 function hash$1(object, label) {
   return new PromiseHash(Promise$1, object, label).promise;
 }
@@ -1884,107 +1797,6 @@ HashSettled.prototype._validationError = function () {
   return new Error('hashSettled must be called with an object');
 };
 
-/**
-  `RSVP.hashSettled` is similar to `RSVP.allSettled`, but takes an object
-  instead of an array for its `promises` argument.
-
-  Unlike `RSVP.all` or `RSVP.hash`, which implement a fail-fast method,
-  but like `RSVP.allSettled`, `hashSettled` waits until all the
-  constituent promises have returned and then shows you all the results
-  with their states and values/reasons. This is useful if you want to
-  handle multiple promises' failure states together as a set.
-
-  Returns a promise that is fulfilled when all the given promises have been
-  settled, or rejected if the passed parameters are invalid.
-
-  The returned promise is fulfilled with a hash that has the same key names as
-  the `promises` object argument. If any of the values in the object are not
-  promises, they will be copied over to the fulfilled object and marked with state
-  'fulfilled'.
-
-  Example:
-
-  ```javascript
-  let promises = {
-    myPromise: RSVP.Promise.resolve(1),
-    yourPromise: RSVP.Promise.resolve(2),
-    theirPromise: RSVP.Promise.resolve(3),
-    notAPromise: 4
-  };
-
-  RSVP.hashSettled(promises).then(function(hash){
-    // hash here is an object that looks like:
-    // {
-    //   myPromise: { state: 'fulfilled', value: 1 },
-    //   yourPromise: { state: 'fulfilled', value: 2 },
-    //   theirPromise: { state: 'fulfilled', value: 3 },
-    //   notAPromise: { state: 'fulfilled', value: 4 }
-    // }
-  });
-  ```
-
-  If any of the `promises` given to `RSVP.hash` are rejected, the state will
-  be set to 'rejected' and the reason for rejection provided.
-
-  Example:
-
-  ```javascript
-  let promises = {
-    myPromise: RSVP.Promise.resolve(1),
-    rejectedPromise: RSVP.Promise.reject(new Error('rejection')),
-    anotherRejectedPromise: RSVP.Promise.reject(new Error('more rejection')),
-  };
-
-  RSVP.hashSettled(promises).then(function(hash){
-    // hash here is an object that looks like:
-    // {
-    //   myPromise:              { state: 'fulfilled', value: 1 },
-    //   rejectedPromise:        { state: 'rejected', reason: Error },
-    //   anotherRejectedPromise: { state: 'rejected', reason: Error },
-    // }
-    // Note that for rejectedPromise, reason.message == 'rejection',
-    // and for anotherRejectedPromise, reason.message == 'more rejection'.
-  });
-  ```
-
-  An important note: `RSVP.hashSettled` is intended for plain JavaScript objects that
-  are just a set of keys and values. `RSVP.hashSettled` will NOT preserve prototype
-  chains.
-
-  Example:
-
-  ```javascript
-  function MyConstructor(){
-    this.example = RSVP.Promise.resolve('Example');
-  }
-
-  MyConstructor.prototype = {
-    protoProperty: RSVP.Promise.resolve('Proto Property')
-  };
-
-  let myObject = new MyConstructor();
-
-  RSVP.hashSettled(myObject).then(function(hash){
-    // protoProperty will not be present, instead you will just have an
-    // object that looks like:
-    // {
-    //   example: { state: 'fulfilled', value: 'Example' }
-    // }
-    //
-    // hash.hasOwnProperty('protoProperty'); // false
-    // 'undefined' === typeof hash.protoProperty
-  });
-  ```
-
-  @method hashSettled
-  @for RSVP
-  @param {Object} object
-  @param {String} label optional string that describes the promise.
-  Useful for tooling.
-  @return {Promise} promise that is fulfilled when when all properties of `promises`
-  have been settled.
-  @static
-*/
 function hashSettled$1(object, label) {
   return new HashSettled(Promise$1, object, label).promise;
 }
@@ -2036,38 +1848,7 @@ function rethrow$1(reason) {
   throw reason;
 }
 
-/**
-  `RSVP.defer` returns an object similar to jQuery's `$.Deferred`.
-  `RSVP.defer` should be used when porting over code reliant on `$.Deferred`'s
-  interface. New code should use the `RSVP.Promise` constructor instead.
 
-  The object returned from `RSVP.defer` is a plain object with three properties:
-
-  * promise - an `RSVP.Promise`.
-  * reject - a function that causes the `promise` property on this object to
-    become rejected
-  * resolve - a function that causes the `promise` property on this object to
-    become fulfilled.
-
-  Example:
-
-   ```javascript
-   let deferred = RSVP.defer();
-
-   deferred.resolve("Success!");
-
-   deferred.promise.then(function(value){
-     // value here is "Success!"
-   });
-   ```
-
-  @method defer
-  @static
-  @for RSVP
-  @param {String} label optional string for labeling the promise.
-  Useful for tooling.
-  @return {Object}
- */
 function defer$1(label) {
   var deferred = { resolve: undefined, reject: undefined };
 
@@ -2079,84 +1860,6 @@ function defer$1(label) {
   return deferred;
 }
 
-/**
- `RSVP.map` is similar to JavaScript's native `map` method, except that it
-  waits for all promises to become fulfilled before running the `mapFn` on
-  each item in given to `promises`. `RSVP.map` returns a promise that will
-  become fulfilled with the result of running `mapFn` on the values the promises
-  become fulfilled with.
-
-  For example:
-
-  ```javascript
-
-  let promise1 = RSVP.resolve(1);
-  let promise2 = RSVP.resolve(2);
-  let promise3 = RSVP.resolve(3);
-  let promises = [ promise1, promise2, promise3 ];
-
-  let mapFn = function(item){
-    return item + 1;
-  };
-
-  RSVP.map(promises, mapFn).then(function(result){
-    // result is [ 2, 3, 4 ]
-  });
-  ```
-
-  If any of the `promises` given to `RSVP.map` are rejected, the first promise
-  that is rejected will be given as an argument to the returned promise's
-  rejection handler. For example:
-
-  ```javascript
-  let promise1 = RSVP.resolve(1);
-  let promise2 = RSVP.reject(new Error('2'));
-  let promise3 = RSVP.reject(new Error('3'));
-  let promises = [ promise1, promise2, promise3 ];
-
-  let mapFn = function(item){
-    return item + 1;
-  };
-
-  RSVP.map(promises, mapFn).then(function(array){
-    // Code here never runs because there are rejected promises!
-  }, function(reason) {
-    // reason.message === '2'
-  });
-  ```
-
-  `RSVP.map` will also wait if a promise is returned from `mapFn`. For example,
-  say you want to get all comments from a set of blog posts, but you need
-  the blog posts first because they contain a url to those comments.
-
-  ```javscript
-
-  let mapFn = function(blogPost){
-    // getComments does some ajax and returns an RSVP.Promise that is fulfilled
-    // with some comments data
-    return getComments(blogPost.comments_url);
-  };
-
-  // getBlogPosts does some ajax and returns an RSVP.Promise that is fulfilled
-  // with some blog post data
-  RSVP.map(getBlogPosts(), mapFn).then(function(comments){
-    // comments is the result of asking the server for the comments
-    // of all blog posts returned from getBlogPosts()
-  });
-  ```
-
-  @method map
-  @static
-  @for RSVP
-  @param {Array} promises
-  @param {Function} mapFn function to be called on each fulfilled promise.
-  @param {String} label optional string for labeling the promise.
-  Useful for tooling.
-  @return {Promise} promise that is fulfilled with the result of calling
-  `mapFn` on each fulfilled promise or value when they become fulfilled.
-   The promise will be rejected if any of the given `promises` become rejected.
-  @static
-*/
 function map$1(promises, mapFn, label) {
   return Promise$1.all(promises, label).then(function (values) {
     if (!isFunction(mapFn)) {
@@ -2967,6 +2670,7 @@ EPUBJS.Book.prototype.createHiddenRender = function(renderer, _width, _height) {
 EPUBJS.Book.prototype.generatePageList = function(width, height, flag){
 	var pageList = [];
 	var pager = new EPUBJS.Renderer(this.settings.render_method, false); //hidden
+	pager.isPaginating = true;
 	var hiddenContainer = this.createHiddenRender(pager, width, height);
 	var deferred = new RSVP.defer();
 	var spinePos = -1;
@@ -2997,7 +2701,6 @@ EPUBJS.Book.prototype.generatePageList = function(width, height, flag){
 						"cfi" : item.start,
 						"page" : currentPage,
 						"content" : item.content
-						
 					});
 
 				});
@@ -7909,7 +7612,24 @@ EPUBJS.Renderer.prototype.mapPage = function(){
 
 	
 	/*custom*/
+	if(this.isPaginating){
+		map = this.addContentToMap(map);
+	}
 
+
+	// clean up
+	prevRange = null;
+	prevRanges = undefined;
+	startRange = null;
+	endRange = null;
+	root = null;
+	fullRange = null;
+
+	return map;
+};
+
+
+EPUBJS.Renderer.prototype.addContentToMap = function(map){
 	for(var i = 0; i < map.length; i++){
 		var cfi = new EPUBJS.EpubCFI(),
 				startCfi = map[i].start,
@@ -7923,26 +7643,19 @@ EPUBJS.Renderer.prototype.mapPage = function(){
 		var content = fullRange.toString();
 		map[i].content = content;
 	}
-
-
-	// clean up
-	prevRange = null;
-	prevRanges = undefined;
-	startRange = null;
-	endRange = null;
-	root = null;
-	fullRange = null;
-
-
-
-
-
-
-
 	return map;
-};
+}
 
 
+EPUBJS.Renderer.prototype.createHTMLfromRange = function (range) {
+	let contents = range.cloneContents();
+	let html = "";
+	let children = contents.children;
+	for(var i = 0; i < children.length; i++){
+		html += children[i].outerHTML;
+	}
+	return html;
+}
 
 
 
