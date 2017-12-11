@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
   <head>
-    <meta content="7438f655-cc16-4911-86c8-32f4d5ffa2e6" name="dtb:uid"/>
+    <meta content="a80c39ab-0430-42ba-b7dd-20ad850afcc6" name="dtb:uid"/>
     <meta content="2" name="dtb:depth"/>
     <meta content="calibre (3.6.0)" name="dtb:generator"/>
     <meta content="0" name="dtb:totalPageCount"/>
     <meta content="0" name="dtb:maxPageNumber"/>
   </head>
   <docTitle>
-    <text>Chapter 1, Air Force Heritage</text>
+    <text>Chapter 1</text>
   </docTitle>
   <navMap>
-    <navPoint id="uum9gIVRq3DWljrEwF2PwoF" playOrder="1">
+    <navPoint id="u8LnAFwLlZyo9uLLTxctkC2" playOrder="1">
       <navLabel>
         <text>Start</text>
       </navLabel>

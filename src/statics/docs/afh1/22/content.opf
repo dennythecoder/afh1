@@ -2,15 +2,15 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 22</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Development, Human Resource">Human Resource Development</dc:creator>
     <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">30074a37-2dc1-448a-973c-1ff27ddebf52</dc:identifier>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">d9ab20d5-878c-43ba-935a-cd227caa3851</dc:identifier>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">30074a37-2dc1-448a-973c-1ff27ddebf52</dc:identifier>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:15.113000+00:00"/>
+    <dc:identifier opf:scheme="calibre">d9ab20d5-878c-43ba-935a-cd227caa3851</dc:identifier>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:05.957000+00:00"/>
     <meta name="calibre:title_sort" content="Chapter 22"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:author_link_map" content="{&quot;Human Resource Development&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 22 - Human Resource Development.htm" id="html" media-type="application/xhtml+xml"/>

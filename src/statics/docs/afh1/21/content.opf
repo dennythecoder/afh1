@@ -2,15 +2,15 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 21</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Management, Organizational">Organizational Management</dc:creator>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">e90f4f76-b31c-4803-a55f-bc98192b3a81</dc:identifier>
     <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">089dde3c-e4b9-4bed-8466-4ca1de67e810</dc:identifier>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">089dde3c-e4b9-4bed-8466-4ca1de67e810</dc:identifier>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:17.138000+00:00"/>
+    <dc:identifier opf:scheme="calibre">e90f4f76-b31c-4803-a55f-bc98192b3a81</dc:identifier>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:06.122000+00:00"/>
     <meta name="calibre:title_sort" content="Chapter 21"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:author_link_map" content="{&quot;Organizational Management&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 21 - Organizational Management_split_000.htm" id="html2" media-type="application/xhtml+xml"/>

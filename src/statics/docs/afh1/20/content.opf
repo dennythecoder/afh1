@@ -2,15 +2,15 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 20</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">1d21c4e3-d464-43c0-b76e-f7d35936ab19</dc:identifier>
-    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:creator opf:role="aut" opf:file-as="Knowledge, Air Force">Air Force Knowledge</dc:creator>
     <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">3f0ad60a-8453-45b0-850f-0df17f3dfbda</dc:identifier>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">1d21c4e3-d464-43c0-b76e-f7d35936ab19</dc:identifier>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:19.602000+00:00"/>
+    <dc:identifier opf:scheme="calibre">3f0ad60a-8453-45b0-850f-0df17f3dfbda</dc:identifier>
     <meta name="calibre:title_sort" content="Chapter 20"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:03.127000+00:00"/>
+    <meta name="calibre:author_link_map" content="{&quot;Air Force Knowledge&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 20 - Air Force Knowledge_split_000.htm" id="html6" media-type="application/xhtml+xml"/>

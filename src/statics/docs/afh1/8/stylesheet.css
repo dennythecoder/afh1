@@ -18,92 +18,95 @@
     line-height: 1.2
     }
 .calibre4 {
-    color: blue;
-    line-height: 1.2
-    }
-.calibre5 {
     color: black;
     line-height: 1.2;
     text-decoration: none
     }
-.calibre6 {
+.calibre5 {
     font-size: 0.625em;
     line-height: 1.2
     }
-.calibre7 {
+.calibre6 {
     height: 349px;
     line-height: 1.2;
     width: 246px
     }
-.calibre8 {
+.calibre7 {
     height: 357px;
     line-height: 1.2;
     width: 253px
     }
-.calibre9 {
+.calibre8 {
     font-family: "Calibri", sans-serif;
     line-height: 1.2
     }
-.calibre10 {
+.calibre9 {
     height: 245px;
     line-height: 1.2;
     width: 578px
     }
-.calibre11 {
+.calibre10 {
     height: 245px;
     line-height: 1.2;
     width: 686px
     }
-.calibre12 {
+.calibre11 {
     height: 379px;
     line-height: 1.2;
     width: 751px
     }
-.calibre13 {
+.calibre12 {
     height: 241px;
     line-height: 1.2;
     width: 301px
     }
-.calibre14 {
+.calibre13 {
     height: 240px;
     line-height: 1.2;
     width: 312px
     }
-.calibre15 {
-    float: left;
-    height: 185px;
+.calibre14 {
+    height: 184px;
     line-height: 1.2;
     width: 357px
     }
-.calibre16 {
+.calibre15 {
     height: 376px;
     line-height: 1.2;
     width: 594px
     }
-.calibre17 {
-    float: left;
-    height: 209px;
+.calibre16 {
+    height: 210px;
     line-height: 1.2;
     width: 227px
     }
-.calibre18 {
-    float: left;
+.calibre17 {
     height: 194px;
     line-height: 1.2;
     width: 210px
     }
-.calibre19 {
+.calibre18 {
     font-size: 0.83333em;
     line-height: 1.2
     }
-.calibre20 {
+.calibre19 {
     display: table-row-group;
     vertical-align: middle
     }
-.calibre21 {
+.calibre20 {
     display: table-row;
     height: 11.2pt;
     vertical-align: inherit
+    }
+.calibre21 {
+    background: gray;
+    display: table-cell;
+    height: 11.2pt;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: 178.05pt;
+    border: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre22 {
     background: gray;
@@ -111,9 +114,12 @@
     height: 11.2pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border: black solid 1pt
+    width: 1.35in;
+    border-top: black solid 1pt;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre23 {
     background: gray;
@@ -121,30 +127,30 @@
     height: 11.2pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 197.9pt;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre24 {
-    background: gray;
-    display: table-cell;
-    height: 11.2pt;
-    text-align: inherit;
-    vertical-align: inherit;
-    width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border-top: black solid 1pt;
-    border-right: black solid 1pt;
-    border-bottom: black solid 1pt;
-    border-left: currentColor none medium
-    }
-.calibre25 {
     display: table-row;
     height: 11.3pt;
     vertical-align: inherit
+    }
+.calibre25 {
+    background: #BFBFBF;
+    display: table-cell;
+    height: 11.3pt;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: 178.05pt;
+    border-top: currentColor none medium;
+    border-right: currentColor none medium;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre26 {
     background: #BFBFBF;
@@ -152,12 +158,12 @@
     height: 11.3pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 1.35in;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre27 {
     background: #BFBFBF;
@@ -165,148 +171,148 @@
     height: 11.3pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border-top: currentColor none medium;
-    border-right: currentColor none medium;
-    border-bottom: black solid 1pt;
-    border-left: currentColor none medium
-    }
-.calibre28 {
-    background: #BFBFBF;
-    display: table-cell;
-    height: 11.3pt;
-    text-align: inherit;
-    vertical-align: inherit;
     width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
-.calibre29 {
+.calibre28 {
     display: table-row;
     height: 11.4pt;
     vertical-align: inherit
+    }
+.calibre29 {
+    display: table-cell;
+    height: 11.4pt;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: 178.05pt;
+    border-top: currentColor none medium;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre30 {
     display: table-cell;
     height: 11.4pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 1.35in;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre31 {
     display: table-cell;
     height: 11.4pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 197.9pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre32 {
     display: table-cell;
-    height: 11.4pt;
+    height: 11.3pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 178.05pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre33 {
     display: table-cell;
     height: 11.3pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 1.35in;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre34 {
     display: table-cell;
     height: 11.3pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 197.9pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre35 {
-    display: table-cell;
-    height: 11.3pt;
-    text-align: inherit;
-    vertical-align: inherit;
-    width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border-top: currentColor none medium;
-    border-right: black solid 1pt;
-    border-bottom: black solid 1pt;
-    border-left: currentColor none medium
-    }
-.calibre36 {
     display: table-row;
     height: 11.5pt;
     vertical-align: inherit
+    }
+.calibre36 {
+    display: table-cell;
+    height: 11.5pt;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: 178.05pt;
+    border-top: currentColor none medium;
+    border-right: black solid 1pt;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre37 {
     display: table-cell;
     height: 11.5pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 1.35in;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre38 {
     display: table-cell;
     height: 11.5pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 197.9pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre39 {
-    display: table-cell;
-    height: 11.5pt;
-    text-align: inherit;
-    vertical-align: inherit;
-    width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border-top: currentColor none medium;
-    border-right: black solid 1pt;
-    border-bottom: black solid 1pt;
-    border-left: currentColor none medium
-    }
-.calibre40 {
     display: table-row;
     height: 11.05pt;
     vertical-align: inherit
+    }
+.calibre40 {
+    background: #BFBFBF;
+    display: table-cell;
+    height: 11.05pt;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: 178.05pt;
+    border-top: currentColor none medium;
+    border-right: currentColor none medium;
+    border-bottom: black solid 1pt;
+    border-left: black solid 1pt;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre41 {
     background: #BFBFBF;
@@ -314,12 +320,12 @@
     height: 11.05pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 178.05pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
+    width: 1.35in;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
 .calibre42 {
     background: #BFBFBF;
@@ -327,42 +333,29 @@
     height: 11.05pt;
     text-align: inherit;
     vertical-align: inherit;
-    width: 1.35in;
-    padding: 0.6pt 5.75pt 0 5.35pt;
-    border-top: currentColor none medium;
-    border-right: currentColor none medium;
-    border-bottom: black solid 1pt;
-    border-left: currentColor none medium
-    }
-.calibre43 {
-    background: #BFBFBF;
-    display: table-cell;
-    height: 11.05pt;
-    text-align: inherit;
-    vertical-align: inherit;
     width: 197.9pt;
-    padding: 0.6pt 5.75pt 0 5.35pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.6pt 5.75pt 0 5.35pt
     }
-.calibre44 {
-    height: 653px;
+.calibre43 {
+    height: 652px;
     line-height: 1.2;
     width: 606px
     }
-.calibre45 {
+.calibre44 {
     font-family: "Calibri", sans-serif;
     font-size: 1.29167em;
     line-height: 1.2
     }
-.calibre46 {
+.calibre45 {
     display: block;
-    padding: 0;
-    border: black solid 1pt
+    border: black solid 1pt;
+    padding: 0
     }
-.calibre47 {
+.calibre46 {
     color: #333;
     display: block;
     font-family: "Times New Roman", serif;
@@ -371,13 +364,18 @@
     line-height: 1.2;
     page-break-after: avoid;
     text-align: center;
-    padding: 0;
     border: currentColor none medium;
-    margin: 0 0 4pt
+    margin: 0 0 4pt;
+    padding: 0
     }
-.calibre48 {
+.calibre47 {
     color: #333;
     line-height: 1.2
+    }
+.calibre48 {
+    line-height: 1.2;
+    border: currentColor none 1pt;
+    padding: 0
     }
 .calibre49 {
     font-family: "Times New Roman";
@@ -398,11 +396,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: black solid 1pt;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre52 {
     font-family: Wingdings;
@@ -418,11 +416,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre55 {
     display: table-row;
@@ -435,11 +433,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre57 {
     display: table-cell;
@@ -447,11 +445,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre58 {
     display: table-row;
@@ -464,11 +462,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre60 {
     display: table-cell;
@@ -476,11 +474,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre61 {
     display: table-row;
@@ -493,11 +491,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre63 {
     display: table-cell;
@@ -505,11 +503,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre64 {
     display: table-row;
@@ -522,11 +520,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre66 {
     display: table-cell;
@@ -534,11 +532,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre67 {
     display: table-row;
@@ -551,11 +549,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre69 {
     display: table-cell;
@@ -563,11 +561,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre70 {
     display: table-row;
@@ -580,11 +578,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre72 {
     display: table-cell;
@@ -592,11 +590,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre73 {
     display: table-row;
@@ -609,11 +607,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: currentColor none medium;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre75 {
     display: table-cell;
@@ -621,11 +619,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre76 {
     display: table-row;
@@ -638,11 +636,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 50.3pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt
+    border-left: black solid 1pt;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre78 {
     font-family: Wingdings;
@@ -660,11 +658,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 449.25pt;
-    padding: 0.35pt 7.4pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium
+    border-left: currentColor none medium;
+    padding: 0.35pt 7.4pt 0 0
     }
 .calibre81 {
     height: 225px;
@@ -672,10 +670,9 @@
     width: 602px
     }
 .calibre82 {
-    float: left;
     height: 393px;
     line-height: 1.2;
-    width: 318px
+    width: 317px
     }
 .calibre83 {
     font-size: 1.29167em;
@@ -788,9 +785,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.3pt 5.65pt 45.2pt
+    margin: 0 9.3pt 5.65pt 0.5in
     }
 .msonormal10 {
     color: black;
@@ -799,9 +796,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 45.2pt
+    margin: 0 0.75pt 5.65pt 0.5in
     }
 .msonormal11 {
     color: black;
@@ -810,9 +807,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.75pt 5.65pt 45.2pt
+    margin: 0 9.75pt 5.65pt 0.5in
     }
 .msonormal12 {
     color: black;
@@ -821,9 +818,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.45pt 5.65pt 45.2pt
+    margin: 0 9.45pt 5.65pt 0.5in
     }
 .msonormal13 {
     color: black;
@@ -832,9 +829,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.65pt 5.65pt 45.2pt
+    margin: 0 9.65pt 5.65pt 0.5in
     }
 .msonormal14 {
     color: black;
@@ -843,9 +840,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.7pt 5.65pt 45.2pt
+    margin: 0 9.7pt 5.65pt 0.5in
     }
 .msonormal15 {
     color: black;
@@ -854,9 +851,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 45.2pt
+    margin: 0 0.75pt 0.0001pt 0.5in
     }
 .msonormal16 {
     color: black;
@@ -865,9 +862,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.6pt 5.65pt 45.2pt
+    margin: 0 9.6pt 5.65pt 0.5in
     }
 .msonormal17 {
     color: black;
@@ -887,9 +884,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.55pt 5.65pt 45.2pt
+    margin: 0 9.55pt 5.65pt 0.5in
     }
 .msonormal19 {
     color: black;
@@ -998,9 +995,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.5pt 5.65pt 45.2pt
+    margin: 0 9.5pt 5.65pt 0.5in
     }
 .msonormal29 {
     color: black;
@@ -1009,9 +1006,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.95pt 5.65pt 45.2pt
+    margin: 0 9.95pt 5.65pt 0.5in
     }
 .msonormal30 {
     color: black;
@@ -1020,9 +1017,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 10pt 5.65pt 45.2pt
+    margin: 0 10pt 5.65pt 0.5in
     }
 .msonormal31 {
     color: black;
@@ -1096,13 +1093,24 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
+    text-align: justify;
+    text-indent: 0.1pt;
+    text-justify: inter-ideograph;
+    margin: 0 9.55pt 5.65pt 45.2pt
+    }
+.msonormal38 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
     tab-stops: center 231.3pt 375.55pt;
     text-align: left;
     text-indent: 0;
     text-justify: inter-ideograph;
     margin: 0 0 0.45pt
     }
-.msonormal38 {
+.msonormal39 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1114,7 +1122,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 7.85pt
     }
-.msonormal39 {
+.msonormal40 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1125,7 +1133,7 @@
     text-justify: inter-ideograph;
     margin: 0 23.2pt 1.85pt 0
     }
-.msonormal40 {
+.msonormal41 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1136,27 +1144,16 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.9in
     }
-.msonormal41 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 0.45pt 45.9pt
-    }
 .msonormal42 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
+    text-align: justify;
+    text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.65pt 5.85pt 45.15pt
+    margin: 0 9.45pt 5.65pt 45.2pt
     }
 .msonormal43 {
     color: black;
@@ -1167,7 +1164,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 9.4pt 5.65pt 45.2pt
+    margin: 0 9.6pt 5.65pt 45.2pt
     }
 .msonormal44 {
     color: black;
@@ -1175,10 +1172,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    margin: 0 9.85pt 5.65pt 45.2pt
+    margin: 0 14.75pt 0.45pt 45.9pt
     }
 .msonormal45 {
     color: black;
@@ -1186,10 +1183,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 6.9pt 45.2pt
+    margin: 0 14.75pt 0.45pt 0.5in
     }
 .msonormal46 {
     color: black;
@@ -1198,11 +1195,44 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.3pt 0.0001pt 45.2pt
+    margin: 0 9.4pt 5.65pt 0.5in
     }
 .msonormal47 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.85pt 5.65pt 0.5in
+    }
+.msonormal48 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.75pt 6.9pt 0.5in
+    }
+.msonormal49 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.3pt 0.0001pt 0.5in
+    }
+.msonormal50 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1213,49 +1243,16 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.25in
     }
-.msonormal48 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 7pt 45.2pt
-    }
-.msonormal49 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.8pt 5.65pt 45.2pt
-    }
-.msonormal50 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 0 5.35pt 0.5pt
-    }
 .msonormal51 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
+    text-align: justify;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 5.35pt 18.5pt
+    margin: 0 0.75pt 7pt 0.5in
     }
 .msonormal52 {
     color: black;
@@ -1264,9 +1261,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.35pt 5.65pt 45.2pt
+    margin: 0 9.8pt 5.65pt 0.5in
     }
 .msonormal53 {
     color: black;
@@ -1277,9 +1274,42 @@
     text-align: left;
     text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    margin: 0 0.65pt 5.85pt 18.5pt
+    margin: 0 0 5.35pt 0.5pt
     }
 .msonormal54 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: -0.5pt;
+    text-justify: inter-ideograph;
+    margin: 0 0 5.35pt 18.5pt
+    }
+.msonormal55 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.35pt 5.65pt 0.5in
+    }
+.msonormal56 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: -0.5pt;
+    text-justify: inter-ideograph;
+    margin: 0 0.65pt 5.85pt 18.5pt
+    }
+.msonormal57 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1290,39 +1320,6 @@
     text-justify: inter-ideograph;
     margin: 0 9.7pt 5.65pt 165.85pt
     }
-.msonormal55 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: right;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.9pt 0.55pt 0.5pt
-    }
-.msonormal56 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.45pt 5.65pt 0.25in
-    }
-.msonormal57 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.4pt 5.65pt 0.25in
-    }
 .msonormal58 {
     color: black;
     display: block;
@@ -1330,9 +1327,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 1.2pt 0.25in
+    margin: 0 29.9pt 0.55pt 0.5in
     }
 .msonormal59 {
     color: black;
@@ -1341,9 +1338,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.45pt 11.85pt 0.25in
+    margin: 0 0.75pt 1.2pt 0.5in
     }
 .msonormal60 {
     color: black;
@@ -1352,9 +1349,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0.25in
+    margin: 0 9.45pt 11.85pt 0.5in
     }
 .msonormal61 {
     color: black;
@@ -1365,7 +1362,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 9.35pt 5.65pt 0.25in
+    margin: 0 0.75pt 5.65pt 0.25in
     }
 .msonormal62 {
     color: black;
@@ -1373,10 +1370,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
+    text-align: justify;
+    text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 14.75pt 4.3pt 0.5pt
+    margin: 0 9.35pt 5.65pt 0.25in
     }
 .msonormal63 {
     color: black;
@@ -1387,20 +1384,9 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 9.45pt 4.55pt 45.2pt
+    margin: 0 9.4pt 5.65pt 0.25in
     }
 .msonormal64 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.8pt 5.65pt 0.25in
-    }
-.msonormal65 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1409,7 +1395,18 @@
     text-align: left;
     text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    margin: 0 9.65pt 5.85pt 18.5pt
+    margin: 0 14.75pt 4.3pt 0.5pt
+    }
+.msonormal65 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.45pt 4.55pt 0.5in
     }
 .msonormal66 {
     color: black;
@@ -1420,9 +1417,31 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 9.95pt 5.65pt 0.25in
+    margin: 0 9.8pt 5.65pt 0.25in
     }
 .msonormal67 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: -0.5pt;
+    text-justify: inter-ideograph;
+    margin: 0 9.65pt 5.85pt 18.5pt
+    }
+.msonormal68 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0.1pt;
+    text-justify: inter-ideograph;
+    margin: 0 9.95pt 5.65pt 0.25in
+    }
+.msonormal69 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1433,7 +1452,29 @@
     text-justify: inter-ideograph;
     margin: 0 9.65pt 5.65pt 0.25in
     }
-.msonormal68 {
+.msonormal70 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0.1pt;
+    text-justify: inter-ideograph;
+    margin: 0 9.45pt 5.65pt 0.25in
+    }
+.msonormal71 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.75pt 5.65pt 0.25in
+    }
+.msonormal72 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1444,7 +1485,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 0.45pt 21.15pt
     }
-.msonormal69 {
+.msonormal73 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1455,7 +1496,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.05pt
     }
-.msonormal70 {
+.msonormal74 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1466,7 +1507,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.15pt
     }
-.msonormal71 {
+.msonormal75 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1477,7 +1518,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 8pt
     }
-.msonormal72 {
+.msonormal76 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1488,50 +1529,6 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 31.2pt
     }
-.msonormal73 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt
-    }
-.msonormal74 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.25pt
-    }
-.msonormal75 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.1pt 0.0001pt 0
-    }
-.msonormal76 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: center;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.1pt
-    }
 .msonormal77 {
     color: black;
     display: block;
@@ -1541,7 +1538,7 @@
     text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.3pt
+    margin: 0 0 0.0001pt
     }
 .msonormal78 {
     color: black;
@@ -1552,7 +1549,7 @@
     text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.35pt
+    margin: 0 0 0.0001pt 0.25pt
     }
 .msonormal79 {
     color: black;
@@ -1563,7 +1560,7 @@
     text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.45pt
+    margin: 0 0.1pt 0.0001pt 0
     }
 .msonormal80 {
     color: black;
@@ -1571,10 +1568,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
+    text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 33.7pt
+    margin: 0 0 0.0001pt 0.1pt
     }
 .msonormal81 {
     color: black;
@@ -1585,7 +1582,7 @@
     text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 0.2pt
+    margin: 0 0 0.0001pt 0.3pt
     }
 .msonormal82 {
     color: black;
@@ -1593,10 +1590,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
+    text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt 28.65pt
+    margin: 0 0 0.0001pt 0.35pt
     }
 .msonormal83 {
     color: black;
@@ -1607,9 +1604,53 @@
     text-align: center;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.25pt 0.0001pt 0
+    margin: 0 0 0.0001pt 0.45pt
     }
 .msonormal84 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0 0.0001pt 33.7pt
+    }
+.msonormal85 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0 0.0001pt 0.2pt
+    }
+.msonormal86 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0 0.0001pt 28.65pt
+    }
+.msonormal87 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.25pt 0.0001pt 0
+    }
+.msonormal88 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1620,50 +1661,6 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 4.15pt 0.5pt
     }
-.msonormal85 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.25pt 4.6pt 45.2pt
-    }
-.msonormal86 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.45pt 45.2pt
-    }
-.msonormal87 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 45.2pt
-    }
-.msonormal88 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.55pt 45.2pt
-    }
 .msonormal89 {
     color: black;
     display: block;
@@ -1671,9 +1668,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.75pt 4.55pt 45.2pt
+    margin: 0 9.25pt 4.6pt 0.5in
     }
 .msonormal90 {
     color: black;
@@ -1682,9 +1679,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.4pt 45.2pt
+    margin: 0 0.75pt 4.45pt 0.5in
     }
 .msonormal91 {
     color: black;
@@ -1693,11 +1690,66 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 6.65pt 45.2pt
+    margin: 0 0.75pt 0.45pt 0.5in
     }
 .msonormal92 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.75pt 4.55pt 0.5in
+    }
+.msonormal93 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.75pt 4.4pt 0.5in
+    }
+.msonormal94 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.75pt 6.65pt 0.5in
+    }
+.msonormal95 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0 0.0001pt 0.5in
+    }
+.msonormal96 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.6pt 3.45pt 0.5in
+    }
+.msonormal97 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1708,18 +1760,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 45.4pt
     }
-.msonormal93 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.6pt 3.45pt 45.2pt
-    }
-.msonormal94 {
+.msonormal98 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1730,50 +1771,6 @@
     text-justify: inter-ideograph;
     margin: 0 0 4.6pt 24.25pt
     }
-.msonormal95 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 3.45pt 45.2pt
-    }
-.msonormal96 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.8pt 3.35pt 45.2pt
-    }
-.msonormal97 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 3.5pt 45.2pt
-    }
-.msonormal98 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: right;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.5pt 0.55pt 26.3pt
-    }
 .msonormal99 {
     color: black;
     display: block;
@@ -1781,11 +1778,44 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.7pt 0.05in 45.2pt
+    margin: 0 0.75pt 3.45pt 0.5in
     }
 .msonormal100 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.8pt 3.35pt 0.5in
+    }
+.msonormal101 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 0.75pt 3.5pt 0.5in
+    }
+.msonormal102 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 29.5pt 0.55pt 0.5in
+    }
+.msonormal103 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1796,7 +1826,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 3.35pt 18.5pt
     }
-.msonormal101 {
+.msonormal104 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1807,7 +1837,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 1.05pt 10.6pt
     }
-.msonormal102 {
+.msonormal105 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1816,48 +1846,9 @@
     text-align: justify;
     text-indent: 206.7pt;
     text-justify: inter-ideograph;
-    padding: 0;
     border: currentColor none medium;
-    margin: 0 0 4.45pt
-    }
-.msonormal103 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    padding: 0;
-    border: currentColor none medium;
-    margin: 0 0 4.45pt 0.5pt
-    }
-.msonormal104 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    padding: 0;
-    border: currentColor none medium;
-    margin: 0 0 5.6pt 0.5pt
-    }
-.msonormal105 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    padding: 0;
-    border: currentColor none medium;
-    margin: 0 0 6.5pt 0.5pt
+    margin: 0 0 4.45pt;
+    padding: 0
     }
 .msonormal106 {
     color: black;
@@ -1865,12 +1856,12 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
+    text-align: justify;
     text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    padding: 0;
     border: currentColor none medium;
-    margin: 0 0 4.1pt 0.5pt
+    margin: 0 0 4.45pt 0.5pt;
+    padding: 0
     }
 .msonormal107 {
     color: black;
@@ -1878,12 +1869,12 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -14.3pt;
+    text-align: justify;
+    text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    padding: 0;
     border: currentColor none medium;
-    margin: 0 0 4.1pt 14.3pt
+    margin: 0 0 5.6pt 0.5pt;
+    padding: 0
     }
 .msonormal108 {
     color: black;
@@ -1891,12 +1882,12 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -14.3pt;
+    text-align: justify;
+    text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    padding: 0;
     border: currentColor none medium;
-    margin: 0 0 7.55pt 14.3pt
+    margin: 0 0 6.5pt 0.5pt;
+    padding: 0
     }
 .msonormal109 {
     color: black;
@@ -1904,10 +1895,12 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    margin: 0 10.05pt 5.65pt 0.25in
+    border: currentColor none medium;
+    margin: 0 0 4.1pt 0.5pt;
+    padding: 0
     }
 .msonormal110 {
     color: black;
@@ -1916,9 +1909,11 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: left;
-    text-indent: -30.1pt;
+    text-indent: -14.3pt;
     text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.65pt 48.1pt
+    border: currentColor none medium;
+    margin: 0 0 4.1pt 14.3pt;
+    padding: 0
     }
 .msonormal111 {
     color: black;
@@ -1927,9 +1922,11 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: left;
-    text-indent: -30.1pt;
+    text-indent: -14.3pt;
     text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 48.1pt
+    border: currentColor none medium;
+    margin: 0 0 7.55pt 14.3pt;
+    padding: 0
     }
 .msonormal112 {
     color: black;
@@ -1940,9 +1937,42 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 9.45pt 0.45pt 45.2pt
+    margin: 0 10.05pt 5.65pt 0.25in
     }
 .msonormal113 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: -30.1pt;
+    text-justify: inter-ideograph;
+    margin: 0 14.75pt 5.65pt 48.1pt
+    }
+.msonormal114 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: left;
+    text-indent: -30.1pt;
+    text-justify: inter-ideograph;
+    margin: 0 14.75pt 5.35pt 48.1pt
+    }
+.msonormal115 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.5pt 0.45pt 0.5in
+    }
+.msonormal116 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1953,7 +1983,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 0.45pt 10.35pt
     }
-.msonormal114 {
+.msonormal117 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1964,7 +1994,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 12.6pt
     }
-.msonormal115 {
+.msonormal118 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1975,7 +2005,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.35pt
     }
-.msonormal116 {
+.msonormal119 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1986,7 +2016,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt
     }
-.msonormal117 {
+.msonormal120 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -1997,7 +2027,7 @@
     text-justify: inter-ideograph;
     margin: 0 2.7pt 0.0001pt 0
     }
-.msonormal118 {
+.msonormal121 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -2008,49 +2038,16 @@
     text-justify: inter-ideograph;
     margin: 0 0 0.0001pt 0.2in
     }
-.msonormal119 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.55pt 4.55pt 45.2pt
-    }
-.msonormal120 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.55pt 4.5pt 45.2pt
-    }
-.msonormal121 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 9.55pt 1.6pt 45.2pt
-    }
 .msonormal122 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -30.1pt;
+    text-align: justify;
+    text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 14.75pt 7.05pt 48.1pt
+    margin: 0 10pt 5.65pt 45.2pt
     }
 .msonormal123 {
     color: black;
@@ -2059,9 +2056,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.85pt 45.2pt
+    margin: 0 9.55pt 4.55pt 0.5in
     }
 .msonormal124 {
     color: black;
@@ -2070,9 +2067,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 6.7pt 45.2pt
+    margin: 0 9.55pt 4.5pt 0.5in
     }
 .msonormal125 {
     color: black;
@@ -2080,10 +2077,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
+    text-align: justify;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 6.35pt 21.7pt
+    margin: 0 9.55pt 1.6pt 0.5in
     }
 .msonormal126 {
     color: black;
@@ -2091,10 +2088,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
+    text-align: justify;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 14.75pt 7.45pt 45.9pt
+    margin: 0 0.75pt 4.55pt 0.5in
     }
 .msonormal127 {
     color: black;
@@ -2105,7 +2102,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 5.75pt 5.65pt 45.2pt
+    margin: 0 0.75pt 4.45pt 45.2pt
     }
 .msonormal128 {
     color: black;
@@ -2113,10 +2110,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 5.75pt 11.95pt 45.2pt
+    margin: 0 14.75pt 7.05pt 0.25in
     }
 .msonormal129 {
     color: black;
@@ -2125,9 +2122,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: -0.5pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 5.75pt 5.3pt -0.25pt
+    margin: 0 0.75pt 5.85pt 0.5in
     }
 .msonormal130 {
     color: black;
@@ -2136,9 +2133,9 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 5.75pt 0.0001pt 0.25in
+    margin: 0 0.75pt 6.7pt 0.5in
     }
 .msonormal131 {
     color: black;
@@ -2146,10 +2143,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.9pt 5.65pt 0.25in
+    margin: 0 0 6.35pt 21.7pt
     }
 .msonormal132 {
     color: black;
@@ -2157,10 +2154,10 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
+    text-align: left;
+    text-indent: -0.5pt;
     text-justify: inter-ideograph;
-    margin: 0 5.75pt 5.65pt 0.25in
+    margin: 0 14.75pt 7.45pt 45.9pt
     }
 .msonormal133 {
     color: black;
@@ -2171,9 +2168,64 @@
     text-align: left;
     text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0 5.05pt 0.25in
+    margin: 0 14.75pt 7.45pt 0.25in
     }
 .msonormal134 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 5.75pt 5.65pt 0.5in
+    }
+.msonormal135 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 5.75pt 11.95pt 0.5in
+    }
+.msonormal136 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: -0.5pt;
+    text-justify: inter-ideograph;
+    margin: 0 5.75pt 5.3pt -0.25pt
+    }
+.msonormal137 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.9pt 0.0001pt 0.25in
+    }
+.msonormal138 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 5.75pt 5.65pt 0.25in
+    }
+.msonormal139 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -2184,29 +2236,40 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 5.35pt 22.6pt
     }
-.msonormal135 {
+.msonormal140 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
+    text-justify: inter-ideograph;
+    margin: 0 9.45pt 5.65pt 0.25in
+    }
+.msonormal141 {
+    color: black;
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 0.77419em;
+    line-height: 1.2;
+    text-align: justify;
+    text-indent: 0;
     text-justify: inter-ideograph;
     margin: 0 9.45pt 0.0001pt 0.25in
     }
-.msonormal136 {
+.msonormal142 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
     margin: 0 9.55pt 5.65pt 0.25in
     }
-.msonormal137 {
+.msonormal143 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -2217,38 +2280,38 @@
     text-justify: inter-ideograph;
     margin: 0 9.3pt 5.65pt 0.25in
     }
-.msonormal138 {
+.msonormal144 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: left;
-    text-indent: -38.55pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 83.75pt
+    margin: 0 9.65pt 0.45pt 0.5in
     }
-.msonormal139 {
+.msonormal145 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: left;
-    text-indent: -38.55pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.7pt 83.75pt
+    margin: 0 0.75pt 4.7pt 0.5in
     }
-.msonormal140 {
+.msonormal146 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
+    text-indent: 0;
     text-justify: inter-ideograph;
-    margin: 0 9.55pt 3.8pt 45.2pt
+    margin: 0 9.55pt 3.8pt 0.5in
     }
 .tablegrid {
     border-collapse: collapse;
@@ -2273,4 +2336,12 @@
 .wordsection {
     display: block;
     page: WordSection1
+    }
+.pcalibre:link {
+    color: blue;
+    text-decoration: underline
+    }
+.pcalibre1:visited {
+    color: purple;
+    text-decoration: underline
     }

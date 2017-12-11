@@ -2,15 +2,16 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 8</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
-    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">efeb029a-d797-4d1f-8796-cac2ca2b03e0</dc:identifier>
+    <dc:creator opf:role="aut" opf:file-as="Military Customs, Courtesies &amp; Events, Protocol for Special">Military Customs, Courtesies</dc:creator>
+    <dc:creator opf:role="aut">Protocol for Special Events</dc:creator>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">97de850b-f1bb-4c33-bdcb-ae6a2abfe90d</dc:identifier>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">efeb029a-d797-4d1f-8796-cac2ca2b03e0</dc:identifier>
+    <dc:identifier opf:scheme="calibre">97de850b-f1bb-4c33-bdcb-ae6a2abfe90d</dc:identifier>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:04.443000+00:00"/>
     <meta name="calibre:title_sort" content="Chapter 8"/>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:52.441000+00:00"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:author_link_map" content="{&quot;Military Customs, Courtesies&quot;: &quot;&quot;, &quot;Protocol for Special Events&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 8 - Military Customs, Courtesies, and Protocol for Special Events_split_000.htm" id="html4" media-type="application/xhtml+xml"/>

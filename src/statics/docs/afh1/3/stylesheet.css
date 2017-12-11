@@ -15,159 +15,149 @@
     line-height: 1.2
     }
 .calibre3 {
+    font-size: 0.75em;
     line-height: 1.2
     }
 .calibre4 {
-    font-family: "Times New Roman";
-    font-size: 0.75em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1.2
+    color: black
     }
 .calibre5 {
-    color: #333
-    }
-.calibre6 {
-    line-height: 127%
-    }
-.calibre7 {
     font-weight: bold
     }
-.calibre8 {
+.calibre6 {
     font-style: italic
     }
-.calibre9 {
+.calibre7 {
     height: 144px;
     line-height: 1.2;
     width: 144px
     }
-.calibre10 {
+.calibre8 {
     height: 138px;
     line-height: 1.2;
     width: 139px
     }
-.calibre11 {
+.calibre9 {
     height: 144px;
     line-height: 1.2;
     width: 146px
     }
-.calibre12 {
+.calibre10 {
     height: 144px;
     line-height: 1.2;
     width: 141px
     }
-.calibre13 {
+.calibre11 {
     font-size: 1.29167em;
     line-height: 1.2
     }
-.calibre14 {
+.calibre12 {
     font-size: 0.83333em;
     line-height: 1.2
     }
-.calibre15 {
+.calibre13 {
     height: 144px;
     line-height: 1.2;
     width: 145px
     }
-.calibre16 {
+.calibre14 {
     font-family: "Arial", sans-serif;
     line-height: 1.2
     }
-.calibre17 {
+.calibre15 {
     font-family: "Calibri", sans-serif;
     font-size: 1em;
     line-height: 1.2
     }
-.calibre18 {
+.calibre16 {
     height: 16px;
     line-height: 1.2;
     width: 4px
     }
-.calibre19 {
+.calibre17 {
     font-family: "Arial", sans-serif;
     font-size: 0.83333em;
     line-height: 1.2
     }
-.calibre20 {
+.calibre18 {
     height: 144px;
     line-height: 1.2;
     width: 140px
     }
-.calibre21 {
+.calibre19 {
     color: #28497E;
     font-family: "Arial", sans-serif;
     font-size: 1em;
     line-height: 1.2
     }
-.calibre22 {
+.calibre20 {
     color: #444;
     font-family: "Arial", sans-serif;
     font-size: 0.83333em;
     line-height: 1.2
     }
-.calibre23 {
+.calibre21 {
     height: 144px;
     line-height: 1.2;
     width: 148px
     }
-.calibre24 {
+.calibre22 {
     height: 144px;
     line-height: 1.2;
     width: 147px
     }
-.calibre25 {
+.calibre23 {
     color: #1A0DAB;
     font-family: "Arial", sans-serif;
     line-height: 1.2
     }
-.calibre26 {
+.calibre24 {
     height: 144px;
     line-height: 1.2;
     width: 149px
     }
-.calibre27 {
+.calibre25 {
     font-size: 0.83333em;
     line-height: 1.2;
     vertical-align: super
     }
-.calibre28 {
+.calibre26 {
     height: 513px;
     line-height: 1.2;
     width: 678px
     }
-.calibre29 {
+.calibre27 {
     height: 109px;
     line-height: 1.2;
     width: 109px
     }
-.calibre30 {
+.calibre28 {
     height: 124px;
     line-height: 1.2;
     width: 124px
     }
-.calibre31 {
+.calibre29 {
     height: 134px;
     line-height: 1.2;
     width: 135px
     }
-.calibre32 {
+.calibre30 {
     height: 126px;
     line-height: 1.2;
     width: 127px
     }
-.calibre33 {
+.calibre31 {
     float: left;
     height: 130px;
     line-height: 1.2;
     width: 128px
     }
-.calibre34 {
+.calibre32 {
     height: 121px;
     line-height: 1.2;
     width: 122px
     }
-.calibre35 {
+.calibre33 {
     height: 132px;
     line-height: 1.2;
     width: 128px
@@ -178,10 +168,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.25in;
-    text-justify: inter-ideograph;
-    margin: 0 3.85pt 5.65pt 2.75in
+    text-align: center;
+    text-indent: 0;
+    margin: 0 3.85pt 6pt 0
     }
 .msonormal1 {
     color: black;
@@ -191,8 +180,7 @@
     line-height: 1.2;
     text-align: center;
     text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 19.6pt 11.3pt 16.2pt
+    margin: 0 19.6pt 6pt 16.2pt
     }
 .msonormal2 {
     color: black;
@@ -202,8 +190,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 0 5.3pt -0.25pt
+    margin: 0 0 6pt -0.25pt
     }
 .msonormal3 {
     color: black;
@@ -213,8 +200,7 @@
     line-height: 1.2;
     text-align: left;
     text-indent: -17.65pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 17.65pt
+    margin: 0 14.75pt 6pt 17.65pt
     }
 .msonormal4 {
     color: black;
@@ -223,9 +209,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.25in;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0
+    text-indent: 0;
+    margin: 0 0.75pt 6pt 0.25in
     }
 .msonormal5 {
     color: black;
@@ -234,9 +219,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 4.15pt 5.65pt 0.25in
+    text-indent: 0;
+    margin: 0 4.15pt 6pt 0.25in
     }
 .msonormal6 {
     color: black;
@@ -244,10 +228,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -17.65pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 7pt 17.65pt
+    text-align: justify;
+    text-indent: 0.1pt;
+    margin: 0 0.75pt 6pt 0.25in
     }
 .msonormal7 {
     color: black;
@@ -257,8 +240,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0.25in
+    margin: 0 3.75pt 6pt 0.25in
     }
 .msonormal8 {
     color: black;
@@ -266,10 +248,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.75pt 5.65pt 0.25in
+    text-align: left;
+    text-indent: 0;
+    margin: 0 14.75pt 6pt 0.25in
     }
 .msonormal9 {
     color: black;
@@ -277,10 +258,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -25.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 43.1pt
+    text-align: justify;
+    text-indent: 0;
+    margin: 0 3.85pt 6pt 0.5in
     }
 .msonormal10 {
     color: black;
@@ -289,9 +269,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.85pt 5.65pt 45.2pt
+    text-indent: 0;
+    margin: 0 3.95pt 6pt 0.5in
     }
 .msonormal11 {
     color: black;
@@ -299,10 +278,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.95pt 5.65pt 45.2pt
+    text-align: left;
+    text-indent: -0.5pt;
+    margin: 0 14.75pt 6pt 0.5pt
     }
 .msonormal12 {
     color: black;
@@ -310,10 +288,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 0.5pt
+    text-align: justify;
+    text-indent: 0;
+    margin: 0 3.9pt 6pt 0.5in
     }
 .msonormal13 {
     color: black;
@@ -322,9 +299,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.9pt 5.65pt 45.2pt
+    text-indent: 0;
+    margin: 0 3.1pt 6pt 0.5in
     }
 .msonormal14 {
     color: black;
@@ -332,10 +308,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.1pt 6.25pt 45.5pt
+    text-align: left;
+    text-indent: -17.6pt;
+    margin: 0 14.75pt 6pt 17.6pt
     }
 .msonormal15 {
     color: black;
@@ -343,10 +318,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -17.6pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 17.6pt
+    text-align: justify;
+    text-indent: 0.1pt;
+    margin: 0 3.85pt 6pt 0.25in
     }
 .msonormal16 {
     color: black;
@@ -354,10 +328,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.85pt 0.0001pt 0.25in
+    text-align: left;
+    text-indent: -25.1pt;
+    margin: 0 14.75pt 6pt 43.1pt
     }
 .msonormal17 {
     color: black;
@@ -366,9 +339,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 45.2pt
+    text-indent: 0;
+    margin: 0 0.75pt 6pt 0.5in
     }
 .msonormal18 {
     color: black;
@@ -378,8 +350,7 @@
     line-height: 1.2;
     text-align: left;
     text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 18.5pt
+    margin: 0 14.75pt 6pt 18.5pt
     }
 .msonormal19 {
     color: black;
@@ -388,9 +359,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 2.8pt 45.2pt
+    text-indent: 0;
+    margin: 0 0.75pt 6pt 0
     }
 .msonormal20 {
     color: black;
@@ -400,8 +370,7 @@
     line-height: 1.2;
     text-align: left;
     text-indent: -22.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 22.5pt
+    margin: 0 14.75pt 6pt 22.5pt
     }
 .msonormal21 {
     color: black;
@@ -411,8 +380,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.8pt 5.65pt 0.25in
+    margin: 0 3.8pt 6pt 0.25in
     }
 .msonormal22 {
     color: black;
@@ -422,8 +390,7 @@
     line-height: 1.2;
     text-align: left;
     text-indent: -22.7pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 22.7pt
+    margin: 0 14.75pt 6pt 22.7pt
     }
 .msonormal23 {
     color: black;
@@ -431,10 +398,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 0.25in
+    text-align: left;
+    text-indent: 0;
+    margin: 0 2.2pt 6pt 0.25in
     }
 .msonormal24 {
     color: black;
@@ -442,10 +408,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: right;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 2.2pt 0.55pt 26.3pt
+    text-align: justify;
+    text-indent: 0;
+    margin: 0 22.2pt 6pt 0.25in
     }
 .msonormal25 {
     color: black;
@@ -453,10 +418,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 2.2pt 0.55pt 26.3pt
+    text-align: justify;
+    text-indent: 0;
+    margin: 0 4pt 6pt 0.5in
     }
 .msonormal26 {
     color: black;
@@ -466,8 +430,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 22.2pt 0.55pt 0.25in
+    margin: 0 3.8pt 6pt 0.5in
     }
 .msonormal27 {
     color: black;
@@ -475,10 +438,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: left;
+    text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 0.25in
+    margin: 0 3.8pt 6pt 0.25in
     }
 .msonormal28 {
     color: black;
@@ -488,8 +450,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 4pt 5.65pt 0.5in
+    margin: 0 0.75pt 6pt 0.75in
     }
 .msonormal29 {
     color: black;
@@ -499,8 +460,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.55pt 0.5in
+    margin: 0 0.75pt 6pt 45.3pt
     }
 .msonormal30 {
     color: black;
@@ -509,9 +469,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.55pt 45.2pt
+    text-indent: 0;
+    margin: 0 0.75pt 6pt 1in
     }
 .msonormal31 {
     color: black;
@@ -520,9 +479,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.8pt 5.65pt 45.2pt
+    text-indent: 0;
+    margin: 0 0.75pt 6pt 18.1pt
     }
 .msonormal32 {
     color: black;
@@ -531,9 +489,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 45.2pt
+    text-indent: 0;
+    margin: 0 4.95pt 6pt 0.75in
     }
 .msonormal33 {
     color: black;
@@ -543,8 +500,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 45.3pt
+    margin: 0 3.85pt 6pt 0.75in
     }
 .msonormal34 {
     color: black;
@@ -553,9 +509,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 18.1pt
+    text-indent: 0.1pt;
+    margin: 0 0.75pt 6pt 45.2pt
     }
 .msonormal35 {
     color: black;
@@ -564,9 +519,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.05in 45.2pt
+    text-indent: 0;
+    margin: 0 3.8pt 6pt 0.75in
     }
 .msonormal36 {
     color: black;
@@ -575,9 +529,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 4.95pt 5.65pt 0.75in
+    text-indent: 0.1pt;
+    margin: 0 0.75pt 6pt 0
     }
 .msonormal37 {
     color: black;
@@ -586,9 +539,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 4.95pt 0.45pt 0.75in
+    text-indent: 0.1pt;
+    margin: 0 4pt 6pt 45.2pt
     }
 .msonormal38 {
     color: black;
@@ -597,9 +549,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0.75in
+    text-indent: -80.75pt;
+    margin: 0 0.75pt 6pt 125.95pt
     }
 .msonormal39 {
     color: black;
@@ -607,10 +558,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 1in
+    text-align: left;
+    text-indent: -30.1pt;
+    margin: 0 14.75pt 6pt 48.1pt
     }
 .msonormal40 {
     color: black;
@@ -620,8 +570,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.85pt 5.65pt 0.75in
+    margin: 0 3.75pt 6pt 0.5in
     }
 .msonormal41 {
     color: black;
@@ -629,10 +578,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
+    text-align: left;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 3.65pt 1in
+    margin: 0 0 6pt
     }
 .msonormal42 {
     color: black;
@@ -640,10 +588,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 3.65pt 0
+    text-align: left;
+    text-indent: 0;
+    margin: 0 0 6pt 0.25in
     }
 .msonormal43 {
     color: black;
@@ -651,10 +598,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 45.2pt
+    text-align: left;
+    text-indent: 0;
+    margin: 0 0.65pt 6pt 0.5in
     }
 .msonormal44 {
     color: black;
@@ -664,8 +610,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 0.75in
+    margin: 0 4.1pt 6pt 0.5in
     }
 .msonormal45 {
     color: black;
@@ -673,10 +618,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 0.75in
+    text-align: left;
+    text-indent: -0.5pt;
+    margin: 0 0 6pt 0.5pt
     }
 .msonormal46 {
     color: black;
@@ -684,10 +628,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
+    text-align: left;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.8pt 5.65pt 0.75in
+    margin: 0 14.75pt 6pt 0
     }
 .msonormal47 {
     color: black;
@@ -696,9 +639,8 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 3.8pt 5.65pt 0
+    text-indent: 0;
+    margin: 0 3.9pt 6pt 0.25in
     }
 .msonormal48 {
     color: black;
@@ -708,8 +650,7 @@
     line-height: 1.2;
     text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0.5in
+    margin: 0 4.2pt 6pt 0.25in
     }
 .msonormal49 {
     color: black;
@@ -717,10 +658,9 @@
     font-family: "Times New Roman", serif;
     font-size: 0.77419em;
     line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 0
+    text-align: left;
+    text-indent: 0;
+    margin: 0 0.65pt 6pt 0.25in
     }
 .msonormal50 {
     color: black;
@@ -729,317 +669,11 @@
     font-size: 0.77419em;
     line-height: 1.2;
     text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0
-    }
-.msonormal51 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 4pt 5.65pt 45.2pt
-    }
-.msonormal52 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: -80.75pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 125.95pt
-    }
-.msonormal53 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
     text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.55pt 0.5in
+    margin: 0 3.1pt 6pt 0.25in
     }
-.msonormal54 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -30.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 48.1pt
-    }
-.msonormal55 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -30.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.65pt 48.1pt
-    }
-.msonormal56 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.85pt 5.65pt 0.5in
-    }
-.msonormal57 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 5.65pt 0.25in
-    }
-.msonormal58 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.75pt 5.65pt 0.5in
-    }
-.msonormal59 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 7.05pt 0.5pt
-    }
-.msonormal60 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0 0.0001pt
-    }
-.msonormal61 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0 10.45pt
-    }
-.msonormal62 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.65pt 4.7pt 0.5in
-    }
-.msonormal63 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 4.55pt 0.25in
-    }
-.msonormal64 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.65pt 4.6pt 0.5in
-    }
-.msonormal65 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.65pt 5.85pt 0.5in
-    }
-.msonormal66 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 4.3pt 0.5pt
-    }
-.msonormal67 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 4.6pt 0.5in
-    }
-.msonormal68 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 4.1pt 5.65pt 0.5in
-    }
-.msonormal69 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 4.45pt 0.25in
-    }
-.msonormal70 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: -0.5pt;
-    text-justify: inter-ideograph;
-    margin: 0 0 5.35pt 0.5pt
-    }
-.msonormal71 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 14.75pt 5.35pt 0
-    }
-.msonormal72 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.9pt 5.65pt 0.25in
-    }
-.msonormal73 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 4.2pt 0.0001pt 0.25in
-    }
-.msonormal74 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: left;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 0.65pt 5.85pt 0.25in
-    }
-.msonormal75 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.8pt 5.65pt 0.25in
-    }
-.msonormal76 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 0.25in
-    }
-.msonormal77 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.1pt 0.0001pt 0.25in
-    }
-.msonormal78 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0;
-    text-justify: inter-ideograph;
-    margin: 0 3.1pt 6.25pt 0.25in
+.spelle {
+    line-height: 1.2
     }
 .wordsection {
     display: block;

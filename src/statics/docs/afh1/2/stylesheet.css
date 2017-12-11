@@ -15,9 +15,14 @@
     line-height: 1.2
     }
 .calibre3 {
-    line-height: 1.2
+    line-height: 1.2;
+    padding: 0;
+    border: currentColor none 1pt
     }
 .calibre4 {
+    line-height: 1.2
+    }
+.calibre5 {
     font-family: "Times New Roman";
     font-size: 0.75em;
     font-style: normal;
@@ -25,109 +30,105 @@
     font-weight: normal;
     line-height: 1.2
     }
-.calibre5 {
+.calibre6 {
     height: 293px;
     line-height: 1.2;
     width: 210px
     }
-.calibre6 {
+.calibre7 {
     font-size: 1.29167em;
     line-height: 1.2
     }
-.calibre7 {
+.calibre8 {
     font-family: "Calibri", sans-serif;
     line-height: 1.2
     }
-.calibre8 {
-    height: 274px;
+.calibre9 {
+    height: 275px;
     line-height: 1.2;
     width: 632px
     }
-.calibre9 {
+.calibre10 {
     color: red;
     line-height: 1.2
     }
-.calibre10 {
-    height: 200px;
+.calibre11 {
+    height: 201px;
     line-height: 1.2;
     width: 240px
     }
-.calibre11 {
+.calibre12 {
     height: 220px;
     line-height: 1.2;
     width: 294px
     }
-.calibre12 {
+.calibre13 {
     float: left;
     height: 22px;
     line-height: 1.2;
     width: 256px
     }
-.calibre13 {
-    height: 216px;
-    line-height: 1.2;
-    width: 255px
-    }
 .calibre14 {
-    height: 228px;
+    height: 217px;
     line-height: 1.2;
-    width: 282px
+    width: 254px
     }
 .calibre15 {
+    height: 228px;
+    line-height: 1.2;
+    width: 283px
+    }
+.calibre16 {
     height: 203px;
     line-height: 1.2;
     width: 274px
     }
-.calibre16 {
+.calibre17 {
     font-size: 0.83333em;
     line-height: 1.2;
     vertical-align: super
     }
-.calibre17 {
+.calibre18 {
     font-size: 1.55em;
     line-height: 1.2
     }
-.calibre18 {
+.calibre19 {
     font-size: 1.66667em;
     line-height: 1.2
     }
-.calibre19 {
+.calibre20 {
     height: 222px;
     line-height: 1.2;
     width: 285px
     }
-.calibre20 {
+.calibre21 {
     color: #111;
     line-height: 1.2
     }
-.calibre21 {
+.calibre22 {
     height: 212px;
     line-height: 1.2;
-    width: 245px
+    width: 244px
     }
-.calibre22 {
+.calibre23 {
     height: 207px;
     line-height: 1.2;
     width: 173px
     }
-.calibre23 {
-    height: 235px;
+.calibre24 {
+    height: 236px;
     line-height: 1.2;
     width: 184px
     }
-.calibre24 {
+.calibre25 {
     height: 228px;
     line-height: 1.2;
     width: 176px
     }
-.calibre25 {
+.calibre26 {
     color: black;
     line-height: 1.2;
     text-decoration: none
-    }
-.calibre26 {
-    color: blue;
-    line-height: 1.2
     }
 .msolistparagraph {
     color: black;
@@ -535,7 +536,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.0001pt 45.2pt
+    margin: 0 0.75pt 0.45pt 45.2pt
     }
 .msonormal36 {
     color: black;
@@ -546,7 +547,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 45.2pt
+    margin: 0 0.75pt 0.45pt 0.5in
     }
 .msonormal37 {
     color: black;
@@ -557,7 +558,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 0.45pt 0.5in
+    margin: 0 0.75pt 10.65pt 0.5in
     }
 .msonormal38 {
     color: black;
@@ -568,7 +569,7 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 10.65pt 0.5in
+    margin: 0 0.75pt 10.65pt 0.25in
     }
 .msonormal39 {
     color: black;
@@ -579,20 +580,9 @@
     text-align: justify;
     text-indent: 0.1pt;
     text-justify: inter-ideograph;
-    margin: 0 0.75pt 10.65pt 0.25in
-    }
-.msonormal40 {
-    color: black;
-    display: block;
-    font-family: "Times New Roman", serif;
-    font-size: 0.77419em;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 0.1pt;
-    text-justify: inter-ideograph;
     margin: 0 0.75pt 0.0001pt 0.25in
     }
-.msonormal41 {
+.msonormal40 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -603,7 +593,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 0.0001pt 18.1pt
     }
-.msonormal42 {
+.msonormal41 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -614,7 +604,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 5.35pt 22.6pt
     }
-.msonormal43 {
+.msonormal42 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -625,7 +615,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.65pt 5.85pt 18.5pt
     }
-.msonormal44 {
+.msonormal43 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -636,7 +626,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 7.15pt 0.25in
     }
-.msonormal45 {
+.msonormal44 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -647,7 +637,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 7pt 0.25in
     }
-.msonormal46 {
+.msonormal45 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -658,7 +648,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 0.0001pt 45.3pt
     }
-.msonormal47 {
+.msonormal46 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -669,7 +659,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 0.0001pt 0.25in
     }
-.msonormal48 {
+.msonormal47 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -680,7 +670,7 @@
     text-justify: inter-ideograph;
     margin: 0 0 8pt 0.25in
     }
-.msonormal49 {
+.msonormal48 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -691,7 +681,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 5.65pt 99.5pt
     }
-.msonormal50 {
+.msonormal49 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -702,7 +692,7 @@
     text-justify: inter-ideograph;
     margin: 0 14.75pt 4.3pt 22.6pt
     }
-.msonormal51 {
+.msonormal50 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -713,7 +703,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 1.35pt 0.25in
     }
-.msonormal52 {
+.msonormal51 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -724,7 +714,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 5.65pt 54.2pt
     }
-.msonormal53 {
+.msonormal52 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -735,7 +725,7 @@
     text-justify: inter-ideograph;
     margin: 0 0.75pt 5.65pt 0.25in
     }
-.msonormal54 {
+.msonormal53 {
     color: black;
     display: block;
     font-family: "Times New Roman", serif;
@@ -749,4 +739,12 @@
 .wordsection {
     display: block;
     page: WordSection1
+    }
+.pcalibre:link {
+    color: blue;
+    text-decoration: underline
+    }
+.pcalibre1:visited {
+    color: purple;
+    text-decoration: underline
     }

@@ -2,15 +2,15 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 15</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Programs, Personnel">Personnel Programs</dc:creator>
     <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">ed3a05c6-5906-4ca8-8df8-faa5913343e4</dc:identifier>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">fa8e76e2-2c30-41c1-b348-439bd7b3158e</dc:identifier>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">ed3a05c6-5906-4ca8-8df8-faa5913343e4</dc:identifier>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:36.698000+00:00"/>
+    <dc:identifier opf:scheme="calibre">fa8e76e2-2c30-41c1-b348-439bd7b3158e</dc:identifier>
     <meta name="calibre:title_sort" content="Chapter 15"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:01.690000+00:00"/>
+    <meta name="calibre:author_link_map" content="{&quot;Personnel Programs&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 15 - Personnel Programs_split_000.htm" id="html7" media-type="application/xhtml+xml"/>

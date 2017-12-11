@@ -38,11 +38,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 504.1pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: black solid 1.5pt;
     border-right: black solid 1.5pt;
     border-bottom: currentColor none medium;
-    border-left: black solid 1.5pt;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: black solid 1.5pt
     }
 .calibre8 {
     float: left;
@@ -61,11 +61,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: black solid 1.5pt;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: black solid 1.5pt
     }
 .calibre11 {
     display: table-cell;
@@ -73,11 +73,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1.5pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: currentColor none medium
     }
 .calibre12 {
     display: table-row;
@@ -90,11 +90,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: currentColor none medium;
-    border-left: black solid 1.5pt;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: black solid 1.5pt
     }
 .calibre14 {
     display: table-cell;
@@ -102,11 +102,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1.5pt;
     border-bottom: currentColor none medium;
-    border-left: currentColor none medium;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: currentColor none medium
     }
 .calibre15 {
     display: table-row;
@@ -119,11 +119,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1.5pt;
-    border-left: black solid 1.5pt;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: black solid 1.5pt
     }
 .calibre17 {
     display: table-cell;
@@ -131,11 +131,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 252.05pt;
+    padding: 1.4pt 0.75pt 0 5.4pt;
     border-top: currentColor none medium;
     border-right: black solid 1.5pt;
     border-bottom: black solid 1.5pt;
-    border-left: currentColor none medium;
-    padding: 1.4pt 0.75pt 0 5.4pt
+    border-left: currentColor none medium
     }
 .calibre18 {
     font-size: 1.29167em;
@@ -162,8 +162,8 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 83.8pt;
-    border: black solid 1pt;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    padding: 3.35pt 1.1pt 0 5.3pt;
+    border: black solid 1pt
     }
 .calibre24 {
     display: table-cell;
@@ -171,11 +171,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 413.1pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: currentColor none medium
     }
 .calibre25 {
     display: table-cell;
@@ -183,11 +183,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 83.8pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: black solid 1pt
     }
 .calibre26 {
     display: table-cell;
@@ -195,11 +195,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 413.1pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: currentColor none medium
     }
 .calibre27 {
     display: table-row;
@@ -212,11 +212,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 83.8pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: black solid 1pt
     }
 .calibre29 {
     display: table-cell;
@@ -224,11 +224,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 413.1pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: currentColor none medium
     }
 .calibre30 {
     display: table-row;
@@ -241,11 +241,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 83.8pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: black solid 1pt
     }
 .calibre32 {
     display: table-cell;
@@ -253,11 +253,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 413.1pt;
+    padding: 3.35pt 1.1pt 0 5.3pt;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 3.35pt 1.1pt 0 5.3pt
+    border-left: currentColor none medium
     }
 .calibre33 {
     display: table-row;
@@ -270,11 +270,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 65.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: black solid 1.5pt;
-    border-left: black solid 1pt;
-    padding: 0.05in 2.9pt 0 0
+    border-left: black solid 1pt
     }
 .calibre35 {
     display: table-cell;
@@ -282,11 +282,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 22.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: black solid 1pt;
     border-right: currentColor none medium;
     border-bottom: black solid 1.5pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre36 {
     display: table-cell;
@@ -294,11 +294,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 197.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: black solid 1.5pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre37 {
     display: table-cell;
@@ -306,11 +306,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 19.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: black solid 1pt;
     border-right: currentColor none medium;
     border-bottom: black solid 1.5pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre38 {
     display: table-cell;
@@ -318,11 +318,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 191.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: black solid 1pt;
     border-right: black solid 1pt;
     border-bottom: black solid 1.5pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre39 {
     display: table-row;
@@ -335,11 +335,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 65.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 0.05in 2.9pt 0 0
+    border-left: black solid 1pt
     }
 .calibre41 {
     display: table-cell;
@@ -347,11 +347,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 22.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre42 {
     font-family: "Segoe UI Symbol", sans-serif;
@@ -367,11 +367,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 197.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre45 {
     display: table-cell;
@@ -379,11 +379,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 19.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre46 {
     display: table-cell;
@@ -391,11 +391,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 191.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre47 {
     display: table-row;
@@ -408,11 +408,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 65.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 0.05in 2.9pt 0 0
+    border-left: black solid 1pt
     }
 .calibre49 {
     display: table-cell;
@@ -420,11 +420,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 22.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre50 {
     display: table-cell;
@@ -432,11 +432,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 197.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre51 {
     display: table-cell;
@@ -444,11 +444,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 19.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre52 {
     display: table-cell;
@@ -456,11 +456,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 191.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre53 {
     display: table-row;
@@ -473,11 +473,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 65.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: black solid 1pt;
-    padding: 0.05in 2.9pt 0 0
+    border-left: black solid 1pt
     }
 .calibre55 {
     display: table-cell;
@@ -485,11 +485,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 22.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre56 {
     display: table-cell;
@@ -497,11 +497,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 197.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre57 {
     display: table-cell;
@@ -509,11 +509,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 19.8pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: currentColor none medium;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre58 {
     display: table-cell;
@@ -521,11 +521,11 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 191.45pt;
+    padding: 0.05in 2.9pt 0 0;
     border-top: currentColor none medium;
     border-right: black solid 1pt;
     border-bottom: black solid 1pt;
-    border-left: currentColor none medium;
-    padding: 0.05in 2.9pt 0 0
+    border-left: currentColor none medium
     }
 .calibre59 {
     height: 478px;
@@ -548,8 +548,8 @@
     text-align: inherit;
     vertical-align: inherit;
     width: 145pt;
-    border: black solid 1pt;
-    padding: 0 5.75pt 0 0.7in
+    padding: 0 5.75pt 0 0.7in;
+    border: black solid 1pt
     }
 .calibre63 {
     line-height: 1.2;

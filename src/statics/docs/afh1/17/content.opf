@@ -2,15 +2,16 @@
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
   <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <dc:title>Chapter 17</dc:title>
-    <dc:creator opf:role="aut" opf:file-as="USAF">USAF</dc:creator>
+    <dc:creator opf:role="aut" opf:file-as="Dress &amp; Appearance">Dress</dc:creator>
+    <dc:creator opf:role="aut">Appearance</dc:creator>
     <dc:contributor opf:role="bkp">calibre (3.6.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">dbe33890-95b7-4976-aefe-92a43aa7c9b1</dc:identifier>
     <dc:date>0101-01-01T00:00:00+00:00</dc:date>
-    <dc:identifier id="uuid_id" opf:scheme="uuid">1ac6766d-d4d7-450b-a55d-43c2aa79a6be</dc:identifier>
     <dc:language>en</dc:language>
-    <dc:identifier opf:scheme="calibre">1ac6766d-d4d7-450b-a55d-43c2aa79a6be</dc:identifier>
-    <meta name="calibre:timestamp" content="2017-11-29T14:24:29.025000+00:00"/>
+    <dc:identifier opf:scheme="calibre">dbe33890-95b7-4976-aefe-92a43aa7c9b1</dc:identifier>
+    <meta name="calibre:timestamp" content="2017-12-11T17:19:01.357000+00:00"/>
     <meta name="calibre:title_sort" content="Chapter 17"/>
-    <meta name="calibre:author_link_map" content="{&quot;USAF&quot;: &quot;&quot;}"/>
+    <meta name="calibre:author_link_map" content="{&quot;Dress&quot;: &quot;&quot;, &quot;Appearance&quot;: &quot;&quot;}"/>
   </metadata>
   <manifest>
     <item href="Chapter 17 - Dress and Appearance.htm" id="html" media-type="application/xhtml+xml"/>

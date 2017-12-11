@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
   <head>
-    <meta content="cc5922cb-57ec-454d-ae7f-6763a4582776" name="dtb:uid"/>
+    <meta content="bc945619-9a48-4c3c-9f47-f9756aa676d7" name="dtb:uid"/>
     <meta content="2" name="dtb:depth"/>
     <meta content="calibre (3.6.0)" name="dtb:generator"/>
     <meta content="0" name="dtb:totalPageCount"/>
@@ -11,7 +11,7 @@
     <text>Chapter 2</text>
   </docTitle>
   <navMap>
-    <navPoint id="ujKJgFKaOtTkwQB8yLVrAdA" playOrder="1">
+    <navPoint id="uKwETgUFLLZtKzulxpkBTN8" playOrder="1">
       <navLabel>
         <text>Start</text>
       </navLabel>

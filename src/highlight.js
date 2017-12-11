@@ -1,3 +1,20 @@
+import { Dialog } from "quasar";
+
+window.destroyHighlight = function(guid) {
+  Dialog.create({
+    title: "Delete highlight?",
+    buttons: [
+      {
+        label: "Yes",
+        handler() {
+          window.top.store.commit("destroyHighlight", { guid: guid });
+        }
+      },
+      "No"
+    ]
+  });
+};
+
 class HighlightManager {
   constructor(store) {
     this.$store = store;
@@ -27,7 +44,7 @@ class HighlightManager {
       doc.execCommand(
         "createLink",
         false,
-        `javascript:if(confirm('delete highlight?')) window.top.store.commit('destroyHighlight',{guid:"${guid}"})`
+        `javascript:window.top.destroyHighlight("${guid}")`
       );
     } else {
       doc.execCommand("unlink", false);
