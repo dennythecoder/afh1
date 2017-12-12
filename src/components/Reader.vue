@@ -12,10 +12,20 @@
 
 .content{
   height:95vh;
-  width:100%;
+  width:100vw;
   margin:auto;
   padding:10px 10px;
+  
 }
+.reader, .content{
+  position: absolute;
+  top:0;
+  width:100vw;
+}
+.reader{
+  z-index:-3;
+}
+
 
 .reader-in{
   animation-name: slowly-appear;
@@ -146,9 +156,11 @@ export default {
       });
     },
     onTap(e) {
-      console.log(e.target.tagName);
-      if (this.isToolbarHidden) {
+      let tagName = e.target.tagName.toLocaleLowerCase();
+      if (this.isToolbarHidden && tagName !== "a") {
         this.isToolbarHidden = false;
+      } else {
+        this.isToolbarHidden = true;
       }
     },
     setIsTextSelectable(value) {
@@ -158,9 +170,13 @@ export default {
       let path = "../../../ebook.css";
       window.EPUBJS.core.addCss(path, null, this.book.renderer.doc.head);
     },
+    onChapterDisplayed() {
+      this.insertCss();
+      this.appendHandlers();
+    },
     onBookReady() {
       let vm = this;
-      vm.book.on("renderer:chapterDisplayed", this.insertCss);
+      vm.book.on("renderer:chapterDisplayed", this.onChapterDisplayed);
       vm.book.on("renderer:locationChanged", this.locationChangeHandler);
       vm.book.forceSingle();
       this.$store.commit("setBook", vm.book);

@@ -34,7 +34,7 @@
       ...mapMutations(["createHighlight"]),
       highlight() {
         const hm = CreateHighlightManager();
-        const selection = hm.highlight("yellow");
+        const selection = hm.highlight();
         this.createHighlight({ ...selection });
         hm.releaseSelection();
       }

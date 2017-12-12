@@ -11,5 +11,5 @@ export default {
   pages: [],
   router,
   searchTerm: "",
-  highlightColor: "coral"
+  highlightColor: "#3cc"
 };
