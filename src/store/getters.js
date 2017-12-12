@@ -7,6 +7,7 @@ export default {
   lastLocation: state => state.lastLocation,
   pages: state => state.pages,
   searchTerm: state => state.searchTerm,
+  highlightColor: state => state.highlightColor,
   isReader(state) {
     let currentRoute = state.router.currentRoute;
     return currentRoute.path.indexOf("/reader") !== -1;

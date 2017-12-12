@@ -111,5 +111,8 @@ export default {
     const json = JSON.stringify(lastLocation);
     localStorage.setItem("lastLocation", json);
     state.lastLocation = lastLocation;
+  },
+  setHighlightColor(state, color) {
+    state.highlightColor = color;
   }
 };

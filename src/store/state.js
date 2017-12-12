@@ -10,5 +10,6 @@ export default {
   isTextSelectable: false,
   pages: [],
   router,
-  searchTerm: ""
+  searchTerm: "",
+  highlightColor: "coral"
 };
