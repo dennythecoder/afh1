@@ -25,7 +25,7 @@
 import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import ToolbarSideMenu from "./ToolbarSideMenu.vue";
-import { mapMutations, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   props: {
     isHidden: {
