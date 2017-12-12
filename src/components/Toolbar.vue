@@ -1,15 +1,16 @@
 <template>
 	<div class="toolbar-container">
-		<q-toolbar class="toolbar">
+    <transition name="slide">
+		<q-toolbar class="toolbar" v-show="!isHidden">
 			<div style="width:95%;margin:auto;text-align:center;">
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
-        <ToolbarButton name="fa-pencil" @click="highlight" v-if="isReader && isTextSelectable" />
 			</div>	
 		</q-toolbar>
+    </transition>
     <q-layout ref="layout" view="hHr LpR Fff">
-      <div class="toolbar-content">
+      <div :class="{'toolbar-content':!isReader}">
         <slot scope="default"></slot>
       </div>
       <toolbar-side-menu slot="left" @action-complete="toggleLeft" />
@@ -23,9 +24,15 @@
 import { QToolbar, QLayout, QItem, QSideLink } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import ToolbarSideMenu from "./ToolbarSideMenu.vue";
-import { CreateHighlightManager } from "../highlight";
 import { mapMutations, mapGetters } from "vuex";
 export default {
+  props: {
+    isHidden: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
   components: {
     QToolbar,
     ToolbarButton,
@@ -47,15 +54,18 @@ export default {
   },
 
   methods: {
-    ...mapMutations(["prevPage", "nextPage", "createHighlight"]),
+    ...mapMutations(["prevPage", "nextPage"]),
     toggleLeft() {
       this.$refs.layout.toggleLeft();
-    },
-    highlight() {
-      const hm = CreateHighlightManager();
-      const selection = hm.highlight("yellow");
-      this.createHighlight({ ...selection });
-      hm.releaseSelection();
+    }
+  },
+  watch: {
+    isHidden(newValue, oldValue) {
+      if (!newValue && this.isReader) {
+        setTimeout(() => {
+          this.$emit("update:isHidden", true);
+        }, 3000);
+      }
     }
   }
 };
@@ -89,8 +99,12 @@ export default {
     color:#33f;
 }
 
-.q-item-highlight:hover{
-  cursor:pointer;
-}
+
+  .slide-enter-active, .slide-leave-active {
+    transition: top .5s;
+  }
+  .slide-enter, .slide-leave-to{
+    top:-100px;
+  }
 
 </style>

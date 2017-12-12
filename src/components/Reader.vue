@@ -1,24 +1,20 @@
 <template>
 	<div class="reader" :class="appearHandler">
-		<Toolbar>
-			<div class="content" style="height:85vh;width:100%;margin:auto;" :id="id"></div>
+		<Toolbar :is-hidden.sync="isToolbarHidden">
+			<div class="content" :id="id"></div>
 		</Toolbar>
+    <reader-floating-highlight-button v-show="isTextSelectable" />
 	</div>
 </template>
 
 
 <style>
 
-.reader {
-
-	height: 80vh;
-	width: 95%;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin: auto;
-	position: absolute;
-	top: 0vh;
-	z-index: -1;
+.content{
+  height:95vh;
+  width:100%;
+  margin:auto;
+  padding:10px 10px;
 }
 
 .reader-in{
@@ -47,6 +43,7 @@
 <script>
 let ePub = window.ePub;
 import Toolbar from "./Toolbar.vue";
+import ReaderFloatingHighlightButton from "./ReaderFloatingHighlightButton.vue";
 import { TouchSwipe } from "quasar";
 import { CreateHighlightManager } from "../highlight";
 import Hammer from "hammerjs";
@@ -56,7 +53,8 @@ export default {
     return {
       id: "epubViewer",
       currentCfi: "",
-      appearHandler: ""
+      appearHandler: "",
+      isToolbarHidden: true
     };
   },
   directives: {
@@ -134,6 +132,7 @@ export default {
             break;
         }
       });
+      hammer.on("tap", this.onTap);
       iframe.contentDocument.addEventListener("selectionchange", e => {
         if (iframe.contentWindow.getSelection().toString().length) {
           setTimeout(() => {
@@ -145,6 +144,12 @@ export default {
           this.setIsTextSelectable(false);
         }
       });
+    },
+    onTap(e) {
+      console.log(e.target.tagName);
+      if (this.isToolbarHidden) {
+        this.isToolbarHidden = false;
+      }
     },
     setIsTextSelectable(value) {
       this.$store.commit("setIsTextSelectable", value);
@@ -200,6 +205,7 @@ export default {
       this.removeContextMenu(window);
       this.currentCfi = location.replace(/\//g, "-");
       setTimeout(() => this.markHighlights(), 50);
+      this.isToolbarHidden = true;
     },
     markHighlights() {
       const hm = CreateHighlightManager(this.$store);
@@ -244,7 +250,8 @@ export default {
     }
   },
   components: {
-    Toolbar
+    Toolbar,
+    ReaderFloatingHighlightButton
   },
   mounted() {
     this.$nextTick(() => this.init());
