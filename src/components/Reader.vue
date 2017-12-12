@@ -54,7 +54,6 @@
 let ePub = window.ePub;
 import Toolbar from "./Toolbar.vue";
 import ReaderFloatingHighlightButton from "./ReaderFloatingHighlightButton.vue";
-import { TouchSwipe } from "quasar";
 import { CreateHighlightManager } from "../highlight";
 import Hammer from "hammerjs";
 
@@ -66,9 +65,6 @@ export default {
       appearHandler: "",
       isToolbarHidden: true
     };
-  },
-  directives: {
-    TouchSwipe
   },
   methods: {
     prevPage() {
