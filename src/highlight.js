@@ -31,7 +31,13 @@ class HighlightManager {
     return this.window.getSelection();
   }
 
-  highlightRange(colour, range, guid) {
+  highlightRange(col, range, guid) {
+    let colour;
+    if (col) {
+      colour = col;
+    } else {
+      colour = this.$store.getters.highlightColor;
+    }
     let sel = this.selection,
       doc = this.document;
     sel.removeAllRanges();
