@@ -16,7 +16,7 @@
 <style>
 .bookmarks {
 	background-color: white;
-	height: 84vh;
+	height: 100vh;
 }
 </style>
 

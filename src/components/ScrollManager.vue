@@ -15,7 +15,8 @@
     methods: {
       reactToRoute(route) {
         let path = route.path.split("/")[1];
-        document.body.style.overflow = map[path];
+        document.body.style.overflowX = "hidden";
+        document.body.style.overflowY = map[path];
       }
     },
     watch: {
