@@ -6,8 +6,8 @@
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
-        <ToolbarButton  name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />>
-        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />>
+        <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />
+        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />
 
 			</div>	
 		</q-toolbar>
