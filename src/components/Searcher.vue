@@ -18,26 +18,23 @@
 		background-color:white;
 		min-height:100vh;
 	}
-    .search-bar{ 
-        width:100%;
-        text-align:center;
-    }
-    .search-bar input{
-
-        width:85%;
-        margin: 0 0 ;
-        padding:4px 4px;
-        border-radius: 4px 4px;
-    }
-    .search-bar i{
-   
-        margin:0 0;
-        color:#17d;
-        border: 1px solid #17d;
-        border-radius:4px 4px;
-        padding: 4px 4px;
-
-    }
+  .search-bar{ 
+      width:100%;
+      text-align:center;
+  }
+  .search-bar input{
+      width:85%;
+      margin: 0 0 ;
+      padding:4px 4px;
+      border-radius: 4px 4px;
+  }
+  .search-bar i{
+      margin:0 0;
+      color:#17d;
+      border: 1px solid #17d;
+      border-radius:4px 4px;
+      padding: 4px 4px;
+  }
 
 </style>
 <script>
