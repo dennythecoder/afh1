@@ -1,7 +1,7 @@
 <template>
 	<div class="searcher">
 		<Toolbar>
-      <q-search v-model="searchTerm" @input="searchPages" :debounce="500" />
+      <q-input v-model="searchTerm" @keyup.enter.native="searchPages" :after="afterIcon" />
       <div class="btn-container">
 
         <list-button v-for="(result, index) in searchResults"
@@ -41,7 +41,7 @@
 </style>
 <script>
 import Toolbar from "./Toolbar.vue";
-import { QBtn, QSearch } from "quasar";
+import { QBtn, QInput } from "quasar";
 import ListButton from "./ListButton.vue";
 export default {
   data() {
@@ -52,11 +52,29 @@ export default {
   computed: {
     searchResults() {
       return this.$store.getters.searchResults;
+    },
+    afterIcon() {
+      let icons = [];
+      icons.push({
+        icon: "fa-search",
+        handler: this.searchPages
+      });
+      let vm = this;
+      if (this.searchResults.length) {
+        icons.push({
+          icon: "fa-remove",
+          handler() {
+            vm.searchTerm = "";
+            vm.searchPages();
+          }
+        });
+      }
+      return icons;
     }
   },
   methods: {
-    searchPages(term) {
-      this.$store.commit("searchPages", term || "");
+    searchPages() {
+      this.$store.commit("searchPages", this.searchTerm);
     },
     gotoResult(result) {
       let cfi = /epubcfi\((.*?)\)/.exec(result.cfi)[1];
@@ -72,6 +90,9 @@ export default {
       } catch (e) {
         return "";
       }
+    },
+    log() {
+      console.log("yolo");
     }
   },
   watch: {
@@ -85,7 +106,7 @@ export default {
     Toolbar,
     QBtn,
     ListButton,
-    QSearch
+    QInput
   }
 };
 </script>
