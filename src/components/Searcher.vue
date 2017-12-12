@@ -1,7 +1,7 @@
 <template>
 	<div class="searcher">
 		<Toolbar>
-      <q-search v-model="searchTerm" @keyup.enter="searchPages" />
+      <q-search v-model="searchTerm" @input="searchPages" />
       <div class="btn-container">
         <list-button v-for="(result, index) in searchResults"
             @click="gotoResult(result)"
