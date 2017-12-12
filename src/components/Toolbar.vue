@@ -4,10 +4,8 @@
 		<q-toolbar class="toolbar" v-show="!isHidden">
 			<div style="width:95%;margin:auto;text-align:center;">
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
-        <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
-        <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
-        <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />
-        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />
+        <ToolbarButton name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" class="float-right" />
+        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" class="float-right" />
 
 			</div>	
 		</q-toolbar>
@@ -57,7 +55,6 @@ export default {
   },
 
   methods: {
-    ...mapMutations(["prevPage", "nextPage"]),
     toggleLeft() {
       this.$refs.layout.toggleLeft();
     },
@@ -68,15 +65,6 @@ export default {
     destroyBookmark() {
       this.$store.commit("destroyBookmark");
       Toast.create({ html: "Bookmark Removed!" });
-    }
-  },
-  watch: {
-    isHidden(newValue, oldValue) {
-      if (!newValue && this.isReader) {
-        setTimeout(() => {
-          this.$emit("update:isHidden", true);
-        }, 3000);
-      }
     }
   }
 };
