@@ -125,7 +125,7 @@ export default {
       body._hashandlers = true;
 
       delete Hammer.defaults.cssProps.userSelect;
-      let hammer = new Hammer(iframe.contentDocument);
+      let hammer = new Hammer(body);
       hammer.on("swipe", e => {
         switch (e.direction) {
           case 2: // left
@@ -166,7 +166,7 @@ export default {
       let path = "../../../ebook.css";
       window.EPUBJS.core.addCss(path, null, this.book.renderer.doc.head);
     },
-    onChapterDisplayed() {
+    onChapterDisplayed(e) {
       this.insertCss();
       this.appendHandlers();
     },
