@@ -80,6 +80,7 @@ export default {
 		position:absolute;
 		top:0;
 		height:140%;
-		width:100%;
+    width:100%;
+    z-index:3;
 	}	
 </style>
