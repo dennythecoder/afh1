@@ -125,7 +125,7 @@ export default {
       body._hashandlers = true;
 
       delete Hammer.defaults.cssProps.userSelect;
-      let hammer = new Hammer(body);
+      let hammer = new Hammer(iframe.contentDocument);
       hammer.on("swipe", e => {
         switch (e.direction) {
           case 2: // left
