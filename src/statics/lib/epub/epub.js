@@ -6829,9 +6829,9 @@ EPUBJS.Renderer.prototype.addContentToMap = function(map){
 
 
 EPUBJS.Renderer.prototype.createHTMLfromRange = function (range) {
-	let contents = range.cloneContents();
-	let html = "";
-	let children = contents.children;
+	var contents = range.cloneContents();
+	var html = "";
+	var children = contents.children;
 	for(var i = 0; i < children.length; i++){
 		html += children[i].outerHTML;
 	}
