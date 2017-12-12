@@ -57,7 +57,12 @@ class HighlightManager {
   }
   highlight(colour) {
     let sel = this.selection;
-    let col = colour;
+    let col;
+    if (colour) {
+      col = colour;
+    } else {
+      col = this.$store.getters.highlightColor;
+    }
     if (!sel.baseNode) return;
     if (sel.baseNode.parentElement.style.backgroundColor === colour) {
       col = "transparent";
@@ -105,7 +110,7 @@ class HighlightManager {
   markHighlights() {
     let highlights = this.$store.getters.highlights;
     let destroyedHighlights = this.$store.getters.destroyedHighlights;
-    this.markSelectedHighlights(highlights, "yellow");
+    this.markSelectedHighlights(highlights);
     this.markSelectedHighlights(destroyedHighlights, "transparent");
   }
   markSelectedHighlights(highlights, color) {
