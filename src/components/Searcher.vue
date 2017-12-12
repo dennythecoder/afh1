@@ -1,11 +1,13 @@
 <template>
 	<div class="searcher">
 		<Toolbar>
-      <q-search v-model="searchTerm" @input="searchPages" />
+      <q-search v-model="searchTerm" @input="searchPages" :debounce="500" />
       <div class="btn-container">
+
         <list-button v-for="(result, index) in searchResults"
             @click="gotoResult(result)"
             :key="index">
+            {{parseChapter(result)}} - 
             {{result.shortResult}}
         </list-button>
 
@@ -53,13 +55,23 @@ export default {
     }
   },
   methods: {
-    searchPages() {
-      this.$store.commit("searchPages", this.searchTerm);
+    searchPages(term) {
+      this.$store.commit("searchPages", term || "");
     },
     gotoResult(result) {
       let cfi = /epubcfi\((.*?)\)/.exec(result.cfi)[1];
       cfi = cfi.replace(/\//g, "-");
       window.location.hash = "#/reader/" + cfi;
+    },
+    parseChapter(result) {
+      try {
+        let cfi = result.cfi;
+        let right = cfi.split("[a")[1];
+        let chapter = right.split("html")[0];
+        return "Chapter " + chapter;
+      } catch (e) {
+        return "";
+      }
     }
   },
   watch: {
