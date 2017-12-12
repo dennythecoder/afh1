@@ -22,14 +22,6 @@
       <ToolbarButton name="fa-search cross-out"  />
       Clear Search
     </q-item> 
-    <q-item highlight @click="createBookmark" v-if="isReader && !isBookmarked" >
-      <ToolbarButton name="fa-bookmark-o"/>
-      Create Bookmark
-    </q-item>
-    <q-item highlight @click="destroyBookmark" v-if="isReader && isBookmarked" >
-      <ToolbarButton name="fa-bookmark" />
-      Remove Bookmark
-    </q-item>
     <q-item separator>
       <strong><em>Chapters</em></strong>
     </q-item>
@@ -44,7 +36,7 @@
   </div>
 </template>
 <script>
-import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
+import { QToolbar, QLayout, QItem, QSideLink } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import { mapGetters } from "vuex";
 export default {
@@ -69,16 +61,6 @@ export default {
   },
 
   methods: {
-    createBookmark() {
-      this.$store.commit("createBookmark");
-      this.toggleLeft();
-      Toast.create({ html: "Bookmark Created!" });
-    },
-    destroyBookmark() {
-      this.$store.commit("destroyBookmark");
-      this.toggleLeft();
-      Toast.create({ html: "Bookmark Removed!" });
-    },
     clearSearch() {
       this.$store.commit("searchPages", "");
       this.$emit("action-complete");

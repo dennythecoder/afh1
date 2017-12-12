@@ -6,6 +6,9 @@
         <ToolbarButton name="fa-bars" @click="toggleLeft" class="float-left" />
         <ToolbarButton name="fa-arrow-left" @click="prevPage" v-if="isReader" />
         <ToolbarButton name="fa-arrow-right" @click="nextPage" v-if="isReader" />
+        <ToolbarButton  name="fa-bookmark-o" @click="createBookmark" v-if="isReader && !isBookmarked" />>
+        <ToolbarButton name="fa-bookmark" @click="destroyBookmark" v-if="isReader && isBookmarked" />>
+
 			</div>	
 		</q-toolbar>
     </transition>
@@ -21,7 +24,7 @@
 </template>
 
 <script>
-import { QToolbar, QLayout, QItem, QSideLink } from "quasar";
+import { QToolbar, QLayout, QItem, QSideLink, Toast } from "quasar";
 import ToolbarButton from "./ToolbarButton";
 import ToolbarSideMenu from "./ToolbarSideMenu.vue";
 import { mapMutations, mapGetters } from "vuex";
@@ -57,6 +60,14 @@ export default {
     ...mapMutations(["prevPage", "nextPage"]),
     toggleLeft() {
       this.$refs.layout.toggleLeft();
+    },
+    createBookmark() {
+      this.$store.commit("createBookmark");
+      Toast.create({ html: "Bookmark Created!" });
+    },
+    destroyBookmark() {
+      this.$store.commit("destroyBookmark");
+      Toast.create({ html: "Bookmark Removed!" });
     }
   },
   watch: {
