@@ -1,7 +1,7 @@
 <template>
 	<div class="searcher">
 		<Toolbar>
-      <q-input v-model="searchTerm" @keyup.enter.native="searchPages" :after="afterIcon" />
+      <q-input style="width:90%; margin:auto;" v-model="searchTerm" @keyup.enter.native="searchPages" :before="beforeIcon" :after="afterIcon" />
       <div class="btn-container">
 
         <list-button v-for="(result, index) in searchResults"
@@ -18,7 +18,7 @@
 <style>
 	.searcher{
 		background-color:white;
-		min-height:100vh;
+		min-height:200vh;
 	}
   .search-bar{ 
       width:100%;
@@ -55,10 +55,6 @@ export default {
     },
     afterIcon() {
       let icons = [];
-      icons.push({
-        icon: "fa-search",
-        handler: this.searchPages
-      });
       let vm = this;
       if (this.searchResults.length) {
         icons.push({
@@ -70,6 +66,14 @@ export default {
         });
       }
       return icons;
+    },
+    beforeIcon() {
+      return [
+        {
+          icon: "fa-search",
+          handler: this.searchPages
+        }
+      ];
     }
   },
   methods: {
@@ -89,16 +93,6 @@ export default {
         return "Chapter " + chapter;
       } catch (e) {
         return "";
-      }
-    },
-    log() {
-      console.log("yolo");
-    }
-  },
-  watch: {
-    searchTerm(newVal) {
-      if (newVal === "") {
-        this.searchPages();
       }
     }
   },
